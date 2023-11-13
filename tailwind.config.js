@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        freiheitgelb: '#f7c900'
+      }
+    },
   },
   plugins: [],
 }
