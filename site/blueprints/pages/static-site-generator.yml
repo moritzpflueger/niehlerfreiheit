@@ -1,0 +1,5 @@
+fields:
+  staticSiteGenerator:
+    label: Generate a static version of the site
+    type: staticSiteGenerator
+    # You can customize the field options as needed
