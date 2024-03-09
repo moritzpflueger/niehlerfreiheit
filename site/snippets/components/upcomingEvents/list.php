@@ -1,8 +1,9 @@
 <?php
   $rows = $rows ?? 3;
   $hideFirstEvent = $hideFirstEvent ?? false;
-  $groupByMonth = $groupByMonth ?? false;
   if ($hideFirstEvent) $rows++;
+  $groupByMonth = $groupByMonth ?? false;
+  $showEventsLink = $showEventsLink ?? false;
 
   $eventsPage = $site->find('events');
   $today = date('Y-m-d');
@@ -30,13 +31,11 @@
   }
 ?>
 
-<section>
-  <h2 class="text-3xl my-10">Upcoming Events</h2>
-
+<section class="my-32">
   <?php foreach ($groupedEvents as $month => $events): ?>
     <?php if ($groupByMonth): ?>
-      <h3 class="text-3xl my-10">
-        <?= date('F Y', strtotime($month)) ?>
+      <h3 class="text-5xl font-bold mb-10 mt-20">
+        <?= date('F', strtotime($month)) ?>
       </h3>
     <?php endif; ?>
     <?php foreach ($events as $event): ?>
@@ -55,10 +54,16 @@
           >
         <?php endif; ?>
         <div class="">
-          <h2><?= $event->title()->html() ?></h2>
-          <p>Date: <?= $event->date()->toDate('F j, Y') ?></p>
+          <p class="uppercase text-xl"><?= date('D j M', strtotime($event->date())) ?></p>
+          <h2 class="text-2xl font-bold"><?= $event->title()->html() ?></h2>
+          <p><?= $event->description()->excerpt(100) ?></p>
         </div>
       </article>
     <?php endforeach; ?>
-  <?php endforeach; ?>  
+  <?php endforeach; ?>
+  <?php if ($showEventsLink): ?>
+    <a href="<?= $site->url() ?>/events" class="text-yellow-500">
+      View all events
+    </a>
+  <?php endif; ?>
 </section>

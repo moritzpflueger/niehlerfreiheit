@@ -13,24 +13,24 @@
     ->first();
 ?>
 
-<section>
-  <article class="mb-10 flex gap-5">
+<section class="my-32">
+  <article class="flex flex-col gap-5">
+    <div class="">
+      <p class="font-bold text-4xl mb-5"><?= date('D j M', strtotime($upcomingEvent->date())) ?></p>
+      <h2 class="text-5xl"><?= $upcomingEvent->title()->html() ?></h2>
+    </div>
     <?php if ($upcomingEvent->files()->valid()): ?>
       <img 
         src="<?= $upcomingEvent->files()->first()->url() ?>" 
         alt="<?= $upcomingEvent->files()->first()->alt() ?>" 
-        class="h-64 w-64"
+        class="scale-110 my-10"
       >
     <?php else: ?>
       <img 
         src="<?= $site->placeholderEventImage()->toFile()->url() ?>" 
         alt="Placeholder" 
-        class="h-64 w-64"
+        class=""
       >
     <?php endif; ?>
-    <div class="">
-      <h2><?= $upcomingEvent->title()->html() ?></h2>
-      <p>Date: <?= $upcomingEvent->date()->toDate('F j, Y') ?></p>
-    </div>
   </article>
 </section>
