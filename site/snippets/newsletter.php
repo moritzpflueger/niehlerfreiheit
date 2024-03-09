@@ -1,5 +1,5 @@
-<section class="my-32">
-  <h1 class="text-4xl my-10">Newsletter</h1>
+<section class="my-32 p-20 bg-neutral-900">
+  <h1 class="text-4xl">Newsletter</h1>
   <p class="my-10">
     Du hast Interesse an den neusten Neuigkeiten, dem aktuellen Programm und generellen Updates von der Niehler Freiheit?
   </p>
