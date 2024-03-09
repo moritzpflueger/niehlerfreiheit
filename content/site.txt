@@ -9,11 +9,23 @@ Footertext:
 
 ----
 
-Logo: - file://uuPk7ElmPe6daqaq
+Logo: - file://JRZIEE53CsWhCnnJ
 
 ----
 
 Infotext: Die `Niehler Freiheit` ist ein urbaner Kulturverein mit unmittelbar gemeinnützigem Zweck. Ziel des Vereins ist es, urbanen Lebensraum gemeinsam zu gestalten und kulturell langfristig zu nutzen. Um auch für Externe einen Ort des interdisziplinären und sozialen Austauschs zu schaffen, werden auf dem betreffenden Gelände Kulturveranstaltungen mannigfaltiger Art realisiert.
+
+----
+
+Placeholdereventimage: - file://D26THzyfCcIJNbeH
+
+----
+
+Placeholderimage: - file://D26THzyfCcIJNbeH
+
+----
+
+Image: - file://D26THzyfCcIJNbeH
 
 ----
 
