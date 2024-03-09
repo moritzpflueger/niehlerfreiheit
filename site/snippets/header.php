@@ -16,17 +16,20 @@
     <?= css('assets/css/styles.css') ?>
   </head>
   <body>
-    <header class="py-10">
+    <header class="py-5 md:py-10">
       <nav class="flex items-center justify-between">
         <a href="<?= $site->url() ?>">
           <img 
             src="<?= $site->logo()->toFile()->url() ?>" alt="<?= $site->title() ?>" 
-            class="invert h-16"
+            class="h-8"
           >
         </a>
-        <ul class="flex gap-10">
-          <li><a href="<?= $site->url() ?>/events">Programm</a></li>
-          <li><a href="<?= $site->url() ?>/verein">Verein</a></li>
-        </ul>
+        <button id="menu-button" class=text-white>
+          <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor">
+            <line x1="2" y1="9" x2="22" y2="9" strokeLinecap="round" strokeLinejoin="round" />
+            <line x1="10" y1="15" x2="22" y2="15" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>          
+        </button>
+        <?php snippet('menu') ?>
       </nav>
     </header>
