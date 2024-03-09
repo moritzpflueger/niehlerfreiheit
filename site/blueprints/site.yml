@@ -3,3 +3,19 @@ title: Site
 sections:
   pages:
     type: pages
+  general:
+    type: fields
+    fields:
+      footerText:
+        label: Footer Text
+        type: textarea
+        size: small
+      logo:
+        label: Logo
+        type: files
+        query: site.images
+        max: 1
+      infoText:
+        label: Info Text
+        type: textarea
+        size: small
