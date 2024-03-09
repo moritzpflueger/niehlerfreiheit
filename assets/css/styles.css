@@ -552,10 +552,6 @@ video {
   position: static;
 }
 
-.mt-auto {
-  margin-top: auto;
-}
-
 .flex {
   display: flex;
 }
@@ -568,28 +564,12 @@ video {
   height: 4rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .w-full {
   width: 100%;
 }
 
 .max-w-4xl {
   max-width: 56rem;
-}
-
-.flex-1 {
-  flex: 1 1 0%;
-}
-
-.grow {
-  flex-grow: 1;
-}
-
-.items-end {
-  align-items: flex-end;
 }
 
 .items-center {
