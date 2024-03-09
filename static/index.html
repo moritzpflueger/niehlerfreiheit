@@ -15,72 +15,139 @@
     <!-- Add your CSS and JavaScript files here -->
     <link href="/assets/css/styles.css" rel="stylesheet">  </head>
   <body>
-    <header class="py-10">
-  <nav class="flex items-center justify-between">
-    <a href="/">
-      <img 
-        src="/media/site/beee6fbb03-1710002646/test-logo.png" alt="Kalker Freiheit" 
-        class="invert h-16"
-      >
-    </a>
-    <ul class="flex gap-10">
-      <li><a href="/">Home</a></li>
-      <li><a href="/test">Test</a></li>
-      <li><a href="/events">Events</a></li>
-    </ul>
-  </nav>
-</header>    <div class="">
-      <div class="">
-        <h1 class="text-4xl">Home</h1>
-        This is a Home Page Texts                
-<section>
-  <h2 class="text-3xl my-10">Upcoming Events</h2>
+    <header class="py-5 md:py-10">
+      <nav class="flex items-center justify-between">
+        <a href="/">
+          <img 
+            src="/media/site/19ca8c542b-1710023144/test-logo-2.png" alt="Kalker Freiheit" 
+            class="h-8"
+          >
+        </a>
+        <button id="menu-button" class=text-white>
+          <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor">
+            <line x1="2" y1="9" x2="22" y2="9" strokeLinecap="round" strokeLinejoin="round" />
+            <line x1="10" y1="15" x2="22" y2="15" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>          
+        </button>
+        <div id="menuModal" class="modal">
+  <div class="modal-content p-5 overflow-y-auto">
+    <span class="close-button">
+      <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+      </svg>
+    </span>
+                  <li>
+            <a href="/events" class="">
+              Programm            </a>
+          </li>
+                  <li>
+            <a href="/verein" class="">
+              Verein            </a>
+          </li>
+              </ul>
+  </div>
+</div>
 
-      <h3 class="text-3xl my-10">
-      March 2024    </h3>
-          <article class="mb-10 flex gap-5">
-                  <img 
-            src="/media/pages/events/super-soon-event-copy/489873a923-1710015214/nichtsistumsonst10.webp" 
-            alt="" 
-            class="h-32 w-32"
-          >
-                <div class="">
-          <h2>Super soon event Copy</h2>
-          <p>Date: March 12, 2024</p>
-        </div>
-      </article>
-          <article class="mb-10 flex gap-5">
-                  <img 
-            src="/media/pages/events/this-is-a-test-event/8538684d28-1710002395/eckstein_logo-v7.jpg" 
-            alt="" 
-            class="h-32 w-32"
-          >
-                <div class="">
-          <h2>This is a test event</h2>
-          <p>Date: March 16, 2024</p>
-        </div>
-      </article>
-          <article class="mb-10 flex gap-5">
-                  <img 
-            src="/media/pages/events/this-is-a-test-event-copy/fc961604fa-1710015193/eckstein_logo-v7.jpg" 
-            alt="" 
-            class="h-32 w-32"
-          >
-                <div class="">
-          <h2>This is a test event Copy</h2>
-          <p>Date: March 16, 2024</p>
-        </div>
-      </article>
-        
-</section>
-    
-        <p class="py-10">
-          <p>Die <code>Niehler Freiheit</code> ist ein urbaner Kulturverein mit unmittelbar gemeinnützigem Zweck. Ziel des Vereins ist es, urbanen Lebensraum gemeinsam zu gestalten und kulturell langfristig zu nutzen. Um auch für Externe einen Ort des interdisziplinären und sozialen Austauschs zu schaffen, werden auf dem betreffenden Gelände Kulturveranstaltungen mannigfaltiger Art realisiert.</p>        </p>    
-      </div>  
+<script>
+// Get the modal
+var modal = document.getElementById('menuModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById('menu-button');
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName('close-button')[0];
+
+// When the user clicks on the button, open the modal and disable scrolling
+btn.onclick = function() {
+  modal.style.display = 'block';
+  document.body.classList.add('no-scroll'); // Disable scrolling
+}
+
+// When the user clicks on <span> (x), close the modal and enable scrolling
+span.onclick = function() {
+  modal.style.display = 'none';
+  document.body.classList.remove('no-scroll'); // Enable scrolling
+}
+
+// When the user clicks anywhere outside of the modal, close it and enable scrolling
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+    document.body.classList.remove('no-scroll'); // Enable scrolling
+  }
+}
+</script>
+      </nav>
+    </header><section class="my-10">
+  
+<section class="my-32">
+  <article class="flex flex-col gap-5">
+    <div class="">
+      <p class="font-bold text-4xl mb-5">Sun 10 Mar</p>
+      <h2 class="text-5xl">HOCHDRUCK x Kalker Freiheit</h2>
     </div>
-    <footer class="py-10 text-center">
-  <p>Kalker Freiheit e.V. Vogelsanger Str. 385  50827 Köln Bickendorf</p>
-<p>DE12 3456 7890 1234 5678 COLSDE33XXX</p>  <p>&copy; 2024 Kalker Freiheit</p>
-</footer>  </body>
+          <img 
+        src="/media/pages/events/hochdruck-x-kalker-freiheit/5578a6ae4f-1710022549/unnamed-1.jpg" 
+        alt="" 
+        class="scale-110 my-10"
+      >
+      </article>
+</section>
+  
+<section class="my-32">
+                <article class="mb-10 flex gap-5">
+                  <img 
+            src="/media/pages/events/die-halbe-acht/972e309f9e-1710021437/unnamed-5.jpg" 
+            alt="" 
+            class="h-32 w-32"
+          >
+                <div class="">
+          <p class="uppercase text-xl">Tue 12 Mar</p>
+          <h2 class="text-2xl font-bold">Die halbe Acht</h2>
+          <p>Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail …</p>
+        </div>
+      </article>
+          <article class="mb-10 flex gap-5">
+                  <img 
+            src="/media/pages/events/mutzu-session/89dacaf882-1710021602/screenshot-2024-03-09-at-22.59.40.png" 
+            alt="" 
+            class="h-32 w-32"
+          >
+                <div class="">
+          <p class="uppercase text-xl">Sat 16 Mar</p>
+          <h2 class="text-2xl font-bold">Mutzu Session</h2>
+          <p>Die offene Jam Session in der Niehler Freiheit Jeden zweiten Sonntag im Monat Bei Fragen meldet …</p>
+        </div>
+      </article>
+          <article class="mb-10 flex gap-5">
+                  <img 
+            src="/media/pages/events/synaestetica/c432e04668-1710020731/eckstein_logo-v7.jpg" 
+            alt="" 
+            class="h-32 w-32"
+          >
+                <div class="">
+          <p class="uppercase text-xl">Sat 16 Mar</p>
+          <h2 class="text-2xl font-bold">Synaestetica</h2>
+          <p>Einlass: 19:00 Uhr Ab 21:15 Uhr werden die Türen geschlossen um die Performance nicht zu stören. …</p>
+        </div>
+      </article>
+            <a href="/events" class="text-yellow-500">
+      View all events
+    </a>
+  </section>
+</section>
+<section class="my-32">
+  <h1 class="text-4xl my-10">Newsletter</h1>
+  <p class="my-10">
+    Du hast Interesse an den neusten Neuigkeiten, dem aktuellen Programm und generellen Updates von der Niehler Freiheit?
+  </p>
+  <a href="#" class="bg-[#00538A] text-white font-bold py-3 px-5">
+    Für Newsletter registrieren
+  </a>
+</section>    <footer class="py-10 text-center">
+      <p>Kalker Freiheit e.V. Vogelsanger Str. 385  50827 Köln Bickendorf</p>
+<p>DE12 3456 7890 1234 5678 COLSDE33XXX</p>      <p>&copy; 2024 Kalker Freiheit</p>
+    </footer>
+  </body>
 </html>
-
