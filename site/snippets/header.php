@@ -1,4 +1,4 @@
-<header class="p-10">
+<header class="py-10">
   <nav class="flex items-center justify-between">
     <a href="<?= $site->url() ?>">
       <img 
@@ -9,7 +9,7 @@
     <ul class="flex gap-10">
       <li><a href="<?= $site->url() ?>">Home</a></li>
       <li><a href="<?= $site->url() ?>/test">Test</a></li>
-      <li><a href="<?= $site->url() ?>/contact">Contact</a></li>
+      <li><a href="<?= $site->url() ?>/events">Events</a></li>
     </ul>
   </nav>
 </header>
