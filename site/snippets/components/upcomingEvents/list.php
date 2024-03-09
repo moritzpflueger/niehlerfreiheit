@@ -34,9 +34,11 @@
   <h2 class="text-3xl my-10">Upcoming Events</h2>
 
   <?php foreach ($groupedEvents as $month => $events): ?>
-    <h3 class="text-3xl my-10">
-      <?= $events->first()->date()->toDate('F Y') ?>
-    </h3>
+    <?php if ($groupByMonth): ?>
+      <h3 class="text-3xl my-10">
+        <?= date('F Y', strtotime($month)) ?>
+      </h3>
+    <?php endif; ?>
     <?php foreach ($events as $event): ?>
       <article class="mb-10 flex gap-5">
         <?php if ($event->files()->valid()): ?>
