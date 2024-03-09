@@ -3,6 +3,14 @@ title: Site
 sections:
   pages:
     type: pages
+    templates: 
+      - default
+      - static-site-generator
+      - events
+  # events:
+  #   type: pages
+  #   templates: 
+  #     - event
   general:
     type: fields
     fields:
@@ -13,9 +21,14 @@ sections:
       logo:
         label: Logo
         type: files
-        query: site.images
         max: 1
       infoText:
         label: Info Text
         type: textarea
+        size: small
+      placeholderEventImage:
+        label: Placeholder Event Image
+        help: This image will be used as a default image for events, for when an event is published without an image.
+        type: files
+        max: 1
         size: small

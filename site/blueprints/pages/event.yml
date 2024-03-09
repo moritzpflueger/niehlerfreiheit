@@ -1,0 +1,30 @@
+title: Event
+
+columns:
+  - width: 2/3
+    sections:
+      info:
+        type: fields
+        fields:
+          title:
+            type: text
+          date:
+            type: date
+          time:
+            type: time
+          description:
+            type: textarea
+            size: small     
+  - width: 1/3
+    sections:
+      image:
+        type: files
+        layout: cards
+        size: small
+        max: 1  # Limiting to one image upload
+        
+        # ratio: 1/2
+        # image:
+        #   type: files
+        #   layout: cards
+        #   size: small
