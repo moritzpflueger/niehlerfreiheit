@@ -585,12 +585,20 @@ video {
   height: 8rem;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
 .w-32 {
   width: 8rem;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-64 {
+  width: 16rem;
 }
 
 .max-w-4xl {
