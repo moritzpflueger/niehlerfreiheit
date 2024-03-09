@@ -25,9 +25,8 @@
           >
         </a>
         <ul class="flex gap-10">
-          <li><a href="<?= $site->url() ?>">Home</a></li>
-          <li><a href="<?= $site->url() ?>/test">Test</a></li>
-          <li><a href="<?= $site->url() ?>/events">Events</a></li>
+          <li><a href="<?= $site->url() ?>/events">Programm</a></li>
+          <li><a href="<?= $site->url() ?>/verein">Verein</a></li>
         </ul>
       </nav>
     </header>
