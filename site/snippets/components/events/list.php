@@ -34,7 +34,7 @@
       </h3>
     <?php endif; ?>
     <?php foreach ($events as $event): ?>
-      <?php snippet('components/upcomingEvents/listItem', ['event' => $event]) ?>
+      <?php snippet('components/events/listItem', ['event' => $event]) ?>
     <?php endforeach; ?>
   <?php endforeach; ?>
   <?php if ($showEventsLink): ?>
