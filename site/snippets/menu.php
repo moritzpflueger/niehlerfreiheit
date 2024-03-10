@@ -21,6 +21,9 @@
         </li>
       <?php endforeach; ?>
     </ul>
+    <div class="absolute bottom-10 text-3xl sm:text-5xl">
+      <?php snippet('components/toggleLanguage') ?>      
+    </div>
   </div>
 </div>
 
