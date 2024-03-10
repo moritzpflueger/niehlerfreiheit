@@ -39,7 +39,7 @@
   <?php endforeach; ?>
   <?php if ($showEventsLink): ?>
     <a href="<?= $site->url() ?>/events" class="text-yellow-500">
-      View all events
+      <?= t('events.button.viewAll') ?>
     </a>
   <?php endif; ?>
 </section>

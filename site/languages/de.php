@@ -9,7 +9,11 @@ return [
     ],
     'name' => 'German',
     'translations' => [
-
+        'events.button.viewAll' => 'Alle Veranstaltungen',
+        'menuitem.events' => 'Veranstaltungen',
+        'menuitem.about' => 'Verein',
+        'newsletter.subscribe.button' => 'Newsletter Abonnieren',
+        'newsletter.subscribe.text' => 'Du hast Interesse an den neusten Neuigkeiten, dem aktuellen Programm und generellen Updates von der Niehler Freiheit?',
     ],
     'url' => NULL
 ];

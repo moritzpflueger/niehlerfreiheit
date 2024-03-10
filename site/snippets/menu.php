@@ -5,22 +5,22 @@
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
       </svg>
     </span>
-      <ul class="flex flex-col font-semibold text-5xl items-center gap-10 p-10">
-        <?php 
-          $menuItems = [
-            ['title' => 'Programm', 'uri' => 'events'],
-            ['title' => 'Verein', 'uri' => 'verein'],
-          ];
-          foreach ($menuItems as $item):
-            $isActive = $page->uri() === $item['uri'];
-        ?>
-          <li>
-            <a href="<?= $site->url() ?>/<?= $item['uri'] ?>" class="<?= $isActive ? 'text-yellow-500' : '' ?>">
-              <?= $item['title'] ?>
-            </a>
-          </li>
-        <?php endforeach; ?>
-      </ul>
+    <ul class="flex flex-col font-semibold text-3xl sm:text-5xl items-center gap-10 p-10">
+      <?php 
+        $menuItems = [
+          ['title' => t('menuitem.events'), 'uri' => 'events'],
+          ['title' => t('menuitem.about'), 'uri' => 'verein'],
+        ];
+        foreach ($menuItems as $item):
+          $isActive = $page->uri() === $item['uri'];
+      ?>
+        <li>
+          <a href="<?= $site->url() ?>/<?= $item['uri'] ?>" class="<?= $isActive ? 'text-yellow-500' : '' ?>">
+            <?= $item['title'] ?>
+          </a>
+        </li>
+      <?php endforeach; ?>
+    </ul>
   </div>
 </div>
 
