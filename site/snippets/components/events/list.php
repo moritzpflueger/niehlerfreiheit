@@ -47,6 +47,6 @@
       <div class="w-10">
         <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>
       </div>
-  </a>
+    </a>
   <?php endif; ?>
 </section>
