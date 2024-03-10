@@ -4,12 +4,16 @@
   if ($hideFirstEvent) $rows++;
   $groupByMonth = $groupByMonth ?? false;
   $showEventsLink = $showEventsLink ?? false;
+  $showPastEvents = $showPastEvents ?? false;
 
   $eventsPage = $site->find('events');
   $today = date('Y-m-d');
 
   // Filter for future events, sort them by date, and limit to number of rows given
-  $events = $eventsPage->children()->listed()->filter(function($child) use ($today) {
+  $events = $eventsPage->children()->listed()->filter(function($child) use ($today, $showPastEvents) {
+    if ($showPastEvents) { 
+      return true;
+    }
     return $child->date()->toDate('YYYY-MM-dd') >= $today;
   })->sortBy('date', 'asc')->limit($rows);
 
