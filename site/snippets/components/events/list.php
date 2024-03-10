@@ -42,8 +42,11 @@
     <?php endforeach; ?>
   <?php endforeach; ?>
   <?php if ($showEventsLink): ?>
-    <a href="<?= $site->url() ?>/events" class="text-yellow-500">
+    <a href="<?= $site->url() ?>/events" class="text-yellow-500 text-xl hover:underline flex items-center gap-3">
       <?= t('events.button.viewAll') ?>
-    </a>
+      <div class="w-10">
+        <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>
+      </div>
+  </a>
   <?php endif; ?>
 </section>
