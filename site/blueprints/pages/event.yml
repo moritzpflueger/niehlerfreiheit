@@ -8,13 +8,17 @@ columns:
         fields:
           title:
             type: text
+            translate: true
           date:
             type: date
+            translate: false
           time:
             type: time
+            translate: false
           description:
             type: textarea
-            size: small     
+            size: small
+            translate: true     
   - width: 1/3
     sections:
       image:
