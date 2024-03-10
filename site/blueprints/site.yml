@@ -22,10 +22,6 @@ sections:
         label: Logo
         type: files
         max: 1
-      infoText:
-        label: Info Text
-        type: textarea
-        size: small
       placeholderEventImage:
         label: Placeholder Event Image
         help: This image will be used as a default image for events, for when an event is published without an image.
