@@ -10,6 +10,6 @@
     ]) 
   ?>
 </section>
-<?php snippet('newsletter') ?>
+<?php snippet('teasers/newsletter') ?>
 <?php snippet('footer') ?>
 
