@@ -9,7 +9,8 @@ return [
     ],
     'name' => 'German',
     'translations' => [
-        'events.button.viewAll' => 'Alle Veranstaltungen',
+        'events.button.viewUpcoming' => 'Alle Veranstaltungen',
+        'events.button.viewPast' => 'Vergangene Veranstaltungen',
         'menuitem.events' => 'Veranstaltungen',
         'menuitem.about' => 'Verein',
         'menu.closebutton' => 'schließen',
