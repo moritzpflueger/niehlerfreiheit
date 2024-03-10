@@ -12,6 +12,7 @@ columns:
           date:
             type: date
             translate: false
+            required: true
           time:
             type: time
             translate: false
