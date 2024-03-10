@@ -1,4 +1,4 @@
-Title: Verein
+Title: Vereinssatzung
 
 ----
 
@@ -6,4 +6,4 @@ Text: Die Kalker Freiheit ist ein urbaner Kulturverein mit unmittelbar gemeinnü
 
 ----
 
-Uuid: UvGqlHs8ShmfiCv8
+Uuid: JkaKBKLwaqdU5OCT
