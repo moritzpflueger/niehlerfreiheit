@@ -7,16 +7,20 @@
     ->children()
     ->listed()
     ->filter(function($child) use ($today) {
-      return $child->date()->toDate('Y-m-d') >= $today;
+      return $child->date()->toDate('YYYY-MM-dd') >= $today;
     })
     ->sortBy('date', 'asc')
     ->first();
+
+  if (!$upcomingEvent) return;
 ?>
 
 <section class="my-32">
   <article class="flex flex-col gap-5">
     <div class="">
-      <p class="font-bold text-4xl mb-5"><?= date('D j M', strtotime($upcomingEvent->date())) ?></p>
+      <p class="font-bold uppercase text-4xl mb-5">
+        <?= $upcomingEvent->date()->toDate('E dd MMMM') ?>
+      </p>
       <h2 class="text-5xl"><?= $upcomingEvent->title()->html() ?></h2>
     </div>
     <?php if ($upcomingEvent->files()->valid()): ?>
