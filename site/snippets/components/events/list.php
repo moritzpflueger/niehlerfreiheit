@@ -33,15 +33,19 @@
 
 <section class="my-32">
   <?php foreach ($groupedEvents as $monthName => $events): ?>
+    
     <?php if ($groupByMonth): ?>
       <h3 class="text-5xl font-bold mb-10 mt-20 uppercase">
         <?= strtok($monthName, ' ') ?> <!-- remove the year -->
       </h3>
     <?php endif; ?>
+
     <?php foreach ($events as $event): ?>
       <?php snippet('components/events/listItem', ['event' => $event]) ?>
     <?php endforeach; ?>
+
   <?php endforeach; ?>
+
   <?php if ($showEventsLink): ?>
     <a href="<?= $site->url() ?>/events" class="text-yellow-500 text-xl hover:underline flex items-center gap-3">
       <?= t('events.button.viewUpcoming') ?>
@@ -50,6 +54,7 @@
       </div>
     </a>
   <?php endif; ?>
+ 
   <?php if ($showPastEventsLink): ?>
     <a href="<?= $site->url() ?>/events?showPastEvents=true" class="text-yellow-500 text-xl hover:underline flex items-center gap-3">
       <?= t('events.button.viewPast') ?>
