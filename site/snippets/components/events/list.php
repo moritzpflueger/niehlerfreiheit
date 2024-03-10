@@ -14,15 +14,15 @@
   })->sortBy('date', 'asc')->limit($rows);
 
   if ($hideFirstEvent) {
-    $upcomingEvents = $upcomingEvents->offset(1);
+    $events = $events->offset(1);
   }
 
   if ($groupByMonth) {
-    $groupedEvents = $upcomingEvents->groupBy(function ($child) {
+    $groupedEvents = $events->groupBy(function ($child) {
       return $child->date()->toDate('MMMM Y');
     });
   } else {
-    $groupedEvents = [$upcomingEvents]; // Wrap in array for consistent foreach structure
+    $groupedEvents = [$events]; // Wrap in array for consistent foreach structure
   }
 ?>
 
