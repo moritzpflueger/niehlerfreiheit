@@ -17,6 +17,21 @@ Placeholdereventimage: - file://D26THzyfCcIJNbeH
 
 ----
 
+Sociallinks:
+
+- 
+  name: Instagram
+  url: >
+    https://www.instagram.com/niehlerfreiheit/
+  icon: instagram
+- 
+  name: Facebook
+  url: >
+    https://www.facebook.com/niehlerfreiheit/events/
+  icon: facebook
+
+----
+
 Placeholderimage: - file://D26THzyfCcIJNbeH
 
 ----
