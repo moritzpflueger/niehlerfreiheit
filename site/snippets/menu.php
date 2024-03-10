@@ -22,7 +22,8 @@
         </li>
       <?php endforeach; ?>
     </ul>
-    <div class="absolute bottom-10 text-3xl sm:text-5xl">
+    <div class="absolute bottom-10 text-2xl flex gap-5">
+      <?php snippet('components/socialLinks') ?>
       <?php snippet('components/toggleLanguage') ?>      
     </div>
   </div>

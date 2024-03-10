@@ -28,3 +28,20 @@ sections:
         type: files
         max: 1
         size: small
+      socialLinks:
+          label: Social Links
+          type: structure
+          fields:
+            name:
+              label: Social Network Name
+              type: text
+            url:
+              label: URL
+              type: url
+            icon:
+              label: Icon
+              type: select
+              options:
+                facebook: Facebook
+                instagram: Instagram
+                youtube: YouTube
