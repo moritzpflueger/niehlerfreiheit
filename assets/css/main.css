@@ -9,7 +9,11 @@ body {
     font-mono 
     max-w-4xl 
     mx-auto 
-    px-5;
+    px-5
+    h-[100dvh]
+    flex
+    flex-col
+  ;
 }
 
 code {

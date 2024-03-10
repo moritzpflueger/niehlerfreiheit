@@ -1,4 +1,8 @@
 <?php snippet('header') ?>
-<h1 class="text-4xl my-10"><?= $page->title() ?></h1>
-<?= $page->text() ?>
+<main class="flex-grow">
+  <div class="">
+    <h1 class="text-4xl my-10"><?= $page->title() ?></h1>
+    <?= $page->text() ?>      
+  </div>
+</main>
 <?php snippet('footer') ?>
