@@ -1,7 +1,6 @@
 <?php
   $eventsPage = $site->find('events');
   $today = date('Y-m-d');
-
   // Filter for future events, sort them by date, and retrieve the first event
   $event = $eventsPage
     ->children()
@@ -13,30 +12,34 @@
     ->first();
 
   if (!$event) return;
+
+  $eventUrl = $event->url();
+  $isValid = $event->files()->valid();
+  $placeholderUrl = $site->placeholderEventImage()->toFile()->url();
+  if ($isValid) {
+    $imageUrl = $event->files()->first()->url();
+    $imageAlt = $event->files()->first()->alt();
+  } else {
+    $imageUrl = $placeholderUrl;
+    $imageAlt = 'Placeholder Image';
+  };
 ?>
 
 <section class="my-32">
   <article class="flex flex-col gap-5">
-    <a href="<?= $event->url()?>">
+    <a href="<?= $eventUrl?>">
       <div class="">
         <p class="font-bold uppercase text-4xl mb-5">
           <?= $event->date()->toDate('E dd MMMM') ?>
         </p>
         <h2 class="text-5xl"><?= $event->title()->html() ?></h2>
       </div>
-      <?php if ($event->files()->valid()): ?>
-        <img 
-          src="<?= $event->files()->first()->url() ?>" 
-          alt="<?= $event->files()->first()->alt() ?>" 
-          class="scale-110 my-10"
-        >
-      <?php else: ?>
-        <img 
-          src="<?= $site->placeholderEventImage()->toFile()->url() ?>" 
-          alt="Placeholder" 
-          class=""
-        >
-      <?php endif; ?>      
+      <img 
+        src="<?= $imageUrl ?>" 
+        alt="<?= $imageAlt ?>" 
+        class="my-10"
+      >
+      <p><?= $event->description()->excerpt(200) ?></p>
     </a>
   </article>
 </section>
