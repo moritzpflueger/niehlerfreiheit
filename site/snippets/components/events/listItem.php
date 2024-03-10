@@ -11,7 +11,7 @@
   };
 ?>
 
-<article class="mb-10">
+<article class="mb-20">
   <a href="<?= $eventUrl ?>" class="flex flex-col sm:flex-row gap-10">
     <img 
       src="<?= $imageUrl ?>" 
