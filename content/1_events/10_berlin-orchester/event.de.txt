@@ -1,0 +1,17 @@
+Title: Berlin Orchester
+
+----
+
+Date: 2024-03-13
+
+----
+
+Time: 21:00:00
+
+----
+
+Description: Das Sinfonieorchester (alternative Schreibweise: Symphonieorchester) bildete sich in der Mitte des 18. Jahrhunderts aus, unter anderem durch die Mannheimer Schule. Es ist heute der übliche Klangkörper zur Wiedergabe von Orchesterwerken.
+
+----
+
+Uuid: 9MjW8E9UGWSu0fOQ
