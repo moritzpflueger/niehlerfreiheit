@@ -9,7 +9,7 @@
   $today = date('Y-m-d');
 
   // Filter for future events, sort them by date, and limit to number of rows given
-  $upcomingEvents = $eventsPage->children()->listed()->filter(function($child) use ($today) {
+  $events = $eventsPage->children()->listed()->filter(function($child) use ($today) {
     return $child->date()->toDate('YYYY-MM-dd') >= $today;
   })->sortBy('date', 'asc')->limit($rows);
 
