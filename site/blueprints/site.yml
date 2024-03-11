@@ -1,4 +1,55 @@
 title: Site
 
+columns: 
+  - width: 2/3
+    sections:
+      events:
+        type: pages
+        headline: All Events
+        status: all
+        templates:
+          - event
+        sortBy: date desc
+        parent: site.find("events")  # !
+        limit: 20
+
+  - width: 1/3
+    sections:
+      pages:
+        type: pages
+        templates: 
+          - default
+          - static-site-generator
+      general:
+        type: fields
+        fields:
+          logo:
+            label: Logo
+            translate: false
+            type: files
             max: 1
           placeholderImage:
+            label: Placeholder Image
+            help: This image will be used as a default image, for when no image is uploaded to an event or a page.
+            translate: false
+            type: files
+            max: 1
+            size: small
+          socialLinks:
+            label: Social Links
+            type: structure
+            translate: false
+            fields:
+              name:
+                label: Social Network Name
+                type: text
+              url:
+                label: URL
+                type: url
+              icon:
+                label: Icon
+                type: select
+                options:
+                  facebook: Facebook
+                  instagram: Instagram
+                  youtube: YouTube    

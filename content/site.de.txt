@@ -1,15 +1,4 @@
-Title: Kalker Freiheit
-
-----
-
-Footertext:
-
-<p>Kalker Freiheit e.V. Vogelsanger Str. 385  50827 Köln Bickendorf</p>
-<p>DE12 3456 7890 1234 5678 COLSDE33XXX</p>
-
-----
-
-Logo: - file://GVHeDSNlsTep9umo
+Logo: - file://d7R9wJGHeWZIk4pp
 
 ----
 
@@ -27,21 +16,5 @@ Sociallinks:
 - 
   name: Facebook
   url: >
-    https://www.facebook.com/niehlerfreiheit/events/
+    https://www.facebook.com/niehlerfreiheit/events/?ref=page_internal
   icon: facebook
-
-----
-
-Placeholderimage: - file://D26THzyfCcIJNbeH
-
-----
-
-Image: - file://D26THzyfCcIJNbeH
-
-----
-
-Sitelogo: - file://uuPk7ElmPe6daqaq
-
-----
-
-Additionaltext: 
