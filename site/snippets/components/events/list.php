@@ -16,7 +16,7 @@
       return $child->date()->toDate('YYYY-MM-dd') < $today;
     }
     return $child->date()->toDate('YYYY-MM-dd') >= $today;
-  })->sortBy('date', 'asc')->limit($rows);
+  })->sortBy('date', $showPastEvents ? 'desc' : 'asc')->limit($rows);
 
   if ($hideFirstEvent) {
     $events = $events->offset(1);
