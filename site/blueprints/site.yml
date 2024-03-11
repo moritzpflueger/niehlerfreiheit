@@ -19,7 +19,6 @@ columns:
         type: pages
         templates: 
           - default
-          - static-site-generator
       general:
         type: fields
         fields:
@@ -53,3 +52,9 @@ columns:
                   facebook: Facebook
                   instagram: Instagram
                   youtube: YouTube    
+      generateStaticSite:
+        label: Generate Static Site
+        type: pages
+        templates: 
+          - static-site-generator
+      
