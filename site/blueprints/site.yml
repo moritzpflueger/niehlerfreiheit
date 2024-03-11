@@ -1,47 +1,4 @@
 title: Site
 
-sections:
-  pages:
-    type: pages
-    templates: 
-      - default
-      - static-site-generator
-      - events
-  # events:
-  #   type: pages
-  #   templates: 
-  #     - event
-  general:
-    type: fields
-    fields:
-      footerText:
-        label: Footer Text
-        type: textarea
-        size: small
-      logo:
-        label: Logo
-        type: files
-        max: 1
-      placeholderEventImage:
-        label: Placeholder Event Image
-        help: This image will be used as a default image for events, for when an event is published without an image.
-        type: files
-        max: 1
-        size: small
-      socialLinks:
-          label: Social Links
-          type: structure
-          fields:
-            name:
-              label: Social Network Name
-              type: text
-            url:
-              label: URL
-              type: url
-            icon:
-              label: Icon
-              type: select
-              options:
-                facebook: Facebook
-                instagram: Instagram
-                youtube: YouTube
+            max: 1
+          placeholderImage:

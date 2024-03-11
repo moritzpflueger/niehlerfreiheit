@@ -13,7 +13,7 @@ Logo: - file://GVHeDSNlsTep9umo
 
 ----
 
-Placeholdereventimage: - file://D26THzyfCcIJNbeH
+Placeholderimage: - file://nkuMdHbqgCvubkRy
 
 ----
 

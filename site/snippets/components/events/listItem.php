@@ -1,7 +1,7 @@
 <?php
   $eventUrl = $event->url();
   $isValid = $event->files()->valid();
-  $placeholderUrl = $site->placeholderEventImage()->toFile()->url();
+  $placeholderUrl = $site->placeholderImage()->toFile()->url();
   if ($isValid) {
     $imageUrl = $event->files()->first()->url();
     $imageAlt = $event->files()->first()->alt();
