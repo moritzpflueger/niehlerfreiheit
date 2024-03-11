@@ -1,0 +1,23 @@
+title: Post
+num: '{{ page.created.toDate("YMMdd") }}'
+
+columns:
+  - width: 2/3
+    sections:
+      info:
+        type: fields
+        fields:
+          title:
+            type: text
+            translate: true
+          text:
+            type: textarea
+            size: huge
+            translate: true     
+  - width: 1/3
+    sections:
+      image:
+        type: files
+        layout: cards
+        size: small
+        max: 1  # Limiting to one image upload

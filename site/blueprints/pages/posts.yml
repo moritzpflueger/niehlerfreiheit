@@ -1,0 +1,9 @@
+title: Events
+
+sections:
+  events:
+    type: pages
+    layout: cards
+    templates: 
+      - post
+

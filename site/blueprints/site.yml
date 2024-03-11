@@ -19,6 +19,11 @@ columns:
         type: pages
         templates: 
           - default
+      posts:
+        type: pages
+        parent: site.find("posts")  # get posts from parent page
+        templates: 
+          - post
       general:
         type: fields
         fields:
