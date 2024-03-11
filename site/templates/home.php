@@ -1,9 +1,9 @@
 <?php snippet('header') ?>
 <section class="my-10">
-  <?php snippet('components/events/hero')?>
+  <?php snippet('events/hero')?>
   <?php 
     snippet(
-      'components/events/list', [
+      'events/list', [
         'hideFirstEvent' => true, 
         'showEventsLink' => true,
         'rows' => 3,
