@@ -10,7 +10,7 @@ columns:
         templates:
           - event
         sortBy: date desc
-        parent: site.find("events")  # !
+        parent: site.find("events")  # get events from parent page
         limit: 20
 
   - width: 1/3
