@@ -15,7 +15,7 @@
         >
       <?php else: ?>
         <img 
-          src="<?= $site->placeholderEventImage()->toFile()->url() ?>" 
+          src="<?= $site->placeholderImage()->toFile()->url() ?>" 
           alt="Placeholder" 
           class=""
         >
