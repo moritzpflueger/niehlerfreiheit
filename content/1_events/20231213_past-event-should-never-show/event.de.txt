@@ -10,7 +10,7 @@ Time: 18:00:00
 
 ----
 
-Description: This should never show up on the website
+Description: This should never show up on the website. Only in past events section.
 
 ----
 
