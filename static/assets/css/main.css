@@ -15,12 +15,56 @@ body {
     flex-col
   ;
 }
-
-code {
-  @apply text-yellow-500;
+/* Kirby Text */
+.kirbytext .video {
+  width: 100%;
+  padding-top: 56.25%; /* 56.25% is for 16:9 */
+  position: relative;
 }
 
-/* Menu Modal Styles */
+.kirbytext .video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.kirbytext {
+  @apply max-w-2xl;
+}
+
+.kirbytext ul,
+.kirbytext ol,
+.kirbytext p {
+  @apply mb-10;
+}
+
+.kirbytext h2 {
+  @apply mb-5 text-xl;
+}
+
+.kirbytext figure {
+  @apply mb-10;
+}
+
+.kirbytext figcaption {
+  @apply text-sm text-neutral-400 text-right;
+}
+
+.kirbytext ul li {
+  @apply mb-2 list-disc ml-5;
+}
+
+.kirbytext ol li {
+  @apply mb-2 list-decimal ml-16;
+}
+
+.kirbytext a {
+  @apply underline hover:text-yellow-500;
+}
+
+/* Menu Modal */
 .modal {
   display: none; /* Hidden by default */
   position: fixed;
@@ -57,4 +101,8 @@ code {
 .no-scroll {
   overflow: hidden;
   height: 100%;
+}
+
+footer a:hover {
+  @apply text-yellow-500;
 }
