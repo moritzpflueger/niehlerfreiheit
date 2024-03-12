@@ -29,10 +29,10 @@
   <article class="flex flex-col gap-5">
     <a href="<?= $eventUrl?>">
       <div class="">
-        <div class="uppercase text-2xl mb-5  inline-flex px-10">
+        <div class="uppercase sm:text-2xl mb-5  inline-flex sm:px-10">
           <?= $event->date()->toDate('E dd MMMM') ?>
         </div>
-        <h2 class="text-6xl uppercase font-bold px-10 tracking-tight"><?= $event->title()->html() ?></h2>
+        <h2 class="text-4xl sm:text-6xl uppercase font-bold sm:px-10 tracking-tight"><?= $event->title()->html() ?></h2>
       </div>
       <img 
         src="<?= $imageUrl ?>" 

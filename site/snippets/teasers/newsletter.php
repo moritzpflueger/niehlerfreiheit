@@ -14,11 +14,11 @@
     <p class="my-10">
       <?= t('newsletter.subscribe.text') ?>
     </p>
-    <div class="flex items-center w-full gap-5">
+    <div class="flex flex-wrap items-center w-full gap-5">
       <input type="text" name="email" class="flex-1 py-3 px-5 text-black" placeholder="E-Mail">
       <button
         id="submit-button"
-        class="bg-[#00538A] text-white font-bold py-3 px-5"
+        class="bg-[#00538A] text-white w-full font-bold py-3 px-5"
         <?= $userAgreed ? '' : 'disabled' ?>
       >
         <?= t('newsletter.subscribe.button') ?>
