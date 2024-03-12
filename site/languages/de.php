@@ -15,7 +15,7 @@ return [
         'menuitem.about' => 'Verein',
         'menu.closebutton' => 'schließen',
         'newsletter.subscribe.button' => 'Newsletter Abonnieren',
-        'newsletter.subscribe.text' => 'Du hast Interesse an den neusten Neuigkeiten, dem aktuellen Programm und generellen Updates von der Niehler Freiheit?',
+        'newsletter.subscribe.text' => 'Unser Newsletter kommt gewöhnlich einmal im Monat mit dem aktuellen Programm und generellen Updates von der Niehler Freiheit.'
     ],
     'url' => NULL
 ];
