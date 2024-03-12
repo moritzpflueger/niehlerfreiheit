@@ -5,16 +5,16 @@ $post = $posts->first();
 
 ?>
 
-<section class="flex">
-  <div class="w-1/3 ">
+<section class="flex text-center">
+  <!-- <div class="w-1/3 ">
     <img src="<?= $post->files()->first()->url() ?>" />    
-  </div>
-  <div class="pl-10 w-2/3">
+  </div> -->
+  <div class="">
     <h1 class="text-2xl uppercase font-bold"><?= $post->title() ?></h1>
     <p class="my-10">
-      <?= $post->text()->excerpt(200) ?>
+      <?= $post->text()->excerpt(600) ?>
     </p>
-    <a href="<?= $post->url() ?>"  class="text-yellow-500 text-xl uppercase hover:underline flex items-center gap-3">
+    <a href="<?= $post->url() ?>"  class="text-yellow-500 text-xl uppercase hover:underline flex justify-center items-center gap-3">
       Read more
       <div class="w-10">
         <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>
