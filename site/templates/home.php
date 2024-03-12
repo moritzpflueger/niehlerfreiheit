@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-<section class="my-10">
+<section class="">
   <?php snippet('events/hero')?>
   <?php 
     snippet(

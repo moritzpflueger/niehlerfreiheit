@@ -36,7 +36,7 @@
   <?php foreach ($groupedEvents as $monthName => $events): ?>
     
     <?php if ($groupByMonth): ?>
-      <h3 class="text-5xl font-bold mb-10 mt-20 uppercase">
+      <h3 class="text-6xl mb-20 mt-32 first:mt-0 uppercase">
         <?= !$showYear ? strtok($monthName, ' ') : $monthName ?>
       </h3>
     <?php endif; ?>

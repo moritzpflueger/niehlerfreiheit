@@ -14,15 +14,15 @@
 
 <article class="mb-20">
   <a href="<?= $eventUrl ?>" class="flex flex-col sm:flex-row gap-10">
-    <img 
-      src="<?= $imageUrl ?>" 
-      alt="<?= $imageAlt ?>" 
-      class="w-1/3"
-    >
+    <div class="w-1/4">
+      <img src="<?= $imageUrl ?>" alt="<?= $imageAlt ?>" />
+    </div>
     <div class="flex-1">
-      <p class="uppercase"><?= $event->date()->toDate($showYear ? 'EEE dd MMMM Y' : 'EEE dd MMMM') ?></p>
-      <h2 class="text-2xl uppercase font-bold"><?= $event->title()->html() ?></h2>
-      <p><?= $event->text()->excerpt(100) ?></p>
+      <p class="text-xl uppercase mb-3"><?= $event->date()->toDate($showYear ? 'EEE dd MMMM Y' : 'EEE dd MMMM') ?></p>
+      <h2 class="text-5xl uppercase font-bold mb-3"><?= $event->title()->html() ?></h2>
+      <p>Einlass: 19:00 Uhr</p>
+      <p>Abendkasse: 15 €</p>
+      <!-- <p><?= $event->text()->excerpt(100) ?></p> -->
     </div>    
   </a>
 </article>

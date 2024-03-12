@@ -3,7 +3,7 @@
 ?>
 
 <?= snippet('header') ?>
-<!-- <h1 class="text-5xl my-10"><?= $page->title() ?></h1> -->
+<h1 class="text-3xl font-bold uppercase my-10"><?= $showPastEvents ? "Vergangene Veranstaltungen" : "" ?></h1>
 <?= snippet('events/list', [
   'rows' => 1000, 
   'groupByMonth' => true,
