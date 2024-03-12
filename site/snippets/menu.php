@@ -1,22 +1,25 @@
 <div id="menuModal" class="modal">
   <div class="modal-content p-5 overflow-y-auto">
     <span class="close-button hover:text-yellow-500">
-      <span class="font-semibold lowercase"><?= t('close') ?></span>
+      <span class="font-semibold lowercase text-xl"><?= t('close') ?></span>
       <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
       </svg>
     </span>
-    <ul class="flex flex-col font-semibold text-3xl sm:text-5xl items-center gap-10 p-10">
+    <ul class="flex flex-col text-3xl sm:text-5xl uppercase items-center gap-10 p-10">
       <?php 
         $menuItems = [
           ['title' => t('menuitem.events'), 'uri' => 'events'],
           ['title' => t('menuitem.about'), 'uri' => 'verein'],
+          ['title' => 'Posts', 'uri' => 'posts'],
+          ['title' => 'Mitmachen', 'uri' => 'mitmachen'],
+          ['title' => 'Kontakt', 'uri' => 'contact'],
         ];
         foreach ($menuItems as $item):
           $isActive = $page->uri() === $item['uri'];
       ?>
-        <li>
-          <a href="<?= $site->url() ?>/<?= $item['uri'] ?>" class="<?= $isActive ? 'text-yellow-500' : '' ?> hover:text-yellow-500">
+        <li class="hover:text-yellow-500">
+          <a href="<?= $site->url() ?>/<?= $item['uri'] ?>" class="<?= $isActive ? 'text-yellow-500' : '' ?>">
             <?= $item['title'] ?>
           </a>
         </li>
