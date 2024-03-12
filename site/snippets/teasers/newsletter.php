@@ -6,8 +6,6 @@
   if (isset($_POST['agree'])) {
     $userAgreed = true;
   }
-  print_r('test', $userAgreed);
-
 ?>
 
 <form method="POST" action="">
