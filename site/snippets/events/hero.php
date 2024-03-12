@@ -37,7 +37,7 @@
       <img 
         src="<?= $imageUrl ?>" 
         alt="<?= $imageAlt ?>" 
-        class="my-10"
+        class="my-10 w-full"
       >
       <p><?= $event->text()->excerpt(200) ?></p>
     </a>
