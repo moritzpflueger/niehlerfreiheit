@@ -5,7 +5,9 @@
 ?>
 
 <?= snippet('header') ?>
-<h1 class="text-2xl my-10"><?= $page->title() ?></h1>
-<p><?= $page->text()->toHtml() ?></p>
+<h1 class="text-5xl my-32"><?= $page->title() ?></h1>
+<div class="kirbytext">
+  <?= $page->text()->kirbyText() ?>
+</div>
 <?= snippet('footer') ?>
 

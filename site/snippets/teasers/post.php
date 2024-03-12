@@ -5,13 +5,20 @@ $post = $posts->first();
 
 ?>
 
-<section class="my-32 p-20 bg-neutral-900">
-  <img src="<?= $post->files()->first()->url() ?>" />
-  <h1 class="text-4xl mt-10"><?= $post->title() ?></h1>
-  <p class="my-10">
-    <?= $post->text()->excerpt(200) ?>
-  </p>
-  <a href="<?= $post->url() ?>" class="bg-[#00538A] text-white font-bold py-3 px-5">
-    Open post
-  </a>
+<section class="flex">
+  <div class="w-1/3 ">
+    <img src="<?= $post->files()->first()->url() ?>" />    
+  </div>
+  <div class="pl-10 w-2/3">
+    <h1 class="text-4xl"><?= $post->title() ?></h1>
+    <p class="my-10">
+      <?= $post->text()->excerpt(200) ?>
+    </p>
+    <a href="<?= $post->url() ?>"  class="text-yellow-500 text-xl hover:underline flex items-center gap-3">
+      Read more
+      <div class="w-10">
+        <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>
+      </div>      
+    </a>  
+  </div>
 </section>
