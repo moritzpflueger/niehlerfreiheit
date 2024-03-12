@@ -6,6 +6,7 @@
   $showEventsLink = $showEventsLink ?? false;
   $showPastEvents = $showPastEvents ?? false;
   $showPastEventsLink = $showPastEventsLink ?? false;
+  $showYear = $showPastEvents;
 
   $eventsPage = $site->find('events');
   $today = date('Y-m-d');
@@ -36,12 +37,15 @@
     
     <?php if ($groupByMonth): ?>
       <h3 class="text-5xl font-bold mb-10 mt-20 uppercase">
-        <?= strtok($monthName, ' ') ?> <!-- remove the year -->
+        <?= !$showYear ? strtok($monthName, ' ') : $monthName ?>
       </h3>
     <?php endif; ?>
 
     <?php foreach ($events as $event): ?>
-      <?php snippet('events/listItem', ['event' => $event]) ?>
+      <?php snippet('events/listItem', [
+        'event' => $event,
+        'showYear' => $showYear,
+      ]) ?>
     <?php endforeach; ?>
 
   <?php endforeach; ?>

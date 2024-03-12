@@ -9,6 +9,7 @@
     $imageUrl = $placeholderUrl;
     $imageAlt = 'Placeholder Image';
   };
+  $showYear = $showYear ?? false;
 ?>
 
 <article class="mb-20">
@@ -19,7 +20,7 @@
       class="w-1/3"
     >
     <div class="flex-1">
-      <p class="uppercase text-xl"><?= $event->date()->toDate('EEE dd MMMM') ?></p>
+      <p class="uppercase text-xl"><?= $event->date()->toDate($showYear ? 'EEE dd MMMM Y' : 'EEE dd MMMM') ?></p>
       <h2 class="text-2xl font-bold"><?= $event->title()->html() ?></h2>
       <p><?= $event->text()->excerpt(100) ?></p>
     </div>    
