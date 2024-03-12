@@ -1,12 +1,12 @@
 <?php snippet('header') ?>
 <section class="">
-  <?php snippet('events/hero')?>
   <?php 
     snippet(
       'events/list', [
         'hideFirstEvent' => true, 
         'showEventsLink' => true,
-        'rows' => 3,
+        'rows' => 4,
+        'enlargeFirst' => true,
     ]) 
   ?>
 </section>

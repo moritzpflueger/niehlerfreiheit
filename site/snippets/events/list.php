@@ -1,7 +1,6 @@
 <?php
   $rows = $rows ?? 3;
-  $hideFirstEvent = $hideFirstEvent ?? false;
-  if ($hideFirstEvent) $rows++;
+  $hasSpotlightEvent = $hasSpotlightEvent ?? false;
   $groupByMonth = $groupByMonth ?? false;
   $showEventsLink = $showEventsLink ?? false;
   $showPastEvents = $showPastEvents ?? false;
@@ -19,9 +18,6 @@
     return $child->date()->toDate('YYYY-MM-dd') >= $today;
   })->sortBy('date', $showPastEvents ? 'desc' : 'asc')->limit($rows);
 
-  if ($hideFirstEvent) {
-    $events = $events->offset(1);
-  }
 
   if ($groupByMonth) {
     $groupedEvents = $events->groupBy(function ($child) {
@@ -41,13 +37,15 @@
       </h3>
     <?php endif; ?>
 
+    <?php $index = 0; ?>
     <?php foreach ($events as $event): ?>
       <?php snippet('events/listItem', [
         'event' => $event,
         'showYear' => $showYear,
+        'hasSpotlightEvent' => $index === 0 ? $hasSpotlightEvent : false,
       ]) ?>
+      <?php $index++; ?>
     <?php endforeach; ?>
-
   <?php endforeach; ?>
 
   <?php if ($showEventsLink): ?>
