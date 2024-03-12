@@ -10,7 +10,7 @@ Time: 21:00:00
 
 ----
 
-Description: Das Sinfonieorchester (alternative Schreibweise: Symphonieorchester) bildete sich in der Mitte des 18. Jahrhunderts aus, unter anderem durch die Mannheimer Schule. Es ist heute der übliche Klangkörper zur Wiedergabe von Orchesterwerken.
+Text: Das Sinfonieorchester (alternative Schreibweise: Symphonieorchester) bildete sich in der Mitte des 18. Jahrhunderts aus, unter anderem durch die Mannheimer Schule. Es ist heute der übliche Klangkörper zur Wiedergabe von Orchesterwerken.
 
 ----
 

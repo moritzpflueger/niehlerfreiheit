@@ -10,7 +10,7 @@ Time: 19:00:00
 
 ----
 
-Description:
+Text:
 
 Samstag, 23. März 2024
 Einlass: 19:00

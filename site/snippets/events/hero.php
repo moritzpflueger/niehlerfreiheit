@@ -39,7 +39,7 @@
         alt="<?= $imageAlt ?>" 
         class="my-10"
       >
-      <p><?= $event->description()->excerpt(200) ?></p>
+      <p><?= $event->text()->excerpt(200) ?></p>
     </a>
   </article>
 </section>

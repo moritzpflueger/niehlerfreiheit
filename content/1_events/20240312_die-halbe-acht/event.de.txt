@@ -10,7 +10,7 @@ Time: 19:00:00
 
 ----
 
-Description:
+Text:
 
 Fahrradwerkstatt - Hilfe zur Selbsthilfe  
 

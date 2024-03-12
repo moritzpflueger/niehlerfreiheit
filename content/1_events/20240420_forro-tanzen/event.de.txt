@@ -10,7 +10,7 @@ Time: 20:00:00
 
 ----
 
-Description:
+Text:
 
 Mittwoch, 06. und 20. März 2024
 

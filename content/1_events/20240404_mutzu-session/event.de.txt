@@ -10,7 +10,7 @@ Time: 18:00:00
 
 ----
 
-Description:
+Text:
 
 Die offene Jam Session in der Niehler Freiheit 
 Jeden zweiten Sonntag im Monat

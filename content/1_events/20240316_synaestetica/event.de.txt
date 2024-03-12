@@ -10,7 +10,7 @@ Time: 19:00:00
 
 ----
 
-Description:
+Text:
 
 Einlass: 19:00 Uhr
 Ab 21:15 Uhr werden die Türen geschlossen um die Performance nicht zu stören.

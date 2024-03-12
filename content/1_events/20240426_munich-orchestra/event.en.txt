@@ -2,4 +2,4 @@ Title: Munich Orchestra
 
 ----
 
-Description: The symphony orchestra (alternative spelling: symphony orchestra) developed in the middle of the 18th century, partly as a result of the Mannheim School. Today, it is the usual orchestra for the performance of orchestral works.
+Text: The symphony orchestra (alternative spelling: symphony orchestra) developed in the middle of the 18th century, partly as a result of the Mannheim School. Today, it is the usual orchestra for the performance of orchestral works.

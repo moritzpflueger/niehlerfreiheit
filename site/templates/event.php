@@ -20,7 +20,7 @@
           class=""
         >
       <?php endif; ?>
-      <?= $page->description()->kirbyText() ?>
+        <?= $page->text()->kirbyText() ?>
     </article>
   </section>
 <?php snippet('footer') ?>

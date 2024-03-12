@@ -2,7 +2,7 @@ Title: Events
 
 ----
 
-Description: This is a Events Page Test
+Text: This is a Events Page Test
 
 ----
 

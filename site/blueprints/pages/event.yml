@@ -17,7 +17,7 @@ columns:
           time:
             type: time
             translate: false
-          description:
+          text:
             type: textarea
             size: small
             translate: true     
