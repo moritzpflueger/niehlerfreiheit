@@ -37,4 +37,8 @@ Wie gewohnt bereiten wir für euch eine gemütliche und ruhige Atmosphäre. Es w
 
 ----
 
+Isfeatured: false
+
+----
+
 Uuid: 4sljhNOi3JTtIxmJ

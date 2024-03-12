@@ -12,9 +12,6 @@ Time: 19:30:00
 
 Text:
 
-Samstag, 16. März 2024
-19:30 Uhr
-
 Ein politisches Theaterstück über Cancel Culture.
  
 Das Stück:
@@ -25,6 +22,10 @@ Darf man heute gar nichts mehr sagen, ohne im Regen stehen gelassen zu werden?
 Aber was heißt das? Was ist canceln? Und wer muss wirklich geschützt werden?
  
 HOCHDRUCK ist der Versuch zwischen den Zeilen der öffentlichen Aufruhe zu lesen, sich mit systematischer Unterdrückung auseinanderzusetzen und die Frage nach einer kollektiven Fehlerkultur aufzuwerfen
+
+----
+
+Isfeatured: true
 
 ----
 

@@ -17,6 +17,18 @@
     }
     return $child->date()->toDate('YYYY-MM-dd') >= $today;
   })->sortBy('date', $showPastEvents ? 'desc' : 'asc')->limit($rows);
+  // Move the most upcoming featured event to the beginning of the events array
+  if ($highlightFeaturedEvent) {
+    
+    $featuredEvent = $events->filter(function($event) {
+      return $event->isFeatured()->isTrue();
+    })->sortBy('date', 'asc')->first();
+
+    if ($featuredEvent && $featuredEvent->valid()) {
+      $events = $events->prepend($featuredEvent);
+    };
+    
+  }
 
 
   if ($groupByMonth) {

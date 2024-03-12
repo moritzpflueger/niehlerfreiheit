@@ -32,9 +32,12 @@ columns:
         layout: cards
         size: small
         max: 1  # Limiting to one image upload
-        
-        # ratio: 1/2
-        # image:
-        #   type: files
-        #   layout: cards
-        #   size: small
+      settings:
+        type: fields
+        fields:
+          isFeatured:
+            label: Highlight Event
+            help: If checked, this event will displayed as a highlight on the landing page.
+            type: toggle
+            translate: false
+            default: false        

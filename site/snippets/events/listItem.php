@@ -13,31 +13,29 @@
   $showYear = $showYear ?? false;
 ?>
 
-<?php if ($highlightFeaturedEvent): ?>
-  <section class="my-16">
-    <article class="flex flex-col gap-5">
-      <a href="<?= $eventUrl?>">
-        <div class="">
-          <div class="uppercase sm:text-2xl mb-5  inline-flex sm:px-10">
-            <?= $event->date()->toDate('E dd MMMM') ?>
-          </div>
-          <h2 class="text-4xl sm:text-6xl uppercase font-bold sm:px-10 tracking-tight"><?= $event->title()->html() ?></h2>
+<?php if ($highlightFeaturedEvent && $event->isFeatured()->isTrue()): ?>
+  <article class="flex flex-col gap-5 my-16">
+    <a href="<?= $eventUrl?>">
+      <div class="">
+        <div class="uppercase sm:text-2xl mb-5  inline-flex sm:px-10">
+          <?= $event->date()->toDate('E dd MMMM') ?>
         </div>
-        <img 
-          src="<?= $imageUrl ?>" 
-          alt="<?= $imageAlt ?>" 
-          class="mt-10 w-full"
-        >
-        <!-- <p class="px-10"><?= $event->text()->excerpt(200) ?></p> -->
-        <a href="<?= $eventUrl ?>" class="text-yellow-500 text-xl hover:underline flex items-center gap-3 px-10 ml-auto">
-          VIEW DETAILS
-          <div class="w-10">
-            <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>
-          </div>
-        </a>
+        <h2 class="text-4xl sm:text-6xl uppercase font-bold sm:px-10 tracking-tight"><?= $event->title()->html() ?></h2>
+      </div>
+      <img 
+        src="<?= $imageUrl ?>" 
+        alt="<?= $imageAlt ?>" 
+        class="mt-10 w-full"
+      >
+      <!-- <p class="px-10"><?= $event->text()->excerpt(200) ?></p> -->
+      <a href="<?= $eventUrl ?>" class="text-yellow-500 text-xl hover:underline flex items-center gap-3 px-10 ml-auto">
+        VIEW DETAILS
+        <div class="w-10">
+          <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>
+        </div>
       </a>
-    </article>
-  </section>
+    </a>
+  </article>
 <?php else: ?>
   <article class="mb-20">
     <a href="<?= $eventUrl ?>" class="flex flex-col sm:flex-row gap-10">
