@@ -20,8 +20,8 @@
       class="w-1/3"
     >
     <div class="flex-1">
-      <p class="uppercase text-xl"><?= $event->date()->toDate($showYear ? 'EEE dd MMMM Y' : 'EEE dd MMMM') ?></p>
-      <h2 class="text-2xl font-bold"><?= $event->title()->html() ?></h2>
+      <p class="uppercase"><?= $event->date()->toDate($showYear ? 'EEE dd MMMM Y' : 'EEE dd MMMM') ?></p>
+      <h2 class="text-3xl uppercase my-3"><?= $event->title()->html() ?></h2>
       <p><?= $event->text()->excerpt(100) ?></p>
     </div>    
   </a>
