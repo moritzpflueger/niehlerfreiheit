@@ -30,7 +30,7 @@ body {
   height: 100%;
 }
 
-.kirbytext p {
+.kirbytext ul, p {
   @apply mb-10;
 }
 
@@ -44,6 +44,11 @@ body {
 
 .kirbytext figcaption {
   @apply text-sm text-neutral-400 text-right;
+}
+
+.kirbytext li {
+  @apply mb-2 list-disc ml-5;
+
 }
 
 /* Menu Modal */
@@ -83,4 +88,8 @@ body {
 .no-scroll {
   overflow: hidden;
   height: 100%;
+}
+
+footer a:hover {
+  @apply text-yellow-500;
 }
