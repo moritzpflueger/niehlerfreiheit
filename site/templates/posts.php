@@ -15,7 +15,7 @@
         <a href="<?= $post->url() ?>" class="flex flex-col sm:flex-row gap-10">
           <div class="flex-1">
             <p class="uppercase text-xl"><?= $post->date()->toDate('EEE dd MMMM') ?></p>
-            <h2 class="text-2xl font-bold"><?= $post->title()->html() ?></h2>
+            <h2 class="text-2xl uppercase font-bold"><?= $post->title()->html() ?></h2>
             <p><?= $post->text()->excerpt(500) ?></p>
           </div>    
         </a>

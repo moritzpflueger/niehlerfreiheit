@@ -18,7 +18,7 @@
         <p class="font-bold uppercase text-4xl mb-5">
           <?= $page->date()->toDate('E dd MMMM') ?>
         </p>
-        <h2 class="text-5xl"><?= $page->title()->html() ?></h2>
+        <h2 class="text-5xl uppercase"><?= $page->title()->html() ?></h2>
       </div>
       <div class="kirbytext">
         <?= $page->text()->kirbyText() ?>

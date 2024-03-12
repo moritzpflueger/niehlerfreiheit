@@ -10,7 +10,7 @@ $post = $posts->first();
     <img src="<?= $post->files()->first()->url() ?>" />    
   </div>
   <div class="pl-10 w-2/3">
-    <h1 class="text-4xl"><?= $post->title() ?></h1>
+    <h1 class="text-2xl uppercase font-bold"><?= $post->title() ?></h1>
     <p class="my-10">
       <?= $post->text()->excerpt(200) ?>
     </p>
