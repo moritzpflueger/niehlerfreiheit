@@ -1,5 +1,9 @@
 title: Event
 num: '{{ page.date.toDate("YMMdd") }}'
+create: 
+  fields: 
+    - date
+    - time
 
 columns:
   - width: 2/3
