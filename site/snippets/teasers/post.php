@@ -14,7 +14,7 @@ $post = $posts->first();
     <p class="my-10">
       <?= $post->text()->excerpt(200) ?>
     </p>
-    <a href="<?= $post->url() ?>"  class="text-yellow-500 text-xl hover:underline flex items-center gap-3">
+    <a href="<?= $post->url() ?>"  class="text-yellow-500 text-xl uppercase hover:underline flex items-center gap-3">
       Read more
       <div class="w-10">
         <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>
