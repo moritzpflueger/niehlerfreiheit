@@ -30,7 +30,11 @@ body {
   height: 100%;
 }
 
-.kirbytext ul, p {
+.kirbytext {
+  @apply max-w-2xl;
+}
+
+.kirbytext ul, ol, p {
   @apply mb-10;
 }
 
@@ -46,9 +50,16 @@ body {
   @apply text-sm text-neutral-400 text-right;
 }
 
-.kirbytext li {
+.kirbytext ul li {
   @apply mb-2 list-disc ml-5;
+}
 
+.kirbytext ol li {
+  @apply mb-2 list-decimal ml-16;
+}
+
+.kirbytext a {
+  @apply underline hover:text-yellow-500;
 }
 
 /* Menu Modal */
