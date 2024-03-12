@@ -34,7 +34,9 @@ body {
   @apply max-w-2xl;
 }
 
-.kirbytext ul, ol, p {
+.kirbytext ul,
+.kirbytext ol,
+.kirbytext p {
   @apply mb-10;
 }
 
