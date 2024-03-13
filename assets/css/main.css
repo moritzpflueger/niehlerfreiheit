@@ -30,7 +30,14 @@ body {
   height: 100%;
 }
 
-.blocks .block {
+.blocks .block p,
+.blocks .block[data-type="quote"],
+.blocks .block[data-type="video"],
+.blocks .block[data-type="image"],
+.blocks .block[data-type="list"] ul,
+.blocks .block[data-type="list"] ol,
+.blocks .block[data-type="markdown"] ul,
+.blocks .block[data-type="markdown"] ol {
   @apply mb-10;
 }
 
@@ -43,13 +50,13 @@ body {
 }
 
 .blocks .block h1 {
-  @apply text-2xl uppercase mb-5;
+  @apply text-5xl uppercase mb-5;
 }
 .blocks .block h2 {
-  @apply text-xl uppercase mb-5;
+  @apply text-3xl font-semibold uppercase mb-5;
 }
 .blocks .block h3 {
-  @apply text-lg uppercase mb-5;
+  @apply text-xl uppercase mb-5;
 }
 
 .blocks .block a {
@@ -80,7 +87,7 @@ body {
 }
 
 .blocks .block[data-type="quote"] {
-  @apply bg-neutral-900 p-5 pl-10 mb-10 text-2xl;
+  @apply bg-neutral-900 p-5 pl-10 text-2xl;
 }
 .blocks .block[data-type="quote"]:before {
   content: '“';
