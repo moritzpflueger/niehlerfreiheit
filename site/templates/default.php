@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 <main class="flex-grow">
-  <div class="">
+  <div class="mx-auto max-w-2xl">
     <h1 class="text-4xl uppercase my-10"><?= $page->title() ?></h1>
     <div class="kirbytext">
       <?= $page->text()->kirbyText() ?>
