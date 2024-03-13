@@ -9,7 +9,8 @@
     return $page->url() . $queryParams;
   };
   
-
+  // Set the locale based on the site's current language
+  setlocale(LC_TIME, kirby()->language()->locale(LC_TIME));
 ?>
   
 <nav class="mb-20">
@@ -28,7 +29,11 @@
     <?php foreach($filters2 as $filter): ?>
       <?php
         $isActive = $filter === $selectedFilter;
-        $formattedFilter = date('F', strtotime($filter));
+        // Using IntlDateFormatter for locale-aware formatting
+        $locale = kirby()->language();
+        $formatter = new IntlDateFormatter($locale, IntlDateFormatter::LONG, IntlDateFormatter::NONE, null, IntlDateFormatter::GREGORIAN, 'MMMM');
+        $timestamp = strtotime($filter);
+        $formattedFilter = $formatter->format($timestamp);
       ?>
       <a 
         href="<?= $filterUrl($filter) ?>" 
@@ -38,4 +43,4 @@
       </a>        
     <?php endforeach; ?>        
   <?php endforeach; ?> 
-</nav>x
+</nav>
