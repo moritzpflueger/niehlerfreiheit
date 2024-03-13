@@ -25,7 +25,6 @@
   <?php foreach ($events as $event): ?>
     <?php snippet('events/listItem', [
       'event' => $event,
-      'showYear' => false,
       'highlightFeaturedEvent' => true,
     ]) ?>
   <?php endforeach; ?>
