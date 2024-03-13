@@ -8,7 +8,7 @@
 
 <section class="my-32">
   <?php snippet('events/filter', [
-    'dateStrings' => $dateStrings,
+    'filters' => $filters,
     'selectedFilter' => $selectedFilter,
     'showPastEvents' => $showPastEvents,
   ]) ?>

@@ -6,6 +6,7 @@
     $showPastEventsLink = $showPastEventsLink ?? false;
     $showYear = $showPastEvents;
     $today = date('Y-m-d');
+    $selectedFilter = get('filterBy', null);
 
     // Filter for future events, sort them by date, and limit to number of rows given
     $events = $page
@@ -28,7 +29,17 @@
       }
     }
 
-    $selectedFilter = get('filterBy', null);
+    // Now, let's group these date strings by year
+    $filters = [];
+
+    foreach ($dateStrings as $dateString) {
+      // Extract the year from dateString
+      $year = substr($dateString, 0, 4); // Get the first four characters as year
+      if (!array_key_exists($year, $filters)) {
+        $filters[$year] = [];
+      }
+      $filters[$year][] = $dateString;
+    }
     
     $filteredEvents = $events->filter(function($child) use ($selectedFilter) {
       return $child->date()->toDate('Y-MM') === $selectedFilter;
@@ -44,7 +55,7 @@
       });
     }
     return [
-      'dateStrings' => $dateStrings,
+      'filters' => $filters,
       'groupedEvents' => $groupedEvents,
       'selectedFilter' => $selectedFilter,
       'showPastEvents' => $showPastEvents,
