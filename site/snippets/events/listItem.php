@@ -18,7 +18,7 @@
     <a href="<?= $eventUrl?>">
       <div class="">
         <div class="uppercase sm:text-2xl mb-5  inline-flex sm:px-10">
-          <?= $event->date()->toDate('E dd MMMM') ?>
+          <?= $event->date()->toDate('E dd MMMM' . ($showYear ? ' Y' : '')) ?>
         </div>
         <h2 class="text-4xl sm:text-6xl uppercase font-bold sm:px-10 tracking-tight"><?= $event->title()->html() ?></h2>
       </div>
@@ -43,7 +43,9 @@
         <img src="<?= $imageUrl ?>" alt="<?= $imageAlt ?>" />
       </div>
       <div class="flex-1">
-        <p class="sm:text-xl uppercase mb-3"><?= $event->date()->toDate($showYear ? 'EEE dd MMMM Y' : 'EEE dd MMMM') ?></p>
+        <p class="sm:text-xl uppercase mb-3">
+          <?= $event->date()->toDate('E dd MMMM' . ($showYear ? ' Y' : '')) ?>
+        </p>
         <h2 class="text-3xl sm:text-5xl uppercase font-bold mb-3"><?= $event->title()->html() ?></h2>
         <p>Einlass: 19:00 Uhr</p>
         <p>Abendkasse: 15 €</p>
