@@ -15,10 +15,10 @@
         >
       <?php endif; ?>
       <div class="my-10">
-        <p class="font-bold uppercase text-4xl mb-5">
+        <p class="uppercase sm:text-2xl mb-5 inline-flex">
           <?= $page->date()->toDate('E dd MMMM') ?>
         </p>
-        <h2 class="text-5xl uppercase"><?= $page->title()->html() ?></h2>
+        <h2 class="text-4xl sm:text-6xl uppercase font-bold tracking-tight"><?= $page->title()->html() ?></h2>
       </div>
       <div class="kirbytext">
         <?= $page->text()->kirbyText() ?>
