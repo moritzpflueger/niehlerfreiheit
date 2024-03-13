@@ -2,7 +2,7 @@ Title: This is a far far in the future event
 
 ----
 
-Date: 2025-03-12
+Date: 2025-01-12
 
 ----
 
@@ -10,7 +10,11 @@ Time: 08:00:00
 
 ----
 
-Text: asdfasdfasdf
+Text: asdfasdfasdfd
+
+----
+
+Isfeatured: false
 
 ----
 
