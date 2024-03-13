@@ -44,21 +44,14 @@
         </li>
         <li class="">
           <ul>
+            <?php 
+              $posts = page('posts')->children()->listed()->limit(5);
+              foreach ($posts as $post):
+            ?>
             <li>
-              <a href="<?= $site->url() ?>/verein">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</a>
+              <a href="<?= $post->url() ?>"><?= $post->title()->excerpt(35) ?></a>
             </li>
-            <li>
-              <a href="<?= $site->url() ?>/verein">Consetetur sadipscing elitr</a>
-            </li>
-            <li>
-              <a href="<?= $site->url() ?>/verein">Sit amet, consetetur sadipscing elitr</a>
-            </li>
-            <li>
-              <a href="<?= $site->url() ?>/verein">Lorem ipsum dolor sit amet</a>
-            </li>
-            <li>
-              <a href="<?= $site->url() ?>/verein">Lorem ipsum dolor</a>
-            </li>
+            <?php endforeach; ?>
           </ul>
         </li>
       </ul>
