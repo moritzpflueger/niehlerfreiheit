@@ -1,0 +1,21 @@
+Title: Mein zweiter Post
+
+----
+
+Blocks: [{"content":{"code":"<section class=\"flex text-center\">\n  <!-- <div class=\"w-1/3 \">\n    <img src=\"<?= $post->files()->first()->url() ?>\" />    \n  </div> -->\n  <div class=\"\">\n    <h1 class=\"text-2xl uppercase font-bold\"><?= $post->title() ?></h1>\n    <p class=\"my-10\">\n      <?= $post->text()->excerpt(2000) ?>\n    </p>\n    <a href=\"<?= $post->url() ?>\"  class=\"text-yellow-500 text-xl uppercase hover:underline flex justify-center items-center gap-3\">\n      Read more\n      <div class=\"w-10\">\n        <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>\n      </div>      \n    </a>  \n  </div> \n</section>","language":"php"},"id":"7d3c89a2-ef9c-49e9-9dc4-55bafac9d414","isHidden":false,"type":"code"},{"content":{"images":["file://gKBusBXy7AfUqCRa","file://hk8YonyiNQT03haw","file://Kj4BpPnyGcD2cNQA","file://uZTlyR4bGq2fVJ0t","file://NX8ucjzcxH8cvCoD"],"caption":"","ratio":"","crop":"false"},"id":"cdf5f6e1-dea7-43e9-aed1-4d72a5ed3739","isHidden":false,"type":"gallery"},{"content":{"level":"h2","text":"Test Heading"},"id":"9585fd80-281f-48ca-b726-e74e70a44802","isHidden":false,"type":"heading"},{"content":{"location":"kirby","image":["file://hk8YonyiNQT03haw"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"2e1c2ba0-84c9-4b02-bd13-eedde8a9d80c","isHidden":false,"type":"image"},{"content":[],"id":"0e4d3d85-52e1-44da-80c2-2207b904ad82","isHidden":false,"type":"line"},{"content":{"text":"<ul><li>List Item 1</li><li>List Item 2</li><li>List Item 3</li></ul>"},"id":"4468bb5e-cc35-496e-a8de-764253e28958","isHidden":false,"type":"list"},{"content":{"text":"# Heading 1\n## Heading 2\n### Heading 3\n\nLorem Ipsum\n\n- List Item 1\n- List Item 2\n- List Item 3\n\n* List Item 1\n* List Item 2\n* List Item 3\n\n1. List Item 1\n2. List Item 2\n3. List Item 3\n\nurl: [example.com](www.example.com)\n\n**bold**"},"id":"3723feeb-2819-41a4-9c82-3cf1ed7ad7d9","isHidden":false,"type":"markdown"},{"content":{"text":"Amsterdam has a wealth of culture and nightlife, but something is missing. There is nowhere to go if you just want to scream along to the songs you love and dance the night away to Sean Paul and ABBA. Basic Bitch Fever Dream is here to fix that.","citation":"Sexyland.world"},"id":"83eb48f6-6ac2-412c-a838-df153a2d3d80","isHidden":false,"type":"quote"},{"content":{"text":"<p>Lorem Ipsum Basic Text BlaBla</p>"},"id":"e85be659-ecb7-44c3-bae3-82f47968202a","isHidden":false,"type":"text"},{"content":{"url":"https://www.youtube.com/watch?v=eOoGMmQbre8","caption":"This is a caption"},"id":"68d288f3-6047-4ec1-87ec-a513edd598c3","isHidden":false,"type":"video"}]
+
+----
+
+Text: 
+
+----
+
+Date: 
+
+----
+
+Time: 
+
+----
+
+Uuid: 3aSA8hX3S5FSMKhD

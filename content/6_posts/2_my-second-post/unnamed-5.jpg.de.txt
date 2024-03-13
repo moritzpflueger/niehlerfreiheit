@@ -1,0 +1,5 @@
+Uuid: hk8YonyiNQT03haw
+
+----
+
+Template: blocks/image

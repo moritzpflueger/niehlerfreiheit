@@ -1,0 +1,9 @@
+Title: Mein dritter Post
+
+----
+
+Blocks: [{"content":{"location":"kirby","image":["file://fHO6F9pW5cNirf9L"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"cbbfe620-140d-417c-8bab-486629663be5","isHidden":false,"type":"image"}]
+
+----
+
+Uuid: c6YrkOwm7EBeZHNs
