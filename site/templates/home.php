@@ -1,16 +1,8 @@
 <?php snippet('header') ?>
-<section class="">
-  <?php 
-    snippet(
-      'events/list', [
-        'hideFirstEvent' => true, 
-        'showEventsLink' => true,
-        'rows' => 4,
-        'highlightFeaturedEvent' => true,
-    ]) 
-  ?>
-</section>
-<?php snippet('teasers/post') ?>
-<?php snippet('teasers/newsletter') ?>
+<main class="">
+  <?php snippet('teasers/events', ['rows' => 4]) ?>
+  <?php snippet('teasers/post') ?>
+  <?php snippet('teasers/newsletter') ?>
+</main>
 <?php snippet('footer') ?>
 
