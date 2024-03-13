@@ -16,6 +16,89 @@ body {
   ;
 }
 /* Kirby Text */
+.blocks .block[data-type="video"] {
+  width: 100%;
+  padding-top: 56.25%; /* 56.25% is for 16:9 */
+  position: relative;
+}
+
+.blocks .block[data-type="video"] iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.blocks .block {
+  @apply mb-10;
+}
+
+.blocks .block[data-type="text"] {
+  @apply max-w-2xl;
+}
+
+.blocks .block[data-type="markdown"] p {
+  @apply max-w-2xl mb-5;
+}
+
+.blocks .block h1 {
+  @apply text-2xl uppercase mb-5;
+}
+.blocks .block h2 {
+  @apply text-xl uppercase mb-5;
+}
+.blocks .block h3 {
+  @apply text-lg uppercase mb-5;
+}
+
+.blocks .block a {
+  @apply underline hover:text-yellow-500;
+}
+
+.blocks .block figcaption {
+  @apply text-sm text-neutral-400 text-right;
+}
+
+.blocks .block[data-type="gallery"] figure ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blocks .block[data-type="gallery"] figure ul li {
+  @apply basis-1/2;
+}
+
+.blocks .block[data-type="list"] ul li,
+.blocks .block[data-type="markdown"] ul li {
+  @apply mb-2 list-disc ml-12;
+}
+
+.blocks .block[data-type="list"] ol li,
+.blocks .block[data-type="markdown"] ol li {
+  @apply mb-2 list-decimal ml-16;
+}
+
+.blocks .block[data-type="quote"] {
+  @apply bg-neutral-900 p-5 pl-10 mb-10 text-2xl;
+}
+.blocks .block[data-type="quote"]:before {
+  content: '“';
+  @apply text-6xl text-yellow-500;
+}
+
+.blocks .block[data-type="quote"] footer {
+  @apply text-lg py-10 text-center flex justify-center relative;
+}
+.blocks .block[data-type="quote"] footer:before {
+  content: '—';
+  @apply pr-3;
+}
+
+.blocks .block[data-type="code"] {
+  @apply p-10 bg-neutral-900 text-yellow-500 mb-10 overflow-x-auto;
+}
+
 .kirbytext .video {
   width: 100%;
   padding-top: 56.25%; /* 56.25% is for 16:9 */
