@@ -1,51 +1,3 @@
-<?php 
-  $rows = 1000; // TODO: implement pagination
-  $groupByMonth = $groupByMonth ?? false;
-  $showPastEvents = get('showPastEvents', false);
-  $showPastEventsLink = $showPastEventsLink ?? false;
-  $showYear = $showPastEvents;
-
-  $eventsPage = $site->find('events');
-  $today = date('Y-m-d');
-
-  // Filter for future events, sort them by date, and limit to number of rows given
-  $events = $eventsPage
-    ->children()
-    ->listed()
-    ->filter(function($child) use ($today, $showPastEvents) {
-      if ($showPastEvents) { 
-        return $child->date()->toDate('YYYY-MM-dd') < $today;
-      }
-      return $child->date()->toDate('YYYY-MM-dd') >= $today;
-    })
-    ->sortBy('date', $showPastEvents ? 'desc' : 'asc')
-    ->limit($rows);
-
-  $dateStrings = [];
-  foreach ($events as $event) {
-    $dateString = $event->date()->toDate('Y-MM');
-    if (!in_array($dateString, $dateStrings)) {
-      $dateStrings[] = $dateString;
-    }
-  }
-
-  $selectedFilter = get('filterBy', null);
-  
-  $filteredEvents = $events->filter(function($child) use ($selectedFilter) {
-    return $child->date()->toDate('Y-MM') === $selectedFilter;
-  });  
-
-  if ($filteredEvents->count() > 0) {
-    $groupedEvents = $filteredEvents->groupBy(function ($child) {
-      return $child->date()->toDate('MMMM Y');
-    });
-  } else {
-    $groupedEvents = $events->groupBy(function ($child) {
-      return $child->date()->toDate('MMMM Y');
-    });
-  }
-?>
-
 <?= snippet('header') ?>
 
 <?php if ($showPastEvents): ?>
@@ -76,15 +28,21 @@
     <?php endforeach; ?>
   <?php endforeach; ?>
  
-  <a href="<?= $page->url() ?>?showPastEvents=true" class="text-yellow-500 text-xl hover:underline flex items-center gap-3">
-    <?= t('events.button.viewPast') ?>
-    <div class="w-10">
-      <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>
-    </div>
-  </a>
+  <?php if(!$showPastEvents): ?>
+    <a href="<?= $page->url() ?>?showPastEvents=true" class="text-yellow-500 text-xl hover:underline flex items-center gap-3">
+      <?= t('events.button.viewPast') ?>
+      <div class="w-10">
+        <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>
+      </div>
+    </a>
+  <?php else: ?>
+    <a href="<?= $page->url() ?>" class="text-yellow-500 text-xl hover:underline flex items-center gap-3">
+      Show upcoming Events
+      <div class="w-10">
+        <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>
+      </div>
+    </a>    
+  <?php endif ?>
 </section>
 
 <?= snippet('footer') ?>
-
-
-
