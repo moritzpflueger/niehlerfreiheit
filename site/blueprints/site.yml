@@ -24,6 +24,12 @@ columns:
         parent: site.find("posts")  # get posts from parent page
         templates: 
           - post
+      dynamicPages:
+        type: pages
+        label: Dynamic Pages
+        templates: 
+          - posts
+          - events
       general:
         type: fields
         fields:
