@@ -18,7 +18,7 @@ if (!$teaserText) {
     <p class="my-10">
       <?= $teaserText ?>
     </p>
-    <a href="<?= $post->url() ?>"  class="text-yellow-500 text-xl uppercase hover:underline flex justify-center items-center gap-3">
+    <a href="<?= $post->url() ?>"  class="text-yellow-500 text-xl uppercase hover:underline flex justify-end items-center gap-3">
       Read more
       <div class="w-10">
         <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>
