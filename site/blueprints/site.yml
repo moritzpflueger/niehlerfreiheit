@@ -19,17 +19,20 @@ columns:
         type: pages
         templates: 
           - default
+        limit: 10  
       posts:
         type: pages
         parent: site.find("posts")  # get posts from parent page
         templates: 
           - post
+        limit: 10
       dynamicPages:
         type: pages
         label: Dynamic Pages
         templates: 
           - posts
           - events
+        limit: 10  
       general:
         type: fields
         fields:
