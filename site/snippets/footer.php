@@ -3,7 +3,7 @@
         <?php snippet('components/socialLinks') ?>
         <?php snippet('components/toggleLanguage') ?>      
       </div>
-      <ul class="flex flex-col sm:flex-row justify-between w-full gap-5 sm:gap-20 py-10">
+      <ul class="flex flex-col md:flex-row justify-between w-full gap-5 sm:gap-20 py-10">
         <li class="">
           <ul>
             <li>
