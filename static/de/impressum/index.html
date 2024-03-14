@@ -15,7 +15,7 @@
     <!-- Add your CSS and JavaScript files here -->
     <link href="/assets/css/styles.css" rel="stylesheet">  </head>
   <body>
-    <header class="py-5 md:py-10">
+    <header class="py-5 md:py-10 sm:px-5">
       <nav class="flex items-center justify-between">
         <a href="/de">
           <img 
@@ -40,23 +40,15 @@
     <ul class="flex flex-col text-3xl sm:text-5xl uppercase items-center gap-10 p-10">
               <li class="hover:text-yellow-500">
           <a href="/de/events" class="">
-            Veranstaltungen          </a>
+            Programm          </a>
         </li>
               <li class="hover:text-yellow-500">
-          <a href="/de/verein" class="">
-            Verein          </a>
-        </li>
-              <li class="hover:text-yellow-500">
-          <a href="/de/posts" class="">
-            Posts          </a>
+          <a href="/de/der-verein" class="">
+            Der Verein          </a>
         </li>
               <li class="hover:text-yellow-500">
           <a href="/de/mitmachen" class="">
             Mitmachen          </a>
-        </li>
-              <li class="hover:text-yellow-500">
-          <a href="/de/contact" class="">
-            Kontakt          </a>
         </li>
           </ul>
     <div class="absolute bottom-10 text-2xl flex gap-5">
@@ -118,15 +110,15 @@ window.onclick = function(event) {
 }
 </script>
       </nav>
-    </header><main class="flex-grow">
-  <div class="mx-auto max-w-2xl">
-    <h1 class="text-4xl uppercase my-10">Impressum</h1>
-    <div class="kirbytext">
-      <h2>ANBIETERKENNZEICHNUNG</h2>
+    </header>  <main class="max-w-4xl mx-auto">
+    <h1 class="text-5xl sm:text-6xl">Impressum</h1>
+    <div class="blocks">
+              <div class="block" data-type="markdown">
+          <h2>ANBIETERKENNZEICHNUNG</h2>
 <p>Kalker Freiheit e.V.<br />
 Vogelsanger Straße 385<br />
 50827 Köln</p>
-<p>E-Mail: <a href="mailto:&#x68;&#x65;&#108;&#108;&#111;&#x40;&#107;&#x61;&#108;&#x6b;&#x65;&#114;&#x66;&#x72;&#101;&#105;&#x68;&#101;&#105;&#x74;&#46;&#x64;&#x65;">&#x68;&#101;&#108;&#x6c;&#111;&#x40;&#x6b;&#97;&#x6c;&#x6b;&#101;&#114;&#x66;&#x72;&#101;&#x69;&#x68;&#x65;&#x69;&#x74;&#46;&#x64;&#101;</a><br />
+<p>E-Mail: <a href="mailto:&#x68;&#x65;&#108;&#108;&#111;&#x40;&#x6b;&#x61;&#108;&#x6b;&#x65;&#x72;&#x66;&#114;&#101;&#105;&#x68;&#101;&#x69;&#x74;&#x2e;&#x64;&#101;">&#x68;&#101;&#108;&#x6c;&#111;&#x40;&#x6b;&#x61;&#108;&#x6b;&#101;&#114;&#x66;&#114;&#x65;&#x69;&#104;&#x65;&#105;&#116;&#46;&#x64;&#101;</a><br />
 Internet: <a href="https://www.kalkerfreiheit.de">kalkerfreiheit.de</a></p>
 <h2>VERTRETUNGSBERECHTIGTER VORSTAND</h2>
 <p>Einzeln Vertretungsberechtigter Vorstand:</p>
@@ -153,10 +145,10 @@ Registernummer: VR 19248</p>
 <p>Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten, bei Auskünften, Berichtigung, Sperrung oder Löschung von Daten wenden Sie sich bitte an:</p>
 <p>Kalker Freiheit e.V.<br />
 Vogelsanger Straße 385<br />
-50827 Köln</p>    </div>     
-  </div>
-</main>
-    <footer class="flex flex-col items-center py-10 text-neutral-400">
+50827 Köln</p>        </div>
+          </div>
+  </main>
+    <footer class="flex flex-col items-center p-10 text-neutral-400">
       <div class="text-2xl flex gap-5">
         <ul class="flex gap-3">
       <li class="w-10 h-10">
@@ -182,25 +174,30 @@ Vogelsanger Straße 385<br />
     </li>
   </ul>         
       </div>
-      <ul class="flex flex-col sm:flex-row justify-between w-full gap-5 sm:gap-20 py-10">
+      <ul class="flex flex-col md:flex-row justify-between w-full gap-5 sm:gap-20 py-10">
         <li class="">
           <ul>
-            <li>
-              <a href="/de/mitmachen">About</a>
-            </li>
-            <li>
-              <a href="/de/mitmachen">About</a>
-            </li>
-            <li>
-              <a href="/de/mitmachen">AboutAboutAbout</a>
-            </li>
-            <li>
-              <a href="/de/mitmachen">About</a>
-            </li>
-            <li>
-              <a href="/de/mitmachen">AboutAbout</a>
-            </li>
-          </ul>
+                          <li class="hover:text-yellow-500">
+                <a href="/de/events">
+                  Programm                </a>
+              </li>
+                          <li class="hover:text-yellow-500">
+                <a href="/de/events?showPastEvents=true">
+                  Archiv                </a>
+              </li>
+                          <li class="hover:text-yellow-500">
+                <a href="/de/posts">
+                  Posts                </a>
+              </li>
+                          <li class="hover:text-yellow-500">
+                <a href="/de/impressum">
+                  Impressum                </a>
+              </li>
+                          <li class="hover:text-yellow-500">
+                <a href="/de/der-verein">
+                  Der Verein                </a>
+              </li>
+                      </ul>
         </li>
         <li class="">
           <ul>

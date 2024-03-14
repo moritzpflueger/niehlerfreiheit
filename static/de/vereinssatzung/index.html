@@ -15,7 +15,7 @@
     <!-- Add your CSS and JavaScript files here -->
     <link href="/assets/css/styles.css" rel="stylesheet">  </head>
   <body>
-    <header class="py-5 md:py-10">
+    <header class="py-5 md:py-10 sm:px-5">
       <nav class="flex items-center justify-between">
         <a href="/de">
           <img 
@@ -40,23 +40,15 @@
     <ul class="flex flex-col text-3xl sm:text-5xl uppercase items-center gap-10 p-10">
               <li class="hover:text-yellow-500">
           <a href="/de/events" class="">
-            Veranstaltungen          </a>
+            Programm          </a>
         </li>
               <li class="hover:text-yellow-500">
-          <a href="/de/verein" class="text-yellow-500">
-            Verein          </a>
-        </li>
-              <li class="hover:text-yellow-500">
-          <a href="/de/posts" class="">
-            Posts          </a>
+          <a href="/de/der-verein" class="">
+            Der Verein          </a>
         </li>
               <li class="hover:text-yellow-500">
           <a href="/de/mitmachen" class="">
             Mitmachen          </a>
-        </li>
-              <li class="hover:text-yellow-500">
-          <a href="/de/contact" class="">
-            Kontakt          </a>
         </li>
           </ul>
     <div class="absolute bottom-10 text-2xl flex gap-5">
@@ -118,11 +110,11 @@ window.onclick = function(event) {
 }
 </script>
       </nav>
-    </header><main class="flex-grow">
-  <div class="mx-auto max-w-2xl">
-    <h1 class="text-4xl uppercase my-10">Vereinssatzung</h1>
-    <div class="kirbytext">
-      <h2>Satzung des eingetragenen, gemeinnützigen Vereins "Kalker Freiheit"</h2>
+    </header>  <main class="max-w-4xl mx-auto">
+    <h1 class="text-5xl sm:text-6xl">Vereinssatzung</h1>
+    <div class="blocks">
+              <div class="block" data-type="markdown">
+          <h2>Satzung des eingetragenen, gemeinnützigen Vereins "Kalker Freiheit"</h2>
 <h2>§ 1 NAME UND SITZ</h2>
 <ol>
 <li>Der Verein führt den Namen "Kalker Freiheit".</li>
@@ -237,10 +229,10 @@ Die letztgenannte Befugnis kann an Gruppen oder Personen delegiert werden.</li>
 </ol>
 <h2>§ 15 AUFLÖSUNG DES VEREINS</h2>
 <p>Bei Auflösung oder Aufhebung des Vereins oder bei Wegfall steuerbegünstigter Zwecke fällt das Vermögen des Vereins gesinnungsverwandten Körperschaften zu, die vom Finanzamt als gemeinnützig anerkannt sind und über deren Auswahl die Mitgliederversammlung beschließt. Diese müssen es ausschließlich und unmittelbar für gemeinnützige bzw. mildtätige Zwecke verwenden.</p>
-<p>Köln, 29.08.2021</p>    </div>     
-  </div>
-</main>
-    <footer class="flex flex-col items-center py-10 text-neutral-400">
+<p>Köln, 29.08.2021</p>        </div>
+          </div>
+  </main>
+    <footer class="flex flex-col items-center p-10 text-neutral-400">
       <div class="text-2xl flex gap-5">
         <ul class="flex gap-3">
       <li class="w-10 h-10">
@@ -266,25 +258,30 @@ Die letztgenannte Befugnis kann an Gruppen oder Personen delegiert werden.</li>
     </li>
   </ul>         
       </div>
-      <ul class="flex flex-col sm:flex-row justify-between w-full gap-5 sm:gap-20 py-10">
+      <ul class="flex flex-col md:flex-row justify-between w-full gap-5 sm:gap-20 py-10">
         <li class="">
           <ul>
-            <li>
-              <a href="/de/mitmachen">About</a>
-            </li>
-            <li>
-              <a href="/de/mitmachen">About</a>
-            </li>
-            <li>
-              <a href="/de/mitmachen">AboutAboutAbout</a>
-            </li>
-            <li>
-              <a href="/de/mitmachen">About</a>
-            </li>
-            <li>
-              <a href="/de/mitmachen">AboutAbout</a>
-            </li>
-          </ul>
+                          <li class="hover:text-yellow-500">
+                <a href="/de/events">
+                  Programm                </a>
+              </li>
+                          <li class="hover:text-yellow-500">
+                <a href="/de/events?showPastEvents=true">
+                  Archiv                </a>
+              </li>
+                          <li class="hover:text-yellow-500">
+                <a href="/de/posts">
+                  Posts                </a>
+              </li>
+                          <li class="hover:text-yellow-500">
+                <a href="/de/impressum">
+                  Impressum                </a>
+              </li>
+                          <li class="hover:text-yellow-500">
+                <a href="/de/der-verein">
+                  Der Verein                </a>
+              </li>
+                      </ul>
         </li>
         <li class="">
           <ul>
