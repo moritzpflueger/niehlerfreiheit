@@ -9,8 +9,8 @@
 ?>
 
 <form method="POST" action="">
-  <section class="my-32 p-10 bg-neutral-900">
-    <h1 class="text-4xl uppercase">NEWSLETTER</h1>
+  <section class="p-5 sm:p-10 bg-neutral-900">
+    <h2>NEWSLETTER</h2>
     <p class="my-10">
       <?= t('newsletter.subscribe.text') ?>
     </p>
@@ -18,7 +18,7 @@
       <input type="text" name="email" class="flex-1 py-3 px-5 text-black" placeholder="E-Mail">
       <button
         id="submit-button"
-        class="bg-[#00538A] text-white w-full font-bold py-3 px-5"
+        class="bg-yellow-500 text-black text-xl w-full font-bold py-3 px-5"
         <?= $userAgreed ? '' : 'disabled' ?>
       >
         <?= t('newsletter.subscribe.button') ?>
