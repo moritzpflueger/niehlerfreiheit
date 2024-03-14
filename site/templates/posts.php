@@ -19,7 +19,7 @@
 
 <?= snippet('header') ?>
 
-<section class="my-32">
+    <h1 class="hidden"><?= $page->title() ?></h1>
     <?php foreach ($posts as $post): ?>
       <article class="mb-20">
         <a href="<?= $post->url() ?>" class="flex flex-col sm:flex-row gap-10">

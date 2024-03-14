@@ -1,12 +1,7 @@
 <?= snippet('header') ?>
 
-<?php if ($showPastEvents): ?>
-  <h1 class="text-3xl font-bold uppercase my-10">
-    Vergangene Veranstaltungen
-  </h1>
-<?php endif ?>
+  <h1><?= $showPastEvents ? "Archiv" : "Programm" ?></h1>
 
-<section class="my-32">
   <?php snippet('events/filter', [
     'filters' => $filters,
     'selectedFilter' => $selectedFilter,

@@ -22,7 +22,7 @@
       <p class="sm:text-2xl uppercase mb-2 bg-white text-black inline-flex px-1">
         <?= $event->date()->toDate('E dd MMMM' . ($showYear ? ' Y' : '')) ?>
       </p>
-      <h2 class="text-3xl sm:text-4xl uppercase italic font-bold mb-3"><?= $event->title()->html() ?></h2>
+      <h3><?= $event->title()->html() ?></h3>
       <p>Einlass: 19:00 Uhr</p>
       <p>Abendkasse: 15 €</p>
       <!-- <p><?= $event->text()->excerpt(100) ?></p> -->

@@ -14,7 +14,7 @@ if (!$teaserText) {
 
 <section class="flex text-center">
   <div class="">
-    <h1 class="text-2xl uppercase font-bold"><?= $post->title() ?></h1>
+    <h2><?= $post->title() ?></h2>
     <p class="my-10">
       <?= $teaserText ?>
     </p>
