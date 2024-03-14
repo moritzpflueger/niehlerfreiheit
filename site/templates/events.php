@@ -25,14 +25,14 @@
   <?php endforeach; ?>
  
   <?php if(!$showPastEvents): ?>
-    <a href="<?= $page->url() ?>?showPastEvents=true" class="text-yellow-500 text-xl hover:underline flex items-center gap-3">
+    <a href="<?= $page->url() ?>?showPastEvents=true" class="text-yellow-500 text-xl uppercase hover:underline flex items-center gap-3">
       <?= t('events.button.viewPast') ?>
       <div class="w-10">
         <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>
       </div>
     </a>
   <?php else: ?>
-    <a href="<?= $page->url() ?>" class="text-yellow-500 text-xl hover:underline flex items-center gap-3">
+    <a href="<?= $page->url() ?>" class="text-yellow-500 text-xl uppercase hover:underline flex items-center gap-3">
       Show upcoming Events
       <div class="w-10">
         <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>
