@@ -10,8 +10,9 @@
   ]) ?>
 
   <?php foreach ($groupedEvents as $monthName => $events): ?>
-    <h3 class="text-6xl mb-20 mt-32 first-of-type:mt-0 uppercase">
+    <h3 class="text-2xl mb-20 mt-32 first-of-type:mt-0 uppercase">
       <?= !$showYear ? strtok($monthName, ' ') : $monthName ?>
+      <hr class="border-[#00538A] mt-5" />
     </h3>
 
     <?php $index = 0; ?>
