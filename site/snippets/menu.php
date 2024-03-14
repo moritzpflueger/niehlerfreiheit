@@ -8,19 +8,13 @@
     </span>
     <ul class="flex flex-col text-3xl sm:text-5xl uppercase items-center gap-10 p-10">
       <?php 
-        $menuItems = [
-          ['title' => t('menuitem.events'), 'uri' => 'events'],
-          ['title' => t('menuitem.about'), 'uri' => 'verein'],
-          ['title' => 'Posts', 'uri' => 'posts'],
-          ['title' => 'Mitmachen', 'uri' => 'mitmachen'],
-          ['title' => 'Kontakt', 'uri' => 'contact'],
-        ];
+        $menuItems = $pages->listed()->filterBy('showInMenu', true);
         foreach ($menuItems as $item):
-          $isActive = $page->uri() === $item['uri'];
+          $isActive = $page->uri() === $item->uri();
       ?>
         <li class="hover:text-yellow-500">
-          <a href="<?= $site->url() ?>/<?= $item['uri'] ?>" class="<?= $isActive ? 'text-yellow-500' : '' ?>">
-            <?= $item['title'] ?>
+          <a href="<?= $site->url() ?>/<?= $item->uri() ?>" class="<?= $isActive ? 'text-yellow-500' : '' ?>">
+            <?= $item->title() ?>
           </a>
         </li>
       <?php endforeach; ?>

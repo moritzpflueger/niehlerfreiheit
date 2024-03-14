@@ -1,4 +1,8 @@
-Title: Events
+Title: Programm
+
+----
+
+Showinmenu: true
 
 ----
 
