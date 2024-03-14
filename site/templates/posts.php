@@ -19,15 +19,13 @@
 
 <?= snippet('header') ?>
 
+<section class="my-32 max-w-4xl mx-auto">
     <h1 class="hidden"><?= $page->title() ?></h1>
     <?php foreach ($posts as $post): ?>
       <article class="mb-20">
-        <a href="<?= $post->url() ?>" class="flex flex-col sm:flex-row gap-10">
-          <div class="flex-1">
-            <p class="uppercase text-xl"><?= $post->date()->toDate('EEE dd MMMM') ?></p>
-            <h2 class="text-2xl  font-bold"><?= $post->title()->html() ?></h2>
-            <p><?= $teaserText($post) ?></p>
-          </div>    
+        <a href="<?= $post->url() ?>">
+          <h2><?= $post->title()->html() ?></h2>
+          <p><?= $teaserText($post) . " <span class='text-yellow-500'>Read More</span>" ?></p>
         </a>
       </article>      
     <?php endforeach; ?>
