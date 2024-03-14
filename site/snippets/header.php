@@ -16,7 +16,7 @@
     <?= css('assets/css/styles.css') ?>
   </head>
   <body>
-    <header class="py-5 md:py-10">
+    <header class="py-5 md:py-10 sm:px-5">
       <nav class="flex items-center justify-between">
         <a href="<?= $site->url() ?>">
           <img 

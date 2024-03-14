@@ -8,6 +8,7 @@ body {
     text-neutral-100 
     font-mono 
     text-xl
+    /* max-w-4xl  */
     mx-auto 
     px-5
     h-[100dvh]

@@ -1,5 +1,6 @@
 <?= snippet('header') ?>
 
+<section class="my-32 max-w-4xl mx-auto">
   <h1><?= $showPastEvents ? "Archiv" : "Programm" ?></h1>
 
   <?php snippet('events/filter', [
