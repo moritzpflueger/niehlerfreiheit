@@ -8,5 +8,8 @@
         </div>
       <?php endforeach; ?>
     </div>
+    <?php if($page->uri() == "impressum" || $page->uri() == "imprint"): ?>
+      <div class="py-10">Made with ❤️ by <a class="underline" href="https://www.moritzpflueger.com/en/">Moritz Pflüger</a></div>
+    <?php endif; ?>
   </main>
 <?php snippet('footer') ?>
