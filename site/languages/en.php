@@ -13,7 +13,9 @@ return [
         'events.button.viewPast' => 'View past events',
         'menu.closebutton' => 'close',
         'newsletter.subscribe.button' => 'Subscribe to newsletter',
-        'newsletter.subscribe.text' => 'Our newsletter usually arrives once a month with the current program and general updates from Niehler Freiheit.'
+        'newsletter.subscribe.text' => 'Our newsletter usually arrives once a month with the current program and general updates from Niehler Freiheit.',
+        'event.admissionTime' => 'Admission',
+        'event.startTime' => 'Start'
     ],
     'url' => NULL
 ];
