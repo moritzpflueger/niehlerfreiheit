@@ -1,4 +1,4 @@
-    <footer class="flex flex-col items-center py-10 text-neutral-400">
+    <footer class="flex flex-col items-center p-10 text-neutral-400">
       <div class="text-2xl flex gap-5">
         <?php snippet('components/socialLinks') ?>
         <?php snippet('components/toggleLanguage') ?>      
@@ -6,21 +6,23 @@
       <ul class="flex flex-col md:flex-row justify-between w-full gap-5 sm:gap-20 py-10">
         <li class="">
           <ul>
-            <li>
-              <a href="<?= $site->url() ?>/mitmachen">About</a>
-            </li>
-            <li>
-              <a href="<?= $site->url() ?>/mitmachen">About</a>
-            </li>
-            <li>
-              <a href="<?= $site->url() ?>/mitmachen">AboutAboutAbout</a>
-            </li>
-            <li>
-              <a href="<?= $site->url() ?>/mitmachen">About</a>
-            </li>
-            <li>
-              <a href="<?= $site->url() ?>/mitmachen">AboutAbout</a>
-            </li>
+            <?php 
+              $menuItems = [
+                ['title' => $site->find('events')->title(), 'url' => $site->find('events')->url()],
+                ['title' => 'Archiv', 'url' => $site->url() . '/events?showPastEvents=true'],
+                ['title' => $site->find('posts')->title(), 'url' => $site->url() . '/posts'],
+                ['title' => $site->find('impressum')->title(), 'url' => $site->url() . '/impressum'],
+                ['title' => $site->find('verein')->title(), 'url' => $site->url() . '/verein'],
+              ];
+              foreach ($menuItems as $item):
+
+            ?>
+              <li class="hover:text-yellow-500">
+                <a href="<?= $item['url'] ?>">
+                  <?= $item['title'] ?>
+                </a>
+              </li>
+            <?php endforeach; ?>
           </ul>
         </li>
         <li class="">
