@@ -11,7 +11,8 @@
                 ['title' => $site->find('events')->title(), 'url' => $site->find('events')->url()],
                 ['title' => 'Archiv', 'url' => $site->url() . '/events?showPastEvents=true'],
                 ['title' => $site->find('posts')->title(), 'url' => $site->url() . '/posts'],
-                ['title' => $site->find('impressum')->title(), 'url' => $site->url() . '/impressum'],
+                ['title' => $site->find('location')->title(), 'url' => $site->url() . '/location'],
+                ['title' => $site->find('termine')->title(), 'url' => $site->url() . '/termine'],
                 ['title' => $site->find('verein')->title(), 'url' => $site->url() . '/verein'],
               ];
               foreach ($menuItems as $item):
