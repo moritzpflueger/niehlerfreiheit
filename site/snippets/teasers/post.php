@@ -1,20 +1,22 @@
 <?php 
-
+$layout = $layout ?? null;
 $posts = page('posts')->children()->listed()->limit(1);
-$post = $posts->first();
+$post = $post ?? $posts->first();;
 
-$teaserText = $post->blocks()->toBlocks()->filter(function($block) {
+$textBlock = $post->blocks()->toBlocks()->filter(function($block) {
       return $block->type() === 'text';
-  })->first()->excerpt(500);
-  
-if (!$teaserText) {
+  })->first();
+
+if ($textBlock) {
+  $teaserText = $textBlock->excerpt($layout === 'small' ? 250 : 500);  
+} else {
   $teaserText = "No text available.";
 }
 ?>
 
-<section class="flex text-center">
+<section class="flex <?= $layout === 'small' ? 'text-left' : 'text-center' ?>">
   <div class="">
-    <h2><?= $post->title() ?></h2>
+    <h2 class="<?= $layout === 'small' ? 'text-4xl' : '' ?>"><?= $post->title() ?></h2>
     <p class="my-10">
       <?= $teaserText ?>
     </p>

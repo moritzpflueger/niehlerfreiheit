@@ -1,8 +1,5 @@
 <?php
-  $rows = $rows ?? 3;
-  $postsPage = $site->find('posts');
-
-  $posts = $postsPage->children()->listed()->limit($rows);
+  $posts = $site->find('posts')->children()->listed();
 
   $teaserText = function($post) {
     $textBlock = $post->blocks()->toBlocks()->filter(function($block) {
