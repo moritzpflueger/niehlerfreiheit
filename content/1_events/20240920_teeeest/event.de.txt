@@ -6,7 +6,11 @@ Date: 2024-09-20
 
 ----
 
-Time: 
+Admissiontime: 20:00:00
+
+----
+
+Starttime: 21:00:00
 
 ----
 
@@ -14,7 +18,15 @@ Text: Test
 
 ----
 
+Category: concert
+
+----
+
 Isfeatured: false
+
+----
+
+Time: 
 
 ----
 

@@ -1,8 +1,8 @@
-Title: Munich Orchestra
+Title: Test event 2
 
 ----
 
-Date: 2024-04-26
+Date: 2024-07-28
 
 ----
 
@@ -10,11 +10,11 @@ Admissiontime: 18:00:00
 
 ----
 
-Starttime: 19:00:00
+Starttime: 19:30:00
 
 ----
 
-Text: test
+Text: Test
 
 ----
 
@@ -26,8 +26,8 @@ Isfeatured: false
 
 ----
 
-Time: 20:00:00
+Time: 
 
 ----
 
-Uuid: qMfJxWVVrfMIFjfb
+Uuid: jMACH9ATpsw99vi2

@@ -6,15 +6,15 @@ Date: 2024-04-06
 
 ----
 
-Time: 19:00:00
+Admissiontime: 
+
+----
+
+Starttime: 19:00:00
 
 ----
 
 Text:
-
-Samstag, 23. März 2024
-Einlass: 19:00
-Beginn: 20:00
 
 Niehler Freiheit und What's the Point laden ein zum Konzertabend mit: 
 
@@ -31,6 +31,18 @@ Dinner for Deux (Darkwave, Post-Punk | Köln)
 Musikalisch beeinflusst vom Erwachen des Neo-Post-Punks, eindringlicher Loop-Ästhetik und einer ordentlichen Portion Trash spielt „Dinner for Deux“ mit einer Mischung aus aggressiver und depressiver Energie. Die deutschen, oft kryptischen Texte des Duos entstehen aus Dialogen einer intensiven Freundschaft mit Höhen und Tiefen und bringen gerne die politische und persönliche Orientierungslosigkeit ihrer Generation zum Ausdruck.
  
 Artwork by Jan Auf der Mauer (@janadm)
+
+----
+
+Category: workshop
+
+----
+
+Isfeatured: false
+
+----
+
+Time: 19:00:00
 
 ----
 

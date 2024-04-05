@@ -6,11 +6,27 @@ Date: 2024-04-17
 
 ----
 
-Time: 
+Admissiontime: 
+
+----
+
+Starttime: 18:00:00
 
 ----
 
 Text: Test
+
+----
+
+Category: exhibition
+
+----
+
+Isfeatured: false
+
+----
+
+Time: 
 
 ----
 
