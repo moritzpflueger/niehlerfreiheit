@@ -6,11 +6,27 @@ Date: 2023-12-13
 
 ----
 
-Time: 18:00:00
+Admissiontime: 19:00:00
+
+----
+
+Starttime: 20:00:00
 
 ----
 
 Text: This should never show up on the website. Only in past events section.
+
+----
+
+Category: workshop
+
+----
+
+Isfeatured: false
+
+----
+
+Time: 18:00:00
 
 ----
 

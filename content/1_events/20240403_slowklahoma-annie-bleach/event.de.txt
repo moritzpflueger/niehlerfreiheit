@@ -6,13 +6,16 @@ Date: 2024-04-03
 
 ----
 
-Time: 19:00:00
+Admissiontime: 19:00:00
+
+----
+
+Starttime: 21:15:00
 
 ----
 
 Text:
 
-Einlass: 19:00 Uhr
 Ab 21:15 Uhr werden die Türen geschlossen um die Performance nicht zu stören.
 
 Synæstetica ist ein Kunstwort aus Synästhesie und Ästhetik.
@@ -37,7 +40,15 @@ Wie gewohnt bereiten wir für euch eine gemütliche und ruhige Atmosphäre. Es w
 
 ----
 
+Category: concert
+
+----
+
 Isfeatured: false
+
+----
+
+Time: 19:00:00
 
 ----
 
