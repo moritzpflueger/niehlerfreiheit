@@ -3,7 +3,9 @@ num: '{{ page.date.toDate("YMMdd") }}'
 create: 
   fields: 
     - date
-    - time
+    - admissiontime
+    - starttime
+    - category
 
 columns:
   - width: 2/3
@@ -18,9 +20,15 @@ columns:
             type: date
             translate: false
             required: true
-          time:
+          admissiontime:
+            label: Admission Time
             type: time
             translate: false
+          starttime:
+            label: Start Time
+            type: time
+            translate: false
+            required: true
           text:
             type: textarea
             size: small
@@ -35,6 +43,19 @@ columns:
       settings:
         type: fields
         fields:
+          category: 
+            label: Category
+            type: select
+            translate: false
+            default: talk
+            required: true
+            options:
+              concert: Concert
+              workshop: Workshop
+              exhibition: Exhibition
+              talk: Talk
+              cinema: Cinema
+              theatre: Theatre
           isFeatured:
             label: Highlight Event
             help: If checked, this event will displayed as a highlight on the landing page.
