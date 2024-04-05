@@ -1,0 +1,29 @@
+Title: TEst
+
+----
+
+Date: 2024-10-03
+
+----
+
+Openingtime: 19:00:00
+
+----
+
+Starttime: 20:00:00
+
+----
+
+Text: 
+
+----
+
+Category: talk
+
+----
+
+Isfeatured: false
+
+----
+
+Uuid: QSM8h9dbtrIpocFN
