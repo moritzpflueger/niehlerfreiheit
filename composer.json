@@ -24,7 +24,8 @@
   "require": {
     "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
     "getkirby/cms": "^4.0",
-    "d4l/kirby-static-site-generator": "^1.13"
+    "d4l/kirby-static-site-generator": "^1.13",
+    "hashandsalt/kirby-recurr": "^0.0.7"
   },
   "config": {
     "allow-plugins": {
