@@ -2,6 +2,14 @@ Title: Rational X World
 
 ----
 
+Recurrence: none
+
+----
+
+Recurrenceday: 
+
+----
+
 Date: 2024-05-11
 
 ----

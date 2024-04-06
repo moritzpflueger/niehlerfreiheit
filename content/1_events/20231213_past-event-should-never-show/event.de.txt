@@ -2,6 +2,14 @@ Title: Past Event (should never show)
 
 ----
 
+Recurrence: none
+
+----
+
+Recurrenceday: 
+
+----
+
 Date: 2023-12-13
 
 ----

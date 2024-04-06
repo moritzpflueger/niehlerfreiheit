@@ -2,6 +2,14 @@ Title: Test event 2
 
 ----
 
+Recurrence: none
+
+----
+
+Recurrenceday: 
+
+----
+
 Date: 2024-07-28
 
 ----

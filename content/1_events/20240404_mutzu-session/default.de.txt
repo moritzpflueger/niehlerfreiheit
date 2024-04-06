@@ -2,11 +2,31 @@ Title: Mutzu Session
 
 ----
 
-Date: 2024-04-04
+Blocks: 
 
 ----
 
-Time: 18:00:00
+Showinmenu: false
+
+----
+
+Recurrence: weekly
+
+----
+
+Recurrenceday: sunday
+
+----
+
+Date: 2024-01-01
+
+----
+
+Admissiontime: 
+
+----
+
+Starttime: 18:00:00
 
 ----
 
@@ -19,7 +39,15 @@ Bei Fragen meldet euch gern bei uns per E-Mail an die hello@niehlerfreiheit.de
 
 ----
 
+Category: workshop
+
+----
+
 Isfeatured: false
+
+----
+
+Time: 18:00:00
 
 ----
 

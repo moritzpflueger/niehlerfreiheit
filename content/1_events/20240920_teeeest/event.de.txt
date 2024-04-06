@@ -2,6 +2,14 @@ Title: Teeeest
 
 ----
 
+Recurrence: none
+
+----
+
+Recurrenceday: 
+
+----
+
 Date: 2024-09-20
 
 ----

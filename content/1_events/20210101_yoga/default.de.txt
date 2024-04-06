@@ -1,0 +1,37 @@
+Title: Yoga
+
+----
+
+Recurrence: weekly
+
+----
+
+Recurrenceday: monday
+
+----
+
+Date: 2023-01-01
+
+----
+
+Admissiontime: 
+
+----
+
+Starttime: 12:00:00
+
+----
+
+Text: Jeden Montag gibt's bei uns Yoga bei Kim
+
+----
+
+Category: concert
+
+----
+
+Isfeatured: false
+
+----
+
+Uuid: ocFf6mFQTQYri0Ex

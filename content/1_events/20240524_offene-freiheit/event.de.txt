@@ -2,6 +2,14 @@ Title: Offene Freiheit
 
 ----
 
+Recurrence: none
+
+----
+
+Recurrenceday: 
+
+----
+
 Date: 2024-05-24
 
 ----

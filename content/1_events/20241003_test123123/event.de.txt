@@ -2,11 +2,19 @@ Title: TEst
 
 ----
 
+Recurrence: none
+
+----
+
+Recurrenceday: 
+
+----
+
 Date: 2024-10-03
 
 ----
 
-Openingtime: 19:00:00
+Admissiontime: 
 
 ----
 
@@ -23,6 +31,10 @@ Category: talk
 ----
 
 Isfeatured: false
+
+----
+
+Openingtime: 19:00:00
 
 ----
 

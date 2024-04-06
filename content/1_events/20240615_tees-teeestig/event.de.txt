@@ -2,6 +2,14 @@ Title: Tees Teeestig
 
 ----
 
+Recurrence: none
+
+----
+
+Recurrenceday: 
+
+----
+
 Date: 2024-06-15
 
 ----

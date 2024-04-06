@@ -2,7 +2,15 @@ Title: Die halbe Acht
 
 ----
 
-Date: 2024-04-21
+Recurrence: weekly
+
+----
+
+Recurrenceday: tuesday
+
+----
+
+Date: 2004-06-24
 
 ----
 

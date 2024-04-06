@@ -1,0 +1,46 @@
+Title: Mutzu Session
+
+----
+
+Recurrence: weekly
+
+----
+
+Recurrenceday: sunday
+
+----
+
+Date: 2004-06-24
+
+----
+
+Admissiontime: 
+
+----
+
+Starttime: 18:00:00
+
+----
+
+Text:
+
+Die offene Jam Session in der Niehler Freiheit 
+Jeden zweiten Sonntag im Monat
+
+Bei Fragen meldet euch gern bei uns per E-Mail an die hello@niehlerfreiheit.de
+
+----
+
+Category: workshop
+
+----
+
+Isfeatured: false
+
+----
+
+Time: 18:00:00
+
+----
+
+Uuid: cEwqxGovszEtDfZa
