@@ -2,7 +2,7 @@ Title: Die halbe Acht
 
 ----
 
-Recurrence: weekly
+Recurrence: none
 
 ----
 
@@ -10,7 +10,7 @@ Recurrenceday: tuesday
 
 ----
 
-Date: 2004-06-24
+Date: 2024-06-24
 
 ----
 
@@ -32,6 +32,10 @@ Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de
 
 In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur.
 Vor Ort können Fahrradprojekte begutachtet werden.
+
+----
+
+Canceleddates: 
 
 ----
 

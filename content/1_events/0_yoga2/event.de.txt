@@ -1,0 +1,64 @@
+Title: Yoga2
+
+----
+
+Recurrence: weekly
+
+----
+
+Weekofmonth: 1, 3
+
+----
+
+Recurrencedays: SA, SU
+
+----
+
+Isbiweekly: false
+
+----
+
+Until: 3
+
+----
+
+Date: 
+
+----
+
+Startdate: 2024-01-01
+
+----
+
+Admissiontime: 
+
+----
+
+Starttime: 12:00:00
+
+----
+
+Text: 
+
+----
+
+Canceleddates:
+
+- 
+  date: 2024-07-01
+
+----
+
+Category: concert
+
+----
+
+Isfeatured: false
+
+----
+
+Biweekly: false
+
+----
+
+Uuid: LDnjtfShWElnyxEw
