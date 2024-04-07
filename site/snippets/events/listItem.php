@@ -21,19 +21,6 @@
   $showDivider = $showDivider ?? false;
 ?>
 
-<?php 
-
-// $tags = $page->siblings()->pluck('tags', ',', true);
-// $tags = $event->siblings()->pluck('title');
-// print_r($tags);
-// print_r('<br>');
-$siblings = $event->siblings()->pluck('category2', ',', true);
-foreach($siblings as $sibling) {
-echo '<pre>' . $sibling . '</pre>';
-}
-?>
-
-
 <article class="py-10">
   <a href="<?= $eventUrl ?>" class="flex flex-col sm:flex-row gap-10">
     <?php if ($showImage): ?>
