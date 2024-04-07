@@ -1,5 +1,5 @@
 <?php
-  return function ($page) {
+  return function ($site, $page) {
     $rows = 1000; // TODO: implement pagination
     $groupByMonth = $groupByMonth ?? false;
     $showPastEvents = get('showPastEvents', false);
@@ -18,9 +18,17 @@
         }
         return $child->date()->toDate('YYYY-MM-dd') >= $today;
       })
+      ->filterBy('recurrence', 'none')
       ->sortBy('date', $showPastEvents ? 'desc' : 'asc')
       ->limit($rows);
 
+      $virtualEvents = $site->generateRecurringEvents($page);  
+      foreach ($virtualEvents as $event) {
+        $events->add($event);
+      }
+
+      $events = $events->sortBy('date', $showPastEvents ? 'desc' : 'asc');
+      
     $dateStrings = [];
     foreach ($events as $event) {
       $dateString = $event->date()->toDate('Y-MM');

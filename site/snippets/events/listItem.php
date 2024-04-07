@@ -1,5 +1,11 @@
 <?php
-  $eventUrl = $event->url();
+  // $eventUrl = $event->url();
+  if(method_exists($event, 'isRecurring') && $event->isRecurring()) {
+    $eventUrl = $event->parent()->url(); // For virtual events, link to the parent
+  } else {
+    $eventUrl = $event->url(); 
+  }
+
   $isValid = $event->files()->valid();
   $placeholderUrl = $site->placeholderImage()->toFile()->url();
   if ($isValid) {
@@ -14,6 +20,19 @@
   $showImage = $showImage ?? true;
   $showDivider = $showDivider ?? false;
 ?>
+
+<?php 
+
+// $tags = $page->siblings()->pluck('tags', ',', true);
+// $tags = $event->siblings()->pluck('title');
+// print_r($tags);
+// print_r('<br>');
+$siblings = $event->siblings()->pluck('category2', ',', true);
+foreach($siblings as $sibling) {
+echo '<pre>' . $sibling . '</pre>';
+}
+?>
+
 
 <article class="py-10">
   <a href="<?= $eventUrl ?>" class="flex flex-col sm:flex-row gap-10">
@@ -33,6 +52,11 @@
         <p><?= t('event.admissionTime') . ': ' . $event->admissionTime()->toDate('HH:mm') ?></p>
       <?php endif ?>
       <p><?= t('event.startTime') . ': ' . $event->starttime()->toDate('HH:mm') ?></p>
+      <?php if (method_exists($event, 'isCanceled') &&  $event->isCanceled()): ?>
+        <div class="bg-red-500 p-1 mt-3 text-black inline-block">
+          fällt aus
+        </div>
+      <?php endif; ?>      
       <!-- <p><?= $event->text()->excerpt(100) ?></p> -->
     </div>    
   </a>

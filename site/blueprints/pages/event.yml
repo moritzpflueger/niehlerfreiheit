@@ -2,7 +2,10 @@ title: Event
 num: '{{ page.date.toDate("YMMdd") }}'
 create: 
   fields: 
+    - recurrence
+    - recurrenceDays
     - date
+    - startdate
     - admissiontime
     - starttime
     - category
@@ -16,14 +19,88 @@ columns:
           title:
             type: text
             translate: true
+          recurrence:
+            label: Recurrence
+            type: select
+            translate: false
+            default: none
+            options:
+              none: None
+              weekly: Weekly
+              monthly: Monthly
+          weekOfMonth:
+            label: Week of Month
+            type: checkboxes
+            translate: false
+            required: true
+            default: '1'
+            when: 
+              recurrence: 'monthly'
+            options:
+              - value: '1'
+                text: First
+              - value: '2'
+                text: Second
+              - value: '3'
+                text: Third
+              - value: '4'
+                text: Fourth
+              - value: '5'
+                text: Fifth
+          recurrenceDays:
+            label: Recurrence Days
+            type: checkboxes
+            translate: false
+            required: true
+            default: monday
+            whenQuery: recurrence != 'none'
+            options:
+              - value: MO
+                text: Monday
+              - value: TU
+                text: Tuesday
+              - value: WE
+                text: Wednesday
+              - value: TH
+                text: Thursday
+              - value: FR
+                text: Friday
+              - value: SA
+                text: Saturday
+              - value: SU
+                text: Sunday
+          isBiweekly:
+            label: Show every two weeks
+            type: toggle
+            translate: false
+            default: false
+            when: 
+              recurrence: 'weekly'   
+          until:
+            label: Populate until n months
+            type: number
+            translate: false
+            required: true
+            default: 3
+            whenQuery: recurrence != 'none'
           date:
+            label: Date
             type: date
             translate: false
             required: true
+            when: 
+              recurrence: 'none'
+          startdate:
+            label: Start Date of Event Series
+            type: date
+            translate: false
+            required: true
+            whenQuery: recurrence != 'none'
           admissiontime:
             label: Admission Time
             type: time
             translate: false
+            help: optional
           starttime:
             label: Start Time
             type: time
@@ -39,23 +116,33 @@ columns:
         type: files
         layout: cards
         size: small
-        max: 1  # Limiting to one image upload
+        max: 1  # Limiting to one image upload    
       settings:
         type: fields
         fields:
+          canceledDates:
+            label: Canceled Dates
+            type: structure
+            whenQuery: recurrence != 'none'
+            fields:
+              date:
+                label: Date
+                type: date  
+          eventCategories:
+            label: Event Categories
+            type: structure
+            fields:
+              name:
+                label: Category Name
+                type: text                  
           category: 
             label: Category
-            type: select
+            type: tags
+            max: 1
             translate: false
-            default: talk
             required: true
-            options:
-              concert: Concert
-              workshop: Workshop
-              exhibition: Exhibition
-              talk: Talk
-              cinema: Cinema
-              theatre: Theatre
+            options: query
+            query: page.siblings.pluck("categoryTest", ",", true)
           isFeatured:
             label: Highlight Event
             help: If checked, this event will displayed as a highlight on the landing page.
