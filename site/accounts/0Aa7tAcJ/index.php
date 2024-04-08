@@ -3,6 +3,6 @@
 return [
     'email' => 'moritzpflueger+kirbylocal@googlemail.com',
     'language' => 'en',
-    'name' => '',
+    'name' => 'Moritz',
     'role' => 'admin'
 ];
