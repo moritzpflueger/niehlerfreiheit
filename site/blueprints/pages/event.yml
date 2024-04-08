@@ -127,14 +127,7 @@ columns:
             fields:
               date:
                 label: Date
-                type: date  
-          eventCategories:
-            label: Event Categories
-            type: structure
-            fields:
-              name:
-                label: Category Name
-                type: text                  
+                type: date              
           category: 
             label: Category
             type: tags
