@@ -5,7 +5,7 @@
     ->children()
     ->listed()
     ->filterBy('date', '>=', date('Y-m-d'))
-    ->filterBy('isFeatured', '==', 'true')
+    ->filterBy('recurrence', '==', 'none')
     ->first()
 ?>
 

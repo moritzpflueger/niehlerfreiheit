@@ -136,9 +136,3 @@ columns:
             required: true
             options: query
             query: page.siblings.pluck("categoryTest", ",", true)
-          isFeatured:
-            label: Highlight Event
-            help: If checked, this event will displayed as a highlight on the landing page.
-            type: toggle
-            translate: false
-            default: false        
