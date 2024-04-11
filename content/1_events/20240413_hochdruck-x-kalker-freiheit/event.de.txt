@@ -6,7 +6,15 @@ Recurrence: none
 
 ----
 
-Recurrenceday: 
+Weekofmonth: 
+
+----
+
+Recurrencedays: MO
+
+----
+
+Until: 3
 
 ----
 
@@ -14,11 +22,15 @@ Date: 2024-04-13
 
 ----
 
-Admissiontime: 
+Startdate: 2024-05-01
 
 ----
 
 Starttime: 23:00:00
+
+----
+
+Admissiontime: 
 
 ----
 
@@ -37,7 +49,23 @@ HOCHDRUCK ist der Versuch zwischen den Zeilen der öffentlichen Aufruhe zu lese
 
 ----
 
+Iscanceled: true
+
+----
+
+Canceleddates: 
+
+----
+
 Category: theatre
+
+----
+
+Isbiweekly: false
+
+----
+
+Recurrenceday: 
 
 ----
 

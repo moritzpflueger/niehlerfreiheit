@@ -2,11 +2,19 @@ Title: Mutzu Session
 
 ----
 
-Recurrence: none
+Recurrence: monthly
 
 ----
 
-Recurrenceday: sunday
+Weekofmonth: 2
+
+----
+
+Recurrencedays: SU
+
+----
+
+Until: 3
 
 ----
 
@@ -14,11 +22,15 @@ Date: 2024-12-20
 
 ----
 
-Admissiontime: 
+Startdate: 2024-04-01
 
 ----
 
 Starttime: 18:00:00
+
+----
+
+Admissiontime: 
 
 ----
 
@@ -31,11 +43,23 @@ Bei Fragen meldet euch gern bei uns per E-Mail an die hello@niehlerfreiheit.de
 
 ----
 
+Iscanceled: false
+
+----
+
 Canceleddates: 
 
 ----
 
-Category: workshop
+Category: Jam Session
+
+----
+
+Isbiweekly: false
+
+----
+
+Recurrenceday: sunday
 
 ----
 

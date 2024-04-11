@@ -2,11 +2,19 @@ Title: Die halbe Acht
 
 ----
 
-Recurrence: none
+Recurrence: weekly
 
 ----
 
-Recurrenceday: tuesday
+Weekofmonth: 
+
+----
+
+Recurrencedays: FR
+
+----
+
+Until: 6
 
 ----
 
@@ -14,11 +22,15 @@ Date: 2024-06-24
 
 ----
 
-Admissiontime: 18:00:00
+Startdate: 2024-04-12
 
 ----
 
 Starttime: 18:30:00
+
+----
+
+Admissiontime: 18:00:00
 
 ----
 
@@ -35,11 +47,23 @@ Vor Ort können Fahrradprojekte begutachtet werden.
 
 ----
 
+Iscanceled: false
+
+----
+
 Canceleddates: 
 
 ----
 
-Category: workshop
+Category: Fahrradwerkstatt
+
+----
+
+Isbiweekly: false
+
+----
+
+Recurrenceday: tuesday
 
 ----
 

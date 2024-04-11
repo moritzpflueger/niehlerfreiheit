@@ -1,0 +1,85 @@
+Title: Yoga - Traditionell und Dynamisch
+
+----
+
+Recurrence: weekly
+
+----
+
+Weekofmonth: 1
+
+----
+
+Recurrencedays: SU
+
+----
+
+Until: 3
+
+----
+
+Date: 
+
+----
+
+Startdate: 2024-04-01
+
+----
+
+Starttime: 18:00:00
+
+----
+
+Admissiontime: 
+
+----
+
+Text:
+
+Wir laden euch herzlich zu einer faszinierenden Yoga-Reise ein! Unser Kurs basiert auf dem traditionellen Ashtanga Yoga und ist für alle Levels geeignet. Wir praktizieren nicht nur Körperstellungen (Asanas), sondern entdecken auch Atemübungen (Pranayama) und die Essenz des Ashtanga Yoga. Die positiven Effekte auf Körper und Geist werden spürbar sein. Ashtanga Yoga ist dynamisch, betont fließende Bewegungen (Vinyasas) und verbindet sie mit dem Atem. Wir lenken den Fokus nach innen, achten auf unseren Körper und passen die Praxis individuell an.
+Karina ist ausgebildete Ashtanga-Yogalehrerin und brennt dafür, ihre Leidenschaft mit euch zu teilen.
+Wenn ihr ab März/April dabei sein möchtet, freuen wir uns über eure Anmeldung unter folgender E-Mail-Adresse: yogafreiheit@gmx.de
+
+----
+
+Iscanceled: false
+
+----
+
+Canceleddates:
+
+- 
+  date: 2024-04-14
+- 
+  date: 2024-04-28
+
+----
+
+Category: Yoga
+
+----
+
+Isbiweekly: false
+
+----
+
+Eventcategories:
+
+- 
+  name: Yoga
+
+----
+
+Isfeatured: false
+
+----
+
+Categorytest: Papagei
+
+----
+
+Category2: Yoga
+
+----
+
+Uuid: IqTfU0Ks0goqhKXp

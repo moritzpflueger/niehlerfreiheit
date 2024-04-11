@@ -1,0 +1,57 @@
+Title: Offenes Plenum
+
+----
+
+Recurrence: monthly
+
+----
+
+Weekofmonth: 1
+
+----
+
+Recurrencedays: FR
+
+----
+
+Until: 3
+
+----
+
+Date: 
+
+----
+
+Startdate: 2024-04-01
+
+----
+
+Starttime: 20:00:00
+
+----
+
+Admissiontime: 
+
+----
+
+Text: 
+
+----
+
+Iscanceled: false
+
+----
+
+Canceleddates: 
+
+----
+
+Category: Plenum
+
+----
+
+Isbiweekly: false
+
+----
+
+Uuid: 5Z34aOqjTpshWzxw

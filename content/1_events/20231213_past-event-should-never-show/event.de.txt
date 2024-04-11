@@ -2,7 +2,7 @@ Title: Past Event (should never show)
 
 ----
 
-Recurrence: weekly
+Recurrence: none
 
 ----
 
@@ -11,10 +11,6 @@ Weekofmonth:
 ----
 
 Recurrencedays: MO
-
-----
-
-Isbiweekly: false
 
 ----
 
@@ -30,11 +26,11 @@ Startdate: 2021-03-14
 
 ----
 
-Admissiontime: 19:00:00
+Starttime: 20:00:00
 
 ----
 
-Starttime: 20:00:00
+Admissiontime: 19:00:00
 
 ----
 
@@ -42,7 +38,19 @@ Text: This should never show up on the website. Only in past events section.
 
 ----
 
+Iscanceled: false
+
+----
+
 Canceleddates: 
+
+----
+
+Category: workshop
+
+----
+
+Isbiweekly: false
 
 ----
 
@@ -56,10 +64,6 @@ Eventcategories:
 ----
 
 Categorytest: Papagei
-
-----
-
-Category: workshop
 
 ----
 

@@ -1,0 +1,13 @@
+Title: Verein
+
+----
+
+Blocks: [{"content":{"text":"<p><strong>Über uns</strong></p><p><strong>Entdecke, wer wir sind:</strong> Hinter Niehler Freiheit verbirgt sich eine Gemeinschaft aus Kreativen, Machern und Visionären. Wir sind mehr als nur ein Ort – wir sind eine Bewegung, die Kultur lebt und fördert.</p><p><strong>Mission</strong></p><p><strong>Unsere Mission – Deine Bühne:</strong> Wir setzen uns dafür ein, kulturelle Vielfalt zugänglich zu machen und Räume für kreativen Ausdruck zu schaffen. Bei uns steht die Gemeinschaft im Mittelpunkt, denn gemeinsam können wir Berge versetzen.</p><p><strong>Geschichte</strong></p><p><strong>Von der Idee zur Institution:</strong> Unsere Geschichte begann mit einer einfachen Vision – Raum für Kultur im Herzen von Köln zu schaffen. Schritt für Schritt haben wir diesen Traum verwirklicht. Erfahre mehr über unseren Weg und die Meilensteine, die uns zu dem gemacht haben, was wir heute sind.</p><p><strong>Team</strong></p><p><strong>Triff unser Team – Werde Teil davon:</strong> Hinter jedem Event, jeder Werkstatt und jedem gelungenen Abend bei Niehler Freiheit steht unser engagiertes Team. Lerne die Gesichter hinter der Magie kennen und finde heraus, wie auch du ein Teil dieser wunderbaren Gemeinschaft werden kannst.</p><p><strong>Open Plenum</strong></p><p><strong>Einmal im Monat öffnen wir unsere Türen für alle:</strong> Beim Open Plenum habt ihr die Chance, hinter die Kulissen von Niehler Freiheit zu blicken. Diskutiert mit, bringt eigene Ideen ein oder lernt einfach nur die Community besser kennen. Wir freuen uns auf eure Perspektiven und darauf, gemeinsam etwas zu bewegen.</p>"},"id":"affa79e2-72a1-4678-8db9-1fc50d4f0c06","isHidden":false,"type":"text"}]
+
+----
+
+Showinmenu: true
+
+----
+
+Uuid: CUZgqxdZFbZCMtbi
