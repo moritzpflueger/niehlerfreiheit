@@ -15,40 +15,48 @@
     <!-- Add your CSS and JavaScript files here -->
     <link href="/assets/css/styles.css" rel="stylesheet">  </head>
   <body>
-    <header class="py-5 md:py-10 sm:px-5">
-      <nav class="flex items-center justify-between">
-        <a href="/en">
+    <header class="max-w-4xl w-full mx-auto py-5 md:py-10">
+      <nav class="flex items-start justify-between">
+        <a href="/de">
           <img 
-            src="/media/site/17a1e4baf0-1710162305/test-logo3.png" alt="" 
-            class="h-8"
+            src="/media/site/a2266a6141-1712581423/nf-logo-v4.png" alt="" 
+            class="h-20"
           >
         </a>
         <button id="menu-button" class="text-white hover:text-yellow-500">
           <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor">
-            <line x1="2" y1="9" x2="22" y2="9" strokeLinecap="round" strokeLinejoin="round" />
-            <line x1="10" y1="15" x2="22" y2="15" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>          
+  <line x1="2" y1="9" x2="22" y2="9" strokeLinecap="round" strokeLinejoin="round" />
+  <line x1="10" y1="15" x2="22" y2="15" strokeLinecap="round" strokeLinejoin="round" />
+</svg>          
         </button>
         <div id="menuModal" class="modal">
   <div class="modal-content p-5 overflow-y-auto">
     <span class="close-button hover:text-yellow-500">
-      <span class="font-semibold lowercase text-xl">Close</span>
+      <span class="font-semibold lowercase text-xl">Schließen</span>
       <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
       </svg>
     </span>
     <ul class="flex flex-col text-3xl sm:text-5xl uppercase items-center gap-10 p-10">
               <li class="hover:text-yellow-500">
-          <a href="/en/events" class="">
-            Schedule          </a>
+          <a href="/de/events" class="">
+            Programm          </a>
         </li>
               <li class="hover:text-yellow-500">
-          <a href="/en/der-verein" class="text-yellow-500">
-            About Us          </a>
+          <a href="/de/regelmaessige-termine" class="">
+            Regelmäßige Termine          </a>
         </li>
               <li class="hover:text-yellow-500">
-          <a href="/en/mitmachen" class="">
-            Mitmachen          </a>
+          <a href="/de/verein" class="">
+            Verein          </a>
+        </li>
+              <li class="hover:text-yellow-500">
+          <a href="/de/mitmachen-unterstuetzen" class="">
+            Mitmachen & Unterstützen          </a>
+        </li>
+              <li class="hover:text-yellow-500">
+          <a href="/de/unsere-raeumlichkeiten" class="">
+            Unsere Räumlichkeiten          </a>
         </li>
           </ul>
     <div class="absolute bottom-10 text-2xl flex gap-5">
@@ -66,11 +74,11 @@
 </svg>      </a>
     </li>
   </ul>      <ul class="flex gap-3 items-center">
-      <li  >
+      <li  class="text-yellow-500" >
       <a class="uppercase font-semibold hover:text-yellow-500" href="/de" hreflang="de">
         de      </a>
     </li>
-      <li  class="text-yellow-500" >
+      <li  >
       <a class="uppercase font-semibold hover:text-yellow-500" href="/en" hreflang="en">
         en      </a>
     </li>
@@ -110,13 +118,22 @@ window.onclick = function(event) {
 }
 </script>
       </nav>
-    </header>  <main class="max-w-4xl mx-auto">
-    <h1 class="text-5xl sm:text-6xl">About Us</h1>
-    <div class="blocks">
-              <div class="block" data-type="text">
-          <p>Über uns / Der Verein Page</p>        </div>
-          </div>
-  </main>
+    </header>  <section class="mb-32">
+    <article class="">
+              <img 
+          src="/media/pages/events/test123123/5cd088c43f-1712318753/serious-conversation-illustar.jpg" 
+          alt="" 
+          class="mb-10 w-full"
+        >
+            <div class="my-10">
+        <p class="uppercase sm:text-2xl mb-5 inline-flex">
+          Do. 03 Oktober        </p>
+        <h2 class="text-4xl sm:text-6xl uppercase font-bold tracking-tight">TEst</h2>
+      </div>
+      <div class="kirbytext">
+              </div>
+    </article>
+  </section>
     <footer class="flex flex-col items-center p-10 text-neutral-400">
       <div class="text-2xl flex gap-5">
         <ul class="flex gap-3">
@@ -133,11 +150,11 @@ window.onclick = function(event) {
 </svg>      </a>
     </li>
   </ul>        <ul class="flex gap-3 items-center">
-      <li  >
+      <li  class="text-yellow-500" >
       <a class="uppercase font-semibold hover:text-yellow-500" href="/de" hreflang="de">
         de      </a>
     </li>
-      <li  class="text-yellow-500" >
+      <li  >
       <a class="uppercase font-semibold hover:text-yellow-500" href="/en" hreflang="en">
         en      </a>
     </li>
@@ -147,72 +164,68 @@ window.onclick = function(event) {
         <li class="">
           <ul>
                           <li class="hover:text-yellow-500">
-                <a href="/en/events">
-                  Schedule                </a>
+                <a href="/de/events">
+                  Programm                </a>
               </li>
                           <li class="hover:text-yellow-500">
-                <a href="/en/events?showPastEvents=true">
+                <a href="/de/events?showPastEvents=true">
                   Archiv                </a>
               </li>
                           <li class="hover:text-yellow-500">
-                <a href="/en/posts">
+                <a href="/de/posts">
                   Posts                </a>
               </li>
                           <li class="hover:text-yellow-500">
-                <a href="/en/impressum">
-                  Impressum                </a>
-              </li>
-                          <li class="hover:text-yellow-500">
-                <a href="/en/der-verein">
-                  About Us                </a>
+                <a href="/de/verein">
+                  Verein                </a>
               </li>
                       </ul>
         </li>
         <li class="">
           <ul>
             <li>
-              <a href="/en/contact">Unterstützen</a>
+              <a href="/de/contact">Unterstützen</a>
             </li>
             <li>
-              <a href="/en/contact">Unterstützen</a>
+              <a href="/de/contact">Unterstützen</a>
             </li>
             <li>
-              <a href="/en/contact">Unterstützen</a>
+              <a href="/de/contact">Unterstützen</a>
             </li>
             <li>
-              <a href="/en/contact">Unterstützeeeeen</a>
+              <a href="/de/contact">Unterstützeeeeen</a>
             </li>
             <li>
-              <a href="/en/contact">Unterstützen</a>
+              <a href="/de/contact">Unterstützen</a>
             </li>
           </ul>
         </li>
         <li class="">
           <ul>
                         <li>
-              <a href="/en/posts/unleashing-creativity-and-building-community-the-journey-of-a-cultural-association">Unleashing Creativity and Building …</a>
+              <a href="/de/posts/freiheit-in-5-minuten-ein-ort-erklaert-sich-selbst">Freiheit in 5 Minuten - ein Ort …</a>
             </li>
                         <li>
-              <a href="/en/posts/my-second-post">My second Post</a>
+              <a href="/de/posts/my-second-post">Mein zweiter Post</a>
             </li>
                         <li>
-              <a href="/en/posts/mein-dritter-post">Mein dritter Post</a>
+              <a href="/de/posts/mein-dritter-post">Mein dritter Post</a>
             </li>
                         <li>
-              <a href="/en/posts/mein-vierter-post-ist-etwas-laenger">Mein vierter Post ist etwas länger</a>
+              <a href="/de/posts/mein-vierter-post-ist-etwas-laenger">Mein vierter Post ist etwas länger</a>
             </li>
                         <li>
-              <a href="/en/posts/mein-fuenfter-post-ist-anders">Mein fünfter Post ist anders</a>
+              <a href="/de/posts/mein-fuenfter-post-ist-anders">Mein fünfter Post ist anders</a>
             </li>
                       </ul>
         </li>
       </ul>
       <ul class="flex flex-col sm:flex-row sm:gap-10 w-full">
         <li>
-          <a href="/en/impressum">Impressum</a>
+          <a href="/de/impressum">Impressum</a>
         </li>
         <li>
-          <a href="/en/datenschutz">Datenschutzerklärung</a>
+          <a href="/de/datenschutz">Datenschutzerklärung</a>
         </li>        
         <li class="sm:ml-auto">
           &copy; 2024 Kalker Freiheit

@@ -15,19 +15,19 @@
     <!-- Add your CSS and JavaScript files here -->
     <link href="/assets/css/styles.css" rel="stylesheet">  </head>
   <body>
-    <header class="py-5 md:py-10 sm:px-5">
-      <nav class="flex items-center justify-between">
+    <header class="max-w-4xl w-full mx-auto py-5 md:py-10">
+      <nav class="flex items-start justify-between">
         <a href="/de">
           <img 
-            src="/media/site/17a1e4baf0-1710162305/test-logo3.png" alt="" 
-            class="h-8"
+            src="/media/site/a2266a6141-1712581423/nf-logo-v4.png" alt="" 
+            class="h-20"
           >
         </a>
         <button id="menu-button" class="text-white hover:text-yellow-500">
           <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor">
-            <line x1="2" y1="9" x2="22" y2="9" strokeLinecap="round" strokeLinejoin="round" />
-            <line x1="10" y1="15" x2="22" y2="15" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>          
+  <line x1="2" y1="9" x2="22" y2="9" strokeLinecap="round" strokeLinejoin="round" />
+  <line x1="10" y1="15" x2="22" y2="15" strokeLinecap="round" strokeLinejoin="round" />
+</svg>          
         </button>
         <div id="menuModal" class="modal">
   <div class="modal-content p-5 overflow-y-auto">
@@ -43,12 +43,20 @@
             Programm          </a>
         </li>
               <li class="hover:text-yellow-500">
-          <a href="/de/der-verein" class="">
-            Der Verein          </a>
+          <a href="/de/regelmaessige-termine" class="">
+            Regelmäßige Termine          </a>
         </li>
               <li class="hover:text-yellow-500">
-          <a href="/de/mitmachen" class="">
-            Mitmachen          </a>
+          <a href="/de/verein" class="">
+            Verein          </a>
+        </li>
+              <li class="hover:text-yellow-500">
+          <a href="/de/mitmachen-unterstuetzen" class="">
+            Mitmachen & Unterstützen          </a>
+        </li>
+              <li class="hover:text-yellow-500">
+          <a href="/de/unsere-raeumlichkeiten" class="">
+            Unsere Räumlichkeiten          </a>
         </li>
           </ul>
     <div class="absolute bottom-10 text-2xl flex gap-5">
@@ -111,83 +119,217 @@ window.onclick = function(event) {
 </script>
       </nav>
     </header>
-<section class="my-32 max-w-4xl mx-auto">
+<section class="sm:my-32 max-w-4xl mx-auto">
   <h1>Programm</h1>
+  
+  
 
+<nav class="">
+  <div class="flex items-center justify-between text-base sm:text-lg">
+    <button 
+      id="clearFilters" 
+      class="text-neutral-200 uppercase"
+    >
+      clear all
+      <span class=" text-neutral-500">
+        (0)
+      </span>
+    </button>
+    <button 
+      id="toggleFilters" 
+      class="ml-auto text-neutral-200 uppercase px-2 py-1 flex items-center"
+    >
+      <span class="w-6 mr-3"><svg class="" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor">
+  <line x1="0" y1="6" x2="24" y2="6" strokeLinecap="round" strokeLinejoin="round" />
+  <line x1="4" y1="12" x2="20" y2="12" strokeLinecap="round" strokeLinejoin="round" />
+  <line x1="8" y1="18" x2="16" y2="18" strokeLinecap="round" strokeLinejoin="round" />
+</svg></span>
+      <span id="buttonText">show filters ‣</span>
+    </button>    
+  </div>
+  <div id="filters" class="hidden">
+    <div class="py-5">
+      Veranstaltungen
+    </div>    
+          <a 
+        href="/de/events?filterBy=&category=theatre" 
+        class="border-lime-600 text-lime-600  border inline-flex px-2 py-1 mb-2 whitespace-nowrap uppercase"
+      >
+        theatre      </a>       
+          <a 
+        href="/de/events?filterBy=&category=exhibition" 
+        class="border-lime-600 text-lime-600  border inline-flex px-2 py-1 mb-2 whitespace-nowrap uppercase"
+      >
+        exhibition      </a>       
+          <a 
+        href="/de/events?filterBy=&category=concert" 
+        class="border-lime-600 text-lime-600  border inline-flex px-2 py-1 mb-2 whitespace-nowrap uppercase"
+      >
+        concert      </a>       
+          <a 
+        href="/de/events?filterBy=&category=workshop" 
+        class="border-lime-600 text-lime-600  border inline-flex px-2 py-1 mb-2 whitespace-nowrap uppercase"
+      >
+        workshop      </a>       
+          <a 
+        href="/de/events?filterBy=&category=talk" 
+        class="border-lime-600 text-lime-600  border inline-flex px-2 py-1 mb-2 whitespace-nowrap uppercase"
+      >
+        talk      </a>       
+          <a 
+        href="/de/events?filterBy=&category=cinema" 
+        class="border-lime-600 text-lime-600  border inline-flex px-2 py-1 mb-2 whitespace-nowrap uppercase"
+      >
+        cinema      </a>       
     
-<nav class="mb-20">
-  <a 
-    href="/de/events" 
-    class="bg-yellow-500 text-black inline-block p-2 mb-2 whitespace-nowrap"
-  >
-    Alle Events
-  </a>
-            <div class="py-5">
+    <div class="py-5">
+      Regelmäßige Termine
+    </div>    
+          <a 
+        href="/de/events?filterBy=&category=plenum" 
+        class="border-cyan-500 text-cyan-500  border inline-flex px-2 py-1 mb-2 whitespace-nowrap uppercase"
+      >
+        plenum      </a>       
+          <a 
+        href="/de/events?filterBy=&category=yoga" 
+        class="border-cyan-500 text-cyan-500  border inline-flex px-2 py-1 mb-2 whitespace-nowrap uppercase"
+      >
+        yoga      </a>       
+          <a 
+        href="/de/events?filterBy=&category=fahrradwerkstatt" 
+        class="border-cyan-500 text-cyan-500  border inline-flex px-2 py-1 mb-2 whitespace-nowrap uppercase"
+      >
+        fahrradwerkstatt      </a>       
+          <a 
+        href="/de/events?filterBy=&category=jam+session" 
+        class="border-cyan-500 text-cyan-500  border inline-flex px-2 py-1 mb-2 whitespace-nowrap uppercase"
+      >
+        jam session      </a>       
+    
+          <div class="py-5">
         2024      </div>        
-                    <a 
-        href="/de/events?filterBy=2024-04" 
-        class="bg-neutral-800 text-neutral-300  inline-flex p-2 mb-2 whitespace-nowrap"
-      >
-        April      </a>        
-                <a 
-        href="/de/events?filterBy=2024-05" 
-        class="bg-neutral-800 text-neutral-300  inline-flex p-2 mb-2 whitespace-nowrap"
-      >
-        Mai      </a>        
-                <a 
-        href="/de/events?filterBy=2024-06" 
-        class="bg-neutral-800 text-neutral-300  inline-flex p-2 mb-2 whitespace-nowrap"
-      >
-        Juni      </a>        
-                <a 
-        href="/de/events?filterBy=2024-07" 
-        class="bg-neutral-800 text-neutral-300  inline-flex p-2 mb-2 whitespace-nowrap"
-      >
-        Juli      </a>        
-                <a 
-        href="/de/events?filterBy=2024-08" 
-        class="bg-neutral-800 text-neutral-300  inline-flex p-2 mb-2 whitespace-nowrap"
-      >
-        August      </a>        
-                <a 
-        href="/de/events?filterBy=2024-09" 
-        class="bg-neutral-800 text-neutral-300  inline-flex p-2 mb-2 whitespace-nowrap"
-      >
-        September      </a>        
-            
-            <div class="py-5">
+                      <a 
+          href="/de/events?filterBy=2024-04&category=" 
+          class="bg-neutral-800 text-neutral-300  inline-flex p-2 mb-2 whitespace-nowrap"
+        >
+          April        </a>        
+                      <a 
+          href="/de/events?filterBy=2024-05&category=" 
+          class="bg-neutral-800 text-neutral-300  inline-flex p-2 mb-2 whitespace-nowrap"
+        >
+          Mai        </a>        
+                      <a 
+          href="/de/events?filterBy=2024-06&category=" 
+          class="bg-neutral-800 text-neutral-300  inline-flex p-2 mb-2 whitespace-nowrap"
+        >
+          Juni        </a>        
+                      <a 
+          href="/de/events?filterBy=2024-07&category=" 
+          class="bg-neutral-800 text-neutral-300  inline-flex p-2 mb-2 whitespace-nowrap"
+        >
+          Juli        </a>        
+                      <a 
+          href="/de/events?filterBy=2024-08&category=" 
+          class="bg-neutral-800 text-neutral-300  inline-flex p-2 mb-2 whitespace-nowrap"
+        >
+          August        </a>        
+                      <a 
+          href="/de/events?filterBy=2024-09&category=" 
+          class="bg-neutral-800 text-neutral-300  inline-flex p-2 mb-2 whitespace-nowrap"
+        >
+          September        </a>        
+                      <a 
+          href="/de/events?filterBy=2024-10&category=" 
+          class="bg-neutral-800 text-neutral-300  inline-flex p-2 mb-2 whitespace-nowrap"
+        >
+          Oktober        </a>        
+              
+          <div class="py-5">
         2025      </div>        
-                    <a 
-        href="/de/events?filterBy=2025-01" 
-        class="bg-neutral-800 text-neutral-300  inline-flex p-2 mb-2 whitespace-nowrap"
-      >
-        Januar      </a>        
-            
-   
+                      <a 
+          href="/de/events?filterBy=2025-05&category=" 
+          class="bg-neutral-800 text-neutral-300  inline-flex p-2 mb-2 whitespace-nowrap"
+        >
+          Mai        </a>        
+              
+         
+  </div>
+  <div class="my-10">
+          </div>
 </nav>
-      <h3 class="text-2xl mb-20 mt-32 first-of-type:mt-0 uppercase">
+
+<script>
+  document.getElementById('clearFilters').addEventListener('click', function() {
+    window.location.href = '/de/events';
+  });
+
+  document.getElementById('toggleFilters').addEventListener('click', function() {
+    document.getElementById('filters').classList.toggle('hidden');
+    const buttonText = document.getElementById('buttonText');
+    const isHidden = document.getElementById('filters').classList.contains('hidden');
+    
+    localStorage.setItem('filtersVisible', !isHidden ? 'true' : 'false');
+
+    updateButtonText();
+  });
+
+  // Call this function on page load to set the correct initial state and button text
+  document.addEventListener('DOMContentLoaded', function() {
+      const isFiltersVisible = localStorage.getItem('filtersVisible') === 'true';
+      if(isFiltersVisible) {
+          document.getElementById('filters').classList.remove('hidden');
+      } else {
+          document.getElementById('filters').classList.add('hidden');
+      }
+      updateButtonText();
+  });  
+
+  // Function to update the button text based on the filters' visibility
+  function updateButtonText() {
+      const isFiltersVisible = localStorage.getItem('filtersVisible') === 'true';
+      const buttonText = document.getElementById('buttonText');
+      buttonText.textContent = isFiltersVisible ? 'hide filters ▾' : 'show filters ‣';
+  }  
+</script>
+  
+      <h3 class="text-2xl mb-5 sm:mb-10 mt-16 first-of-type:mt-0 uppercase">
       april      <hr class="border-[#00538A] mt-5" />
     </h3>
 
+
               
-<article class="py-10">
-  <a href="/de/events/slowklahoma-annie-bleach" class="flex flex-col sm:flex-row gap-10">
-          <div class="sm:w-1/4">
-        <img src="/media/pages/events/slowklahoma-annie-bleach/315256897d-1710248449/capture-2024-03-12-135856.webp" alt="" />
-      </div>
-        <div class="flex-1">
-      <!-- <p class="sm:text-2xl uppercase mb-2 bg-white text-black inline-flex px-1">
-        Mi. 03 April      </p> -->
-      <p class="sm:text-2xl uppercase mb-2 inline-flex px-1">
-        Mi. 03 April      </p>
-      <h3>Slowklahoma &amp; Annie Bleach</h3>
-      <!-- <h2 class="text-3xl sm:text-4xl uppercase italic font-bold mb-3">Slowklahoma &amp; Annie Bleach</h2> -->
-      <p>Einlass: 19:00 Uhr</p>
-      <p>Abendkasse: 15 €</p>
-      <!-- <p>Einlass: 19:00 Uhr Ab 21:15 Uhr werden die Türen geschlossen um die Performance nicht zu stören. …</p> -->
-    </div>    
-  </a>
-</article>
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 12 April      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
 
 <!-- bg-[#00538A] -->
 
@@ -195,24 +337,41 @@ window.onclick = function(event) {
 
 
                 
-<article class="py-10">
-  <a href="/de/events/mutzu-session" class="flex flex-col sm:flex-row gap-10">
-          <div class="sm:w-1/4">
-        <img src="/media/pages/events/mutzu-session/d82a3bfb47-1710021602/screenshot-2024-03-09-at-22.59.40.png" alt="" />
-      </div>
-        <div class="flex-1">
-      <!-- <p class="sm:text-2xl uppercase mb-2 bg-white text-black inline-flex px-1">
-        Do. 04 April      </p> -->
-      <p class="sm:text-2xl uppercase mb-2 inline-flex px-1">
-        Do. 04 April      </p>
-      <h3>Mutzu Session</h3>
-      <!-- <h2 class="text-3xl sm:text-4xl uppercase italic font-bold mb-3">Mutzu Session</h2> -->
-      <p>Einlass: 19:00 Uhr</p>
-      <p>Abendkasse: 15 €</p>
-      <!-- <p>Die offene Jam Session in der Niehler Freiheit Jeden zweiten Sonntag im Monat Bei Fragen meldet …</p> -->
-    </div>    
-  </a>
-</article>
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/hochdruck-x-kalker-freiheit" class="">
+        <img class="rounded-sm" src="/media/pages/events/hochdruck-x-kalker-freiheit/8699a7717c-1710022549/unnamed-1.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-lime-600 border-lime-600">
+          theatre        </div>
+                  <div class="bg-red-500 border border-red-500 px-1 text-sm uppercase text-black inline-block">
+            abgesagt
+          </div>
+                 
+      </div>          
+      <h3 class="text-white">HOCHDRUCK x Kalker Freiheit</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Sa. 13 April      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 23:00</p>
+      <p class="text-neutral-400">
+        Ein politisches Theaterstück über Cancel Culture. Das Stück: Ein Sturm zieht auf und wütet über Felder und Systeme. Er wirbelt Fragen auf – solche nach Gerechtigkeit und Rechtfertigung, nach Recht und Unrecht, richtig und falsch. Darf man heute gar nichts mehr sagen, ohne im Regen stehen gelassen …        <a href="/de/events/hochdruck-x-kalker-freiheit" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
 
 <!-- bg-[#00538A] -->
 
@@ -220,24 +379,38 @@ window.onclick = function(event) {
 
 
                 
-<article class="py-10">
-  <a href="/de/events/super-soon-event" class="flex flex-col sm:flex-row gap-10">
-          <div class="sm:w-1/4">
-        <img src="/media/pages/events/super-soon-event/6ec7ad48d2-1710021338/eckstein_icon-v3.jpg" alt="" />
-      </div>
-        <div class="flex-1">
-      <!-- <p class="sm:text-2xl uppercase mb-2 bg-white text-black inline-flex px-1">
-        Sa. 06 April      </p> -->
-      <p class="sm:text-2xl uppercase mb-2 inline-flex px-1">
-        Sa. 06 April      </p>
-      <h3>Super soon event</h3>
-      <!-- <h2 class="text-3xl sm:text-4xl uppercase italic font-bold mb-3">Super soon event</h2> -->
-      <p>Einlass: 19:00 Uhr</p>
-      <p>Abendkasse: 15 €</p>
-      <!-- <p>Samstag, 23. März 2024 Einlass: 19:00 Beginn: 20:00 Niehler Freiheit und What's the Point laden ein …</p> -->
-    </div>    
-  </a>
-</article>
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/mutzu-session" class="">
+        <img class="rounded-sm" src="/media/pages/events/mutzu-session/7b33f760e3-1710021602/screenshot-2024-03-09-at-22.59.40.png" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Jam Session        </div>
+                 
+      </div>          
+      <h3 class="text-white">Mutzu Session</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        So. 14 April      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:00</p>
+      <p class="text-neutral-400">
+        Die offene Jam Session in der Niehler Freiheit Jeden zweiten Sonntag im Monat Bei Fragen meldet euch gern bei uns per E-Mail an die hello@niehlerfreiheit.de        <a href="/de/events/mutzu-session" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
 
 <!-- bg-[#00538A] -->
 
@@ -245,24 +418,41 @@ window.onclick = function(event) {
 
 
                 
-<article class="py-10">
-  <a href="/de/events/hochdruck-x-kalker-freiheit" class="flex flex-col sm:flex-row gap-10">
-          <div class="sm:w-1/4">
-        <img src="/media/pages/events/hochdruck-x-kalker-freiheit/8699a7717c-1710022549/unnamed-1.jpg" alt="" />
-      </div>
-        <div class="flex-1">
-      <!-- <p class="sm:text-2xl uppercase mb-2 bg-white text-black inline-flex px-1">
-        Sa. 13 April      </p> -->
-      <p class="sm:text-2xl uppercase mb-2 inline-flex px-1">
-        Sa. 13 April      </p>
-      <h3>HOCHDRUCK x Kalker Freiheit</h3>
-      <!-- <h2 class="text-3xl sm:text-4xl uppercase italic font-bold mb-3">HOCHDRUCK x Kalker Freiheit</h2> -->
-      <p>Einlass: 19:00 Uhr</p>
-      <p>Abendkasse: 15 €</p>
-      <!-- <p>Ein politisches Theaterstück über Cancel Culture. Das Stück: Ein Sturm zieht auf und wütet über …</p> -->
-    </div>    
-  </a>
-</article>
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/yoga-traditionell-und-dynamisch" class="">
+        <img class="rounded-sm" src="/media/pages/events/yoga-traditionell-und-dynamisch/94407a287b-1712828809/unnamed-7.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Yoga        </div>
+                  <div class="bg-red-500 border border-red-500 px-1 text-sm uppercase text-black inline-block">
+            abgesagt
+          </div>
+                 
+      </div>          
+      <h3 class="text-white">Yoga - Traditionell und Dynamisch</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        So. 14 April      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:00</p>
+      <p class="text-neutral-400">
+        Wir laden euch herzlich zu einer faszinierenden Yoga-Reise ein! Unser Kurs basiert auf dem traditionellen Ashtanga Yoga und ist für alle Levels geeignet. Wir praktizieren nicht nur Körperstellungen (Asanas), sondern entdecken auch Atemübungen (Pranayama) und die Essenz des Ashtanga Yoga. Die …        <a href="/de/events/yoga-traditionell-und-dynamisch" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
 
 <!-- bg-[#00538A] -->
 
@@ -270,24 +460,38 @@ window.onclick = function(event) {
 
 
                 
-<article class="py-10">
-  <a href="/de/events/test-my-event-dashboard" class="flex flex-col sm:flex-row gap-10">
-          <div class="sm:w-1/4">
-        <img src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
-      </div>
-        <div class="flex-1">
-      <!-- <p class="sm:text-2xl uppercase mb-2 bg-white text-black inline-flex px-1">
-        Mi. 17 April      </p> -->
-      <p class="sm:text-2xl uppercase mb-2 inline-flex px-1">
-        Mi. 17 April      </p>
-      <h3>Test my event Dashboard</h3>
-      <!-- <h2 class="text-3xl sm:text-4xl uppercase italic font-bold mb-3">Test my event Dashboard</h2> -->
-      <p>Einlass: 19:00 Uhr</p>
-      <p>Abendkasse: 15 €</p>
-      <!-- <p>Test</p> -->
-    </div>    
-  </a>
-</article>
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/test-my-event-dashboard" class="">
+        <img class="rounded-sm" src="/media/pages/events/test-my-event-dashboard/1ea45d1e52-1712579013/capture-2024-03-12-135304.webp" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-lime-600 border-lime-600">
+          exhibition        </div>
+                 
+      </div>          
+      <h3 class="text-white">Test my event Dashboard</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Mi. 17 April      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:00</p>
+      <p class="text-neutral-400">
+        Test        <a href="/de/events/test-my-event-dashboard" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
 
 <!-- bg-[#00538A] -->
 
@@ -295,24 +499,38 @@ window.onclick = function(event) {
 
 
                 
-<article class="py-10">
-  <a href="/de/events/berlin-orchester-besucht-die-kalker-freitheit-in-koeln-bickendorf" class="flex flex-col sm:flex-row gap-10">
-          <div class="sm:w-1/4">
-        <img src="/media/pages/events/berlin-orchester-besucht-die-kalker-freitheit-in-koeln-bickendorf/f92caf5dfd-1710163039/screenshot-2023-11-17-at-16.38.12.png" alt="" />
-      </div>
-        <div class="flex-1">
-      <!-- <p class="sm:text-2xl uppercase mb-2 bg-white text-black inline-flex px-1">
-        Fr. 19 April      </p> -->
-      <p class="sm:text-2xl uppercase mb-2 inline-flex px-1">
-        Fr. 19 April      </p>
-      <h3>Berlin Orchester besucht die Kalker Freitheit in K&ouml;ln Bickendorf</h3>
-      <!-- <h2 class="text-3xl sm:text-4xl uppercase italic font-bold mb-3">Berlin Orchester besucht die Kalker Freitheit in K&ouml;ln Bickendorf</h2> -->
-      <p>Einlass: 19:00 Uhr</p>
-      <p>Abendkasse: 15 €</p>
-      <!-- <p>Das Sinfonieorchester (alternative Schreibweise: Symphonieorchester) bildete sich in der Mitte des …</p> -->
-    </div>    
-  </a>
-</article>
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/berlin-orchester-besucht-die-kalker-freitheit-in-koeln-bickendorf" class="">
+        <img class="rounded-sm" src="/media/pages/events/berlin-orchester-besucht-die-kalker-freitheit-in-koeln-bickendorf/f92caf5dfd-1710163039/screenshot-2023-11-17-at-16.38.12.png" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-lime-600 border-lime-600">
+          concert        </div>
+                 
+      </div>          
+      <h3 class="text-white">Berlin Orchester besucht die Kalker Freitheit in K&ouml;ln Bickendorf</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 19 April      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 20:00</p>
+      <p class="text-neutral-400">
+        Das Sinfonieorchester (alternative Schreibweise: Symphonieorchester) bildete sich in der Mitte des 18. Jahrhunderts aus, unter anderem durch die Mannheimer Schule. Es ist heute der übliche Klangkörper zur Wiedergabe von Orchesterwerken.        <a href="/de/events/berlin-orchester-besucht-die-kalker-freitheit-in-koeln-bickendorf" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
 
 <!-- bg-[#00538A] -->
 
@@ -320,24 +538,38 @@ window.onclick = function(event) {
 
 
                 
-<article class="py-10">
-  <a href="/de/events/forro-tanzen" class="flex flex-col sm:flex-row gap-10">
-          <div class="sm:w-1/4">
-        <img src="/media/pages/events/forro-tanzen/75c8c57810-1710021384/serious-conversation-illustration-4.jpg" alt="" />
-      </div>
-        <div class="flex-1">
-      <!-- <p class="sm:text-2xl uppercase mb-2 bg-white text-black inline-flex px-1">
-        Sa. 20 April      </p> -->
-      <p class="sm:text-2xl uppercase mb-2 inline-flex px-1">
-        Sa. 20 April      </p>
-      <h3>Forr&oacute; Tanzen</h3>
-      <!-- <h2 class="text-3xl sm:text-4xl uppercase italic font-bold mb-3">Forr&oacute; Tanzen</h2> -->
-      <p>Einlass: 19:00 Uhr</p>
-      <p>Abendkasse: 15 €</p>
-      <!-- <p>Mittwoch, 06. und 20. März 2024 Beginn: 19:30 Uhr Ende: 22:00 Uhr Forró (Forró Pé de Serra) ist ein …</p> -->
-    </div>    
-  </a>
-</article>
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 19 April      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
 
 <!-- bg-[#00538A] -->
 
@@ -345,24 +577,39 @@ window.onclick = function(event) {
 
 
                 
-<article class="py-10">
-  <a href="/de/events/die-halbe-acht" class="flex flex-col sm:flex-row gap-10">
-          <div class="sm:w-1/4">
-        <img src="/media/pages/events/die-halbe-acht/4f3cb3c461-1710021437/unnamed-5.jpg" alt="" />
-      </div>
-        <div class="flex-1">
-      <!-- <p class="sm:text-2xl uppercase mb-2 bg-white text-black inline-flex px-1">
-        So. 21 April      </p> -->
-      <p class="sm:text-2xl uppercase mb-2 inline-flex px-1">
-        So. 21 April      </p>
-      <h3>Die halbe Acht</h3>
-      <!-- <h2 class="text-3xl sm:text-4xl uppercase italic font-bold mb-3">Die halbe Acht</h2> -->
-      <p>Einlass: 19:00 Uhr</p>
-      <p>Abendkasse: 15 €</p>
-      <!-- <p>Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail …</p> -->
-    </div>    
-  </a>
-</article>
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/forro-tanzen" class="">
+        <img class="rounded-sm" src="/media/pages/events/forro-tanzen/75c8c57810-1710021384/serious-conversation-illustration-4.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-lime-600 border-lime-600">
+          workshop        </div>
+                 
+      </div>          
+      <h3 class="text-white">Forr&oacute; Tanzen</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Sa. 20 April      </span>
+    </summary>
+    <div class="my-5">
+              <p class="text-neutral-400">Einlass: 18:00</p>
+            <p class="text-neutral-400 mb-3">Beginn: 18:15</p>
+      <p class="text-neutral-400">
+        Forró (Forró Pé de Serra) ist ein Musik- und Tanzstil, der aus der Kultur des Nordosten Brasiliens entstanden ist. Eine lebensfrohe, vielfältige Musik, die sich seit den fünfziger Jahren zu einem überregionalen Phänomen entwickelt hat. Die typischen, dominierenden Instrumente sind Zabumba, Sanfona …        <a href="/de/events/forro-tanzen" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
 
 <!-- bg-[#00538A] -->
 
@@ -370,24 +617,38 @@ window.onclick = function(event) {
 
 
                 
-<article class="py-10">
-  <a href="/de/events/zu-tisch-mit-freund-innen" class="flex flex-col sm:flex-row gap-10">
-          <div class="sm:w-1/4">
-        <img src="/media/pages/events/zu-tisch-mit-freund-innen/399f4ae877-1710021184/img_0044.jpg" alt="" />
-      </div>
-        <div class="flex-1">
-      <!-- <p class="sm:text-2xl uppercase mb-2 bg-white text-black inline-flex px-1">
-        Mi. 24 April      </p> -->
-      <p class="sm:text-2xl uppercase mb-2 inline-flex px-1">
-        Mi. 24 April      </p>
-      <h3>Zu Tisch mit Freund*innen</h3>
-      <!-- <h2 class="text-3xl sm:text-4xl uppercase italic font-bold mb-3">Zu Tisch mit Freund*innen</h2> -->
-      <p>Einlass: 19:00 Uhr</p>
-      <p>Abendkasse: 15 €</p>
-      <!-- <p>Freitag, 22. März 2024 Einlass 18:30 Uhr Montag, 25. März 2024 Einlas: 19:00 Uhr Ist Freund …</p> -->
-    </div>    
-  </a>
-</article>
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/yoga-traditionell-und-dynamisch" class="">
+        <img class="rounded-sm" src="/media/pages/events/yoga-traditionell-und-dynamisch/94407a287b-1712828809/unnamed-7.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Yoga        </div>
+                 
+      </div>          
+      <h3 class="text-white">Yoga - Traditionell und Dynamisch</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        So. 21 April      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:00</p>
+      <p class="text-neutral-400">
+        Wir laden euch herzlich zu einer faszinierenden Yoga-Reise ein! Unser Kurs basiert auf dem traditionellen Ashtanga Yoga und ist für alle Levels geeignet. Wir praktizieren nicht nur Körperstellungen (Asanas), sondern entdecken auch Atemübungen (Pranayama) und die Essenz des Ashtanga Yoga. Die …        <a href="/de/events/yoga-traditionell-und-dynamisch" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
 
 <!-- bg-[#00538A] -->
 
@@ -395,53 +656,203 @@ window.onclick = function(event) {
 
 
                 
-<article class="py-10">
-  <a href="/de/events/munich-orchestra" class="flex flex-col sm:flex-row gap-10">
-          <div class="sm:w-1/4">
-        <img src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
-      </div>
-        <div class="flex-1">
-      <!-- <p class="sm:text-2xl uppercase mb-2 bg-white text-black inline-flex px-1">
-        Fr. 26 April      </p> -->
-      <p class="sm:text-2xl uppercase mb-2 inline-flex px-1">
-        Fr. 26 April      </p>
-      <h3>Munich Orchestra</h3>
-      <!-- <h2 class="text-3xl sm:text-4xl uppercase italic font-bold mb-3">Munich Orchestra</h2> -->
-      <p>Einlass: 19:00 Uhr</p>
-      <p>Abendkasse: 15 €</p>
-      <!-- <p>test</p> -->
-    </div>    
-  </a>
-</article>
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/zu-tisch-mit-freund-innen" class="">
+        <img class="rounded-sm" src="/media/pages/events/zu-tisch-mit-freund-innen/399f4ae877-1710021184/img_0044.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-lime-600 border-lime-600">
+          talk        </div>
+                 
+      </div>          
+      <h3 class="text-white">Zu Tisch mit Freund*innen</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Mi. 24 April      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:00</p>
+      <p class="text-neutral-400">
+        Ist Freund innenschaft erotisch? Ist Freundinnenschaft grenzenlos? Ist Freund*innenschaft in sich eine Kritik am Kapitalismus? Liebe, Diskrepanzen, Versöhnung, Neid, Sorgearbeit und das Spinnen von Utopien sind Themen, die meist ins Private verdonnert werden, dabei machen sie unsere widerspenstige, …        <a href="/de/events/zu-tisch-mit-freund-innen" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
 
 <!-- bg-[#00538A] -->
 
 
 
 
-                <h3 class="text-2xl mb-20 mt-32 first-of-type:mt-0 uppercase">
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 26 April      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/munich-orchestra" class="">
+        <img class="rounded-sm" src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-lime-600 border-lime-600">
+          concert        </div>
+                 
+      </div>          
+      <h3 class="text-white">Munich Orchestra</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 26 April      </span>
+    </summary>
+    <div class="my-5">
+              <p class="text-neutral-400">Einlass: 18:00</p>
+            <p class="text-neutral-400 mb-3">Beginn: 19:00</p>
+      <p class="text-neutral-400">
+        test        <a href="/de/events/munich-orchestra" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/yoga-traditionell-und-dynamisch" class="">
+        <img class="rounded-sm" src="/media/pages/events/yoga-traditionell-und-dynamisch/94407a287b-1712828809/unnamed-7.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Yoga        </div>
+                  <div class="bg-red-500 border border-red-500 px-1 text-sm uppercase text-black inline-block">
+            abgesagt
+          </div>
+                 
+      </div>          
+      <h3 class="text-white">Yoga - Traditionell und Dynamisch</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        So. 28 April      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:00</p>
+      <p class="text-neutral-400">
+        Wir laden euch herzlich zu einer faszinierenden Yoga-Reise ein! Unser Kurs basiert auf dem traditionellen Ashtanga Yoga und ist für alle Levels geeignet. Wir praktizieren nicht nur Körperstellungen (Asanas), sondern entdecken auch Atemübungen (Pranayama) und die Essenz des Ashtanga Yoga. Die …        <a href="/de/events/yoga-traditionell-und-dynamisch" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                <h3 class="text-2xl mb-5 sm:mb-10 mt-16 first-of-type:mt-0 uppercase">
       mai      <hr class="border-[#00538A] mt-5" />
     </h3>
 
+
               
-<article class="py-10">
-  <a href="/de/events/the-revolution-will-be-televised" class="flex flex-col sm:flex-row gap-10">
-          <div class="sm:w-1/4">
-        <img src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
-      </div>
-        <div class="flex-1">
-      <!-- <p class="sm:text-2xl uppercase mb-2 bg-white text-black inline-flex px-1">
-        Fr. 10 Mai      </p> -->
-      <p class="sm:text-2xl uppercase mb-2 inline-flex px-1">
-        Fr. 10 Mai      </p>
-      <h3>The Revolution will be televised</h3>
-      <!-- <h2 class="text-3xl sm:text-4xl uppercase italic font-bold mb-3">The Revolution will be televised</h2> -->
-      <p>Einlass: 19:00 Uhr</p>
-      <p>Abendkasse: 15 €</p>
-      <!-- <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut …</p> -->
-    </div>    
-  </a>
-</article>
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 03 Mai      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
 
 <!-- bg-[#00538A] -->
 
@@ -449,24 +860,38 @@ window.onclick = function(event) {
 
 
                 
-<article class="py-10">
-  <a href="/de/events/rational-x-world" class="flex flex-col sm:flex-row gap-10">
-          <div class="sm:w-1/4">
-        <img src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
-      </div>
-        <div class="flex-1">
-      <!-- <p class="sm:text-2xl uppercase mb-2 bg-white text-black inline-flex px-1">
-        Sa. 11 Mai      </p> -->
-      <p class="sm:text-2xl uppercase mb-2 inline-flex px-1">
-        Sa. 11 Mai      </p>
-      <h3>Rational X World</h3>
-      <!-- <h2 class="text-3xl sm:text-4xl uppercase italic font-bold mb-3">Rational X World</h2> -->
-      <p>Einlass: 19:00 Uhr</p>
-      <p>Abendkasse: 15 €</p>
-      <!-- <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut …</p> -->
-    </div>    
-  </a>
-</article>
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/offenes-plenum" class="">
+        <img class="rounded-sm" src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Plenum        </div>
+                 
+      </div>          
+      <h3 class="text-white">Offenes Plenum</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 03 Mai      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 20:00</p>
+      <p class="text-neutral-400">
+                <a href="/de/events/offenes-plenum" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
 
 <!-- bg-[#00538A] -->
 
@@ -474,82 +899,1026 @@ window.onclick = function(event) {
 
 
                 
-<article class="py-10">
-  <a href="/de/events/offene-freiheit" class="flex flex-col sm:flex-row gap-10">
-          <div class="sm:w-1/4">
-        <img src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
-      </div>
-        <div class="flex-1">
-      <!-- <p class="sm:text-2xl uppercase mb-2 bg-white text-black inline-flex px-1">
-        Fr. 24 Mai      </p> -->
-      <p class="sm:text-2xl uppercase mb-2 inline-flex px-1">
-        Fr. 24 Mai      </p>
-      <h3>Offene Freiheit</h3>
-      <!-- <h2 class="text-3xl sm:text-4xl uppercase italic font-bold mb-3">Offene Freiheit</h2> -->
-      <p>Einlass: 19:00 Uhr</p>
-      <p>Abendkasse: 15 €</p>
-      <!-- <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut …</p> -->
-    </div>    
-  </a>
-</article>
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/yoga-traditionell-und-dynamisch" class="">
+        <img class="rounded-sm" src="/media/pages/events/yoga-traditionell-und-dynamisch/94407a287b-1712828809/unnamed-7.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Yoga        </div>
+                 
+      </div>          
+      <h3 class="text-white">Yoga - Traditionell und Dynamisch</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        So. 05 Mai      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:00</p>
+      <p class="text-neutral-400">
+        Wir laden euch herzlich zu einer faszinierenden Yoga-Reise ein! Unser Kurs basiert auf dem traditionellen Ashtanga Yoga und ist für alle Levels geeignet. Wir praktizieren nicht nur Körperstellungen (Asanas), sondern entdecken auch Atemübungen (Pranayama) und die Essenz des Ashtanga Yoga. Die …        <a href="/de/events/yoga-traditionell-und-dynamisch" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
 
 <!-- bg-[#00538A] -->
 
 
 
 
-                <h3 class="text-2xl mb-20 mt-32 first-of-type:mt-0 uppercase">
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 10 Mai      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/the-revolution-will-be-televised" class="">
+        <img class="rounded-sm" src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-lime-600 border-lime-600">
+          cinema        </div>
+                 
+      </div>          
+      <h3 class="text-white">The Revolution will be televised</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 10 Mai      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 20:00</p>
+      <p class="text-neutral-400">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. …        <a href="/de/events/the-revolution-will-be-televised" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/rational-x-world" class="">
+        <img class="rounded-sm" src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-lime-600 border-lime-600">
+          concert        </div>
+                 
+      </div>          
+      <h3 class="text-white">Rational X World</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Sa. 11 Mai      </span>
+    </summary>
+    <div class="my-5">
+              <p class="text-neutral-400">Einlass: 19:00</p>
+            <p class="text-neutral-400 mb-3">Beginn: 20:00</p>
+      <p class="text-neutral-400">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. …        <a href="/de/events/rational-x-world" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/this-is-a-super-awesome-test" class="">
+        <img class="rounded-sm" src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-lime-600 border-lime-600">
+          concert        </div>
+                 
+      </div>          
+      <h3 class="text-white">This is a super awesome test</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Sa. 11 Mai      </span>
+    </summary>
+    <div class="my-5">
+              <p class="text-neutral-400">Einlass: 19:00</p>
+            <p class="text-neutral-400 mb-3">Beginn: 20:00</p>
+      <p class="text-neutral-400">
+                <a href="/de/events/this-is-a-super-awesome-test" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/mutzu-session" class="">
+        <img class="rounded-sm" src="/media/pages/events/mutzu-session/7b33f760e3-1710021602/screenshot-2024-03-09-at-22.59.40.png" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Jam Session        </div>
+                 
+      </div>          
+      <h3 class="text-white">Mutzu Session</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        So. 12 Mai      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:00</p>
+      <p class="text-neutral-400">
+        Die offene Jam Session in der Niehler Freiheit Jeden zweiten Sonntag im Monat Bei Fragen meldet euch gern bei uns per E-Mail an die hello@niehlerfreiheit.de        <a href="/de/events/mutzu-session" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/yoga-traditionell-und-dynamisch" class="">
+        <img class="rounded-sm" src="/media/pages/events/yoga-traditionell-und-dynamisch/94407a287b-1712828809/unnamed-7.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Yoga        </div>
+                 
+      </div>          
+      <h3 class="text-white">Yoga - Traditionell und Dynamisch</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        So. 12 Mai      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:00</p>
+      <p class="text-neutral-400">
+        Wir laden euch herzlich zu einer faszinierenden Yoga-Reise ein! Unser Kurs basiert auf dem traditionellen Ashtanga Yoga und ist für alle Levels geeignet. Wir praktizieren nicht nur Körperstellungen (Asanas), sondern entdecken auch Atemübungen (Pranayama) und die Essenz des Ashtanga Yoga. Die …        <a href="/de/events/yoga-traditionell-und-dynamisch" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 17 Mai      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/yoga-traditionell-und-dynamisch" class="">
+        <img class="rounded-sm" src="/media/pages/events/yoga-traditionell-und-dynamisch/94407a287b-1712828809/unnamed-7.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Yoga        </div>
+                 
+      </div>          
+      <h3 class="text-white">Yoga - Traditionell und Dynamisch</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        So. 19 Mai      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:00</p>
+      <p class="text-neutral-400">
+        Wir laden euch herzlich zu einer faszinierenden Yoga-Reise ein! Unser Kurs basiert auf dem traditionellen Ashtanga Yoga und ist für alle Levels geeignet. Wir praktizieren nicht nur Körperstellungen (Asanas), sondern entdecken auch Atemübungen (Pranayama) und die Essenz des Ashtanga Yoga. Die …        <a href="/de/events/yoga-traditionell-und-dynamisch" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 24 Mai      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/offene-freiheit" class="">
+        <img class="rounded-sm" src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-lime-600 border-lime-600">
+          exhibition        </div>
+                 
+      </div>          
+      <h3 class="text-white">Offene Freiheit</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 24 Mai      </span>
+    </summary>
+    <div class="my-5">
+              <p class="text-neutral-400">Einlass: 14:00</p>
+            <p class="text-neutral-400 mb-3">Beginn: 15:00</p>
+      <p class="text-neutral-400">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. …        <a href="/de/events/offene-freiheit" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/yoga-traditionell-und-dynamisch" class="">
+        <img class="rounded-sm" src="/media/pages/events/yoga-traditionell-und-dynamisch/94407a287b-1712828809/unnamed-7.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Yoga        </div>
+                 
+      </div>          
+      <h3 class="text-white">Yoga - Traditionell und Dynamisch</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        So. 26 Mai      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:00</p>
+      <p class="text-neutral-400">
+        Wir laden euch herzlich zu einer faszinierenden Yoga-Reise ein! Unser Kurs basiert auf dem traditionellen Ashtanga Yoga und ist für alle Levels geeignet. Wir praktizieren nicht nur Körperstellungen (Asanas), sondern entdecken auch Atemübungen (Pranayama) und die Essenz des Ashtanga Yoga. Die …        <a href="/de/events/yoga-traditionell-und-dynamisch" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 31 Mai      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                <h3 class="text-2xl mb-5 sm:mb-10 mt-16 first-of-type:mt-0 uppercase">
       juni      <hr class="border-[#00538A] mt-5" />
     </h3>
 
+
               
-<article class="py-10">
-  <a href="/de/events/tees-teeestig" class="flex flex-col sm:flex-row gap-10">
-          <div class="sm:w-1/4">
-        <img src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
-      </div>
-        <div class="flex-1">
-      <!-- <p class="sm:text-2xl uppercase mb-2 bg-white text-black inline-flex px-1">
-        Sa. 15 Juni      </p> -->
-      <p class="sm:text-2xl uppercase mb-2 inline-flex px-1">
-        Sa. 15 Juni      </p>
-      <h3>Tees Teeestig</h3>
-      <!-- <h2 class="text-3xl sm:text-4xl uppercase italic font-bold mb-3">Tees Teeestig</h2> -->
-      <p>Einlass: 19:00 Uhr</p>
-      <p>Abendkasse: 15 €</p>
-      <!-- <p>Test</p> -->
-    </div>    
-  </a>
-</article>
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/yoga-traditionell-und-dynamisch" class="">
+        <img class="rounded-sm" src="/media/pages/events/yoga-traditionell-und-dynamisch/94407a287b-1712828809/unnamed-7.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Yoga        </div>
+                 
+      </div>          
+      <h3 class="text-white">Yoga - Traditionell und Dynamisch</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        So. 02 Juni      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:00</p>
+      <p class="text-neutral-400">
+        Wir laden euch herzlich zu einer faszinierenden Yoga-Reise ein! Unser Kurs basiert auf dem traditionellen Ashtanga Yoga und ist für alle Levels geeignet. Wir praktizieren nicht nur Körperstellungen (Asanas), sondern entdecken auch Atemübungen (Pranayama) und die Essenz des Ashtanga Yoga. Die …        <a href="/de/events/yoga-traditionell-und-dynamisch" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
 
 <!-- bg-[#00538A] -->
 
 
 
 
-                <h3 class="text-2xl mb-20 mt-32 first-of-type:mt-0 uppercase">
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 07 Juni      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/offenes-plenum" class="">
+        <img class="rounded-sm" src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Plenum        </div>
+                 
+      </div>          
+      <h3 class="text-white">Offenes Plenum</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 07 Juni      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 20:00</p>
+      <p class="text-neutral-400">
+                <a href="/de/events/offenes-plenum" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/mutzu-session" class="">
+        <img class="rounded-sm" src="/media/pages/events/mutzu-session/7b33f760e3-1710021602/screenshot-2024-03-09-at-22.59.40.png" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Jam Session        </div>
+                 
+      </div>          
+      <h3 class="text-white">Mutzu Session</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        So. 09 Juni      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:00</p>
+      <p class="text-neutral-400">
+        Die offene Jam Session in der Niehler Freiheit Jeden zweiten Sonntag im Monat Bei Fragen meldet euch gern bei uns per E-Mail an die hello@niehlerfreiheit.de        <a href="/de/events/mutzu-session" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/yoga-traditionell-und-dynamisch" class="">
+        <img class="rounded-sm" src="/media/pages/events/yoga-traditionell-und-dynamisch/94407a287b-1712828809/unnamed-7.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Yoga        </div>
+                 
+      </div>          
+      <h3 class="text-white">Yoga - Traditionell und Dynamisch</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        So. 09 Juni      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:00</p>
+      <p class="text-neutral-400">
+        Wir laden euch herzlich zu einer faszinierenden Yoga-Reise ein! Unser Kurs basiert auf dem traditionellen Ashtanga Yoga und ist für alle Levels geeignet. Wir praktizieren nicht nur Körperstellungen (Asanas), sondern entdecken auch Atemübungen (Pranayama) und die Essenz des Ashtanga Yoga. Die …        <a href="/de/events/yoga-traditionell-und-dynamisch" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 14 Juni      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/tees-teeestig" class="">
+        <img class="rounded-sm" src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-lime-600 border-lime-600">
+          theatre        </div>
+                 
+      </div>          
+      <h3 class="text-white">Tees Teeestig</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Sa. 15 Juni      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 20:00</p>
+      <p class="text-neutral-400">
+        Test        <a href="/de/events/tees-teeestig" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/yoga-traditionell-und-dynamisch" class="">
+        <img class="rounded-sm" src="/media/pages/events/yoga-traditionell-und-dynamisch/94407a287b-1712828809/unnamed-7.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Yoga        </div>
+                 
+      </div>          
+      <h3 class="text-white">Yoga - Traditionell und Dynamisch</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        So. 16 Juni      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:00</p>
+      <p class="text-neutral-400">
+        Wir laden euch herzlich zu einer faszinierenden Yoga-Reise ein! Unser Kurs basiert auf dem traditionellen Ashtanga Yoga und ist für alle Levels geeignet. Wir praktizieren nicht nur Körperstellungen (Asanas), sondern entdecken auch Atemübungen (Pranayama) und die Essenz des Ashtanga Yoga. Die …        <a href="/de/events/yoga-traditionell-und-dynamisch" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 21 Juni      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/yoga-traditionell-und-dynamisch" class="">
+        <img class="rounded-sm" src="/media/pages/events/yoga-traditionell-und-dynamisch/94407a287b-1712828809/unnamed-7.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Yoga        </div>
+                 
+      </div>          
+      <h3 class="text-white">Yoga - Traditionell und Dynamisch</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        So. 23 Juni      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:00</p>
+      <p class="text-neutral-400">
+        Wir laden euch herzlich zu einer faszinierenden Yoga-Reise ein! Unser Kurs basiert auf dem traditionellen Ashtanga Yoga und ist für alle Levels geeignet. Wir praktizieren nicht nur Körperstellungen (Asanas), sondern entdecken auch Atemübungen (Pranayama) und die Essenz des Ashtanga Yoga. Die …        <a href="/de/events/yoga-traditionell-und-dynamisch" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 28 Juni      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/yoga-traditionell-und-dynamisch" class="">
+        <img class="rounded-sm" src="/media/pages/events/yoga-traditionell-und-dynamisch/94407a287b-1712828809/unnamed-7.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Yoga        </div>
+                 
+      </div>          
+      <h3 class="text-white">Yoga - Traditionell und Dynamisch</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        So. 30 Juni      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:00</p>
+      <p class="text-neutral-400">
+        Wir laden euch herzlich zu einer faszinierenden Yoga-Reise ein! Unser Kurs basiert auf dem traditionellen Ashtanga Yoga und ist für alle Levels geeignet. Wir praktizieren nicht nur Körperstellungen (Asanas), sondern entdecken auch Atemübungen (Pranayama) und die Essenz des Ashtanga Yoga. Die …        <a href="/de/events/yoga-traditionell-und-dynamisch" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                <h3 class="text-2xl mb-5 sm:mb-10 mt-16 first-of-type:mt-0 uppercase">
       juli      <hr class="border-[#00538A] mt-5" />
     </h3>
 
+
               
-<article class="py-10">
-  <a href="/de/events/tessfdt" class="flex flex-col sm:flex-row gap-10">
-          <div class="sm:w-1/4">
-        <img src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
-      </div>
-        <div class="flex-1">
-      <!-- <p class="sm:text-2xl uppercase mb-2 bg-white text-black inline-flex px-1">
-        So. 28 Juli      </p> -->
-      <p class="sm:text-2xl uppercase mb-2 inline-flex px-1">
-        So. 28 Juli      </p>
-      <h3>Tessfdt</h3>
-      <!-- <h2 class="text-3xl sm:text-4xl uppercase italic font-bold mb-3">Tessfdt</h2> -->
-      <p>Einlass: 19:00 Uhr</p>
-      <p>Abendkasse: 15 €</p>
-      <!-- <p>Test</p> -->
-    </div>    
-  </a>
-</article>
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 05 Juli      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
 
 <!-- bg-[#00538A] -->
 
@@ -557,53 +1926,318 @@ window.onclick = function(event) {
 
 
                 
-<article class="py-10">
-  <a href="/de/events/test-event-2" class="flex flex-col sm:flex-row gap-10">
-          <div class="sm:w-1/4">
-        <img src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
-      </div>
-        <div class="flex-1">
-      <!-- <p class="sm:text-2xl uppercase mb-2 bg-white text-black inline-flex px-1">
-        So. 28 Juli      </p> -->
-      <p class="sm:text-2xl uppercase mb-2 inline-flex px-1">
-        So. 28 Juli      </p>
-      <h3>Test event 2</h3>
-      <!-- <h2 class="text-3xl sm:text-4xl uppercase italic font-bold mb-3">Test event 2</h2> -->
-      <p>Einlass: 19:00 Uhr</p>
-      <p>Abendkasse: 15 €</p>
-      <!-- <p>Test</p> -->
-    </div>    
-  </a>
-</article>
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/offenes-plenum" class="">
+        <img class="rounded-sm" src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Plenum        </div>
+                 
+      </div>          
+      <h3 class="text-white">Offenes Plenum</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 05 Juli      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 20:00</p>
+      <p class="text-neutral-400">
+                <a href="/de/events/offenes-plenum" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
 
 <!-- bg-[#00538A] -->
 
 
 
 
-                <h3 class="text-2xl mb-20 mt-32 first-of-type:mt-0 uppercase">
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/yoga-traditionell-und-dynamisch" class="">
+        <img class="rounded-sm" src="/media/pages/events/yoga-traditionell-und-dynamisch/94407a287b-1712828809/unnamed-7.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Yoga        </div>
+                 
+      </div>          
+      <h3 class="text-white">Yoga - Traditionell und Dynamisch</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        So. 07 Juli      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:00</p>
+      <p class="text-neutral-400">
+        Wir laden euch herzlich zu einer faszinierenden Yoga-Reise ein! Unser Kurs basiert auf dem traditionellen Ashtanga Yoga und ist für alle Levels geeignet. Wir praktizieren nicht nur Körperstellungen (Asanas), sondern entdecken auch Atemübungen (Pranayama) und die Essenz des Ashtanga Yoga. Die …        <a href="/de/events/yoga-traditionell-und-dynamisch" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 12 Juli      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 19 Juli      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 26 Juli      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/tessfdt" class="">
+        <img class="rounded-sm" src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-lime-600 border-lime-600">
+          concert        </div>
+                 
+      </div>          
+      <h3 class="text-white">Tessfdt</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        So. 28 Juli      </span>
+    </summary>
+    <div class="my-5">
+              <p class="text-neutral-400">Einlass: 18:00</p>
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Test        <a href="/de/events/tessfdt" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/test-event-2" class="">
+        <img class="rounded-sm" src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-lime-600 border-lime-600">
+          concert        </div>
+                 
+      </div>          
+      <h3 class="text-white">Test event 2</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        So. 28 Juli      </span>
+    </summary>
+    <div class="my-5">
+              <p class="text-neutral-400">Einlass: 18:00</p>
+            <p class="text-neutral-400 mb-3">Beginn: 19:30</p>
+      <p class="text-neutral-400">
+        Test        <a href="/de/events/test-event-2" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                <h3 class="text-2xl mb-5 sm:mb-10 mt-16 first-of-type:mt-0 uppercase">
       august      <hr class="border-[#00538A] mt-5" />
     </h3>
 
+
               
-<article class="py-10">
-  <a href="/de/events/teeesst" class="flex flex-col sm:flex-row gap-10">
-          <div class="sm:w-1/4">
-        <img src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
-      </div>
-        <div class="flex-1">
-      <!-- <p class="sm:text-2xl uppercase mb-2 bg-white text-black inline-flex px-1">
-        Sa. 17 August      </p> -->
-      <p class="sm:text-2xl uppercase mb-2 inline-flex px-1">
-        Sa. 17 August      </p>
-      <h3>Teeesst</h3>
-      <!-- <h2 class="text-3xl sm:text-4xl uppercase italic font-bold mb-3">Teeesst</h2> -->
-      <p>Einlass: 19:00 Uhr</p>
-      <p>Abendkasse: 15 €</p>
-      <!-- <p>Test</p> -->
-    </div>    
-  </a>
-</article>
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 02 August      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
 
 <!-- bg-[#00538A] -->
 
@@ -611,82 +2245,602 @@ window.onclick = function(event) {
 
 
                 
-<article class="py-10">
-  <a href="/de/events/tessssssssst" class="flex flex-col sm:flex-row gap-10">
-          <div class="sm:w-1/4">
-        <img src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
-      </div>
-        <div class="flex-1">
-      <!-- <p class="sm:text-2xl uppercase mb-2 bg-white text-black inline-flex px-1">
-        Do. 22 August      </p> -->
-      <p class="sm:text-2xl uppercase mb-2 inline-flex px-1">
-        Do. 22 August      </p>
-      <h3>Tessssssssst</h3>
-      <!-- <h2 class="text-3xl sm:text-4xl uppercase italic font-bold mb-3">Tessssssssst</h2> -->
-      <p>Einlass: 19:00 Uhr</p>
-      <p>Abendkasse: 15 €</p>
-      <!-- <p>Test</p> -->
-    </div>    
-  </a>
-</article>
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 09 August      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
 
 <!-- bg-[#00538A] -->
 
 
 
 
-                <h3 class="text-2xl mb-20 mt-32 first-of-type:mt-0 uppercase">
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 16 August      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/teeesst" class="">
+        <img class="rounded-sm" src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-lime-600 border-lime-600">
+          workshop        </div>
+                 
+      </div>          
+      <h3 class="text-white">Teeesst</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Sa. 17 August      </span>
+    </summary>
+    <div class="my-5">
+              <p class="text-neutral-400">Einlass: 18:00</p>
+            <p class="text-neutral-400 mb-3">Beginn: 20:00</p>
+      <p class="text-neutral-400">
+        Test        <a href="/de/events/teeesst" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/tessssssssst" class="">
+        <img class="rounded-sm" src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-lime-600 border-lime-600">
+          concert        </div>
+                 
+      </div>          
+      <h3 class="text-white">Tessssssssst</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Do. 22 August      </span>
+    </summary>
+    <div class="my-5">
+              <p class="text-neutral-400">Einlass: 19:00</p>
+            <p class="text-neutral-400 mb-3">Beginn: 20:00</p>
+      <p class="text-neutral-400">
+        Test        <a href="/de/events/tessssssssst" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 23 August      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 30 August      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                <h3 class="text-2xl mb-5 sm:mb-10 mt-16 first-of-type:mt-0 uppercase">
       september      <hr class="border-[#00538A] mt-5" />
     </h3>
 
+
               
-<article class="py-10">
-  <a href="/de/events/teeeest" class="flex flex-col sm:flex-row gap-10">
-          <div class="sm:w-1/4">
-        <img src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
-      </div>
-        <div class="flex-1">
-      <!-- <p class="sm:text-2xl uppercase mb-2 bg-white text-black inline-flex px-1">
-        Fr. 20 September      </p> -->
-      <p class="sm:text-2xl uppercase mb-2 inline-flex px-1">
-        Fr. 20 September      </p>
-      <h3>Teeeest</h3>
-      <!-- <h2 class="text-3xl sm:text-4xl uppercase italic font-bold mb-3">Teeeest</h2> -->
-      <p>Einlass: 19:00 Uhr</p>
-      <p>Abendkasse: 15 €</p>
-      <!-- <p>Test</p> -->
-    </div>    
-  </a>
-</article>
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 06 September      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
 
 <!-- bg-[#00538A] -->
 
 
 
 
-                <h3 class="text-2xl mb-20 mt-32 first-of-type:mt-0 uppercase">
-      januar      <hr class="border-[#00538A] mt-5" />
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 13 September      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 20 September      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/teeeest" class="">
+        <img class="rounded-sm" src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-lime-600 border-lime-600">
+          concert        </div>
+                 
+      </div>          
+      <h3 class="text-white">Teeeest</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 20 September      </span>
+    </summary>
+    <div class="my-5">
+              <p class="text-neutral-400">Einlass: 20:00</p>
+            <p class="text-neutral-400 mb-3">Beginn: 21:00</p>
+      <p class="text-neutral-400">
+        Test        <a href="/de/events/teeeest" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 27 September      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                <h3 class="text-2xl mb-5 sm:mb-10 mt-16 first-of-type:mt-0 uppercase">
+      oktober      <hr class="border-[#00538A] mt-5" />
     </h3>
 
+
               
-<article class="py-10">
-  <a href="/de/events/this-is-a-far-far-in-the-future-event" class="flex flex-col sm:flex-row gap-10">
-          <div class="sm:w-1/4">
-        <img src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
-      </div>
-        <div class="flex-1">
-      <!-- <p class="sm:text-2xl uppercase mb-2 bg-white text-black inline-flex px-1">
-        So. 12 Januar      </p> -->
-      <p class="sm:text-2xl uppercase mb-2 inline-flex px-1">
-        So. 12 Januar      </p>
-      <h3>This is a far far in the future event</h3>
-      <!-- <h2 class="text-3xl sm:text-4xl uppercase italic font-bold mb-3">This is a far far in the future event</h2> -->
-      <p>Einlass: 19:00 Uhr</p>
-      <p>Abendkasse: 15 €</p>
-      <!-- <p>asdfasdfasdfd</p> -->
-    </div>    
-  </a>
-</article>
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/test123123" class="">
+        <img class="rounded-sm" src="/media/pages/events/test123123/5cd088c43f-1712318753/serious-conversation-illustar.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-lime-600 border-lime-600">
+          talk        </div>
+                 
+      </div>          
+      <h3 class="text-white">TEst</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Do. 03 Oktober      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 20:00</p>
+      <p class="text-neutral-400">
+                <a href="/de/events/test123123" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 04 Oktober      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/die-halbe-acht" class="">
+        <img class="rounded-sm" src="/media/pages/events/die-halbe-acht/202770061d-1710021437/unnamed-5.jpg" alt="" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-cyan-500 border-cyan-500">
+          Fahrradwerkstatt        </div>
+                 
+      </div>          
+      <h3 class="text-white">Die halbe Acht</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Fr. 11 Oktober      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:30</p>
+      <p class="text-neutral-400">
+        Fahrradwerkstatt - Hilfe zur Selbsthilfe Winterpause bis Ende März Individuelle Anfragen per Mail möglich: hello@niehlerfreiheit.de In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur. Vor Ort können …        <a href="/de/events/die-halbe-acht" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
+
+<!-- bg-[#00538A] -->
+
+
+
+
+                <h3 class="text-2xl mb-5 sm:mb-10 mt-16 first-of-type:mt-0 uppercase">
+      mai      <hr class="border-[#00538A] mt-5" />
+    </h3>
+
+
+              
+<div class="sm:flex items-start gap-5 w-full py-5">
+      <div class="sm:w-1/6">
+      <a href="/de/events/this-is-a-far-far-in-the-future-event" class="">
+        <img class="rounded-sm" src="/media/site/1cda92ed4c-1710163273/nf-placeholder.jpg" alt="Placeholder Image" />
+      </a>
+    </div>
+    <details class="w-full">
+    <summary class="cursor-pointer py-3 sm:py-0">
+      <div class="mb-2">
+        <div class=" border uppercase text-sm inline-flex w-auto px-1 text-lime-600 border-lime-600">
+          workshop        </div>
+                 
+      </div>          
+      <h3 class="text-white">This is a far far in the future event</h3>
+      <span class="text-base text-neutral-400 uppercase mb-0">
+        Sa. 10 Mai      </span>
+    </summary>
+    <div class="my-5">
+            <p class="text-neutral-400 mb-3">Beginn: 18:00</p>
+      <p class="text-neutral-400">
+        asdfasdfasdfd        <a href="/de/events/this-is-a-far-far-in-the-future-event" class="text-yellow-500 hover:underline flex items-center">
+          Event öffnen
+          <span class="w-10 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+          </span>
+        </a>
+      </p>          
+    </div>
+  </details>
+</div>
 
 <!-- bg-[#00538A] -->
 
@@ -694,7 +2848,7 @@ window.onclick = function(event) {
 
 
              
-      <a href="/de/events?showPastEvents=true" class="text-yellow-500 text-xl uppercase hover:underline flex items-center gap-3">
+      <a href="/de/events?showPastEvents=true" class="text-yellow-500 text-xl uppercase hover:underline flex items-center gap-3 mt-16">
       Vergangene Veranstaltungen      <div class="w-10">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
   <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
@@ -745,12 +2899,8 @@ window.onclick = function(event) {
                   Posts                </a>
               </li>
                           <li class="hover:text-yellow-500">
-                <a href="/de/impressum">
-                  Impressum                </a>
-              </li>
-                          <li class="hover:text-yellow-500">
-                <a href="/de/der-verein">
-                  Der Verein                </a>
+                <a href="/de/verein">
+                  Verein                </a>
               </li>
                       </ul>
         </li>
