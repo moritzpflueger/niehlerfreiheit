@@ -1,7 +1,8 @@
 <?php
-  $rows = $rows ?? 3;
   $eventsPage = $site->find('events');
   $excludeHero = $excludeHero ?? true;
+  $rows = $block->rows()->toInt();
+  $heading = $block->heading();
 
   $events = $eventsPage
     ->children()
@@ -11,7 +12,7 @@
     ->limit($rows);
 ?>
 
-<h3 class="mb-10">UPCOMING EVENTS</h3>
+<h2 class=""><?= $heading ?></h2>
 
 <?php $index = 0; ?>
 <?php foreach ($events as $event): ?>

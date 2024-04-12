@@ -1,0 +1,69 @@
+title: My Homepage
+
+options: 
+  status: false
+  create: false
+  template: false
+
+fields:
+  blocks:
+    type: blocks
+    pretty: true # makes block json in home.txt human readable
+    fieldsets:
+      - type: hero
+        # preview: fields
+        # wysiwyg: true
+        fields:
+          text:
+            label: Text
+            type: textarea
+          image:
+            label: Image
+            type: files
+            layout: cards
+            size: small
+            multiple: false
+            help: The image will be displayed in the hero section.
+      - type: newsletter
+        # preview: fields
+        # wysiwyg: true
+        fields:
+          heading:
+            label: Heading
+            type: text
+          text:
+            label: Text
+            type: textarea
+      - type: eventsList
+        # preview: fields
+        # wysiwyg: true
+        fields:
+          heading:
+            label: Heading
+            type: text
+          rows:
+            label: Number of Events
+            type: number
+            default: 3
+            help: The number of events to display.
+      - type: teaser
+        # preview: fields
+        # wysiwyg: true
+        fields:
+          heading:
+            label: Heading
+            type: text
+          text:
+            label: Text
+            type: textarea
+          layout:
+            label: Image Position
+            type: select
+            default: left
+            options:
+              - left
+              - right
+          page:
+            label: Page, Post or Event
+            type: pages
+            multiple: false

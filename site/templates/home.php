@@ -1,19 +1,13 @@
+<?php
+  $homepage = $page;
+?>
 <?php snippet('header') ?>
-<main class="">
-  <section class="flex justify-center my-32">
-    <?php snippet('teasers/heroEvent') ?>
-  </section>
-  <div class="max-w-4xl mx-auto">
-    <section class="my-20">
-      <?php snippet('teasers/eventsList', ['rows' => 3]) ?>
+<main class="max-w-4xl mx-auto">
+  <?php foreach ($homepage->blocks()->toBlocks() as $block): ?>
+    <section class="block my-20" data-type="<?= $block->type() ?>">
+      <?= $block ?>
     </section>
-    <section class="my-48">
-      <?php snippet('teasers/post') ?>
-    </section>
-    <section class="my-20">
-      <?php snippet('teasers/newsletter') ?>
-    </section>
-  </div>
+  <?php endforeach; ?>
 </main>
 <?php snippet('footer') ?>
 
