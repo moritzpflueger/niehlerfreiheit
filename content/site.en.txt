@@ -1,0 +1,32 @@
+Logo: - file://WY3FL5rTvLscY77l
+
+----
+
+Placeholderimage: - file://nkuMdHbqgCvubkRy
+
+----
+
+Sociallinks:
+
+- 
+  name: Instagram
+  url: >
+    https://www.instagram.com/niehlerfreiheit/
+  icon: instagram
+- 
+  name: Facebook
+  url: >
+    https://www.facebook.com/niehlerfreiheit/events/?ref=page_internal
+  icon: facebook
+
+----
+
+Myimage: - file://nkuMdHbqgCvubkRy
+
+----
+
+Image: - file://nkuMdHbqgCvubkRy
+
+----
+
+Mycontent: [{"content":{"location":"kirby","image":["file://nkuMdHbqgCvubkRy"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"9b3e119a-d7a5-4067-ba7a-9dbe81549d51","isHidden":false,"type":"image"}]

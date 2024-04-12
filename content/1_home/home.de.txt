@@ -1,0 +1,71 @@
+Title: Homepage
+
+----
+
+Blocks:
+
+[
+    {
+        "content": {
+            "text": "EIN ORT FÜR FREIHEIT IN KÖLN. NIEHLER FREIHEIT E.V. NUTZT RÄUME KREATIV UND VERANSTALTET REGELMÄSSIGE KULTUEVENTS FÜR ALLE. UNSER ZIEL IST ES AUSTAUSCH UND BEGEGNUNGEN ZU FÖRDERN.",
+            "image": [
+                "file://iKPuEvZCpY1f8Phv"
+            ]
+        },
+        "id": "35926296-145f-4b83-929a-c0cbb3dae116",
+        "isHidden": false,
+        "type": "hero"
+    },
+    {
+        "content": {
+            "heading": "Die anstehenden Veranstaltungen",
+            "rows": 3
+        },
+        "id": "7521cdcb-352c-495c-b527-3521ffe46f4b",
+        "isHidden": false,
+        "type": "eventsList"
+    },
+    {
+        "content": {
+            "heading": "5 Minuten Freiheit",
+            "text": "In einem Zeitalter, in dem die digitalen Verbindungen oft die physischen Interaktionen übertreffen, gewinnt die Kraft von Gemeinschaftsräumen, die der Kreativität, Kultur und Kunst gewidmet sind, immer mehr an Bedeutung. Ein kürzlich veröffentlichtes Video über einen kreativen Kulturverein zeigt die tiefgreifenden Auswirkungen solcher Räume",
+            "layout": "left",
+            "page": [
+                "page://eSTslWxEYW3gt8Vl"
+            ]
+        },
+        "id": "9df53352-1d76-4c8e-91b9-baa7420b625d",
+        "isHidden": false,
+        "type": "teaser"
+    },
+    {
+        "content": {
+            "heading": "Jeden Monat das neuste Programm bekommen",
+            "text": "Unser Newsletter kommt gewöhnlich einmal im Monat mit dem aktuellen Programm und generellen Updates von der Niehler Freiheit."
+        },
+        "id": "7faefc08-0adb-44e3-bd90-134add535482",
+        "isHidden": false,
+        "type": "newsletter"
+    },
+    {
+        "content": {
+            "heading": "Hilf dir selbst in unserer Fahrradwerkstatt",
+            "text": "In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur.\nVor Ort können Fahrradprojekte begutachtet werden.",
+            "layout": "right",
+            "page": [
+                "page://gI2FdBOwLrqabuxD"
+            ]
+        },
+        "id": "bffb0c43-1e54-4317-b6c2-40ef5e2a672a",
+        "isHidden": false,
+        "type": "teaser"
+    }
+]
+
+----
+
+Text: this is my home page 2
+
+----
+
+Uuid: U41JYEhKxVY7jb2l

@@ -1,0 +1,32 @@
+Title: Homepage
+
+----
+
+Blocks:
+
+[
+    {
+        "content": {
+            "text": "EIN FLECKCHEN FREIHEIT IN KÖLN. NIEHLER FREIHEIT E.V. NUTZT RÄUME KREATIV UND VERANSTALTET REGELMÄSSIGE KULTUEVENTS FÜR ALLE. UNSER ZIEL IST ES AUSTAUSCH UND BEGEGNUNGEN ZU FÖRDERN.",
+            "image": [
+                "file://iKPuEvZCpY1f8Phv"
+            ]
+        },
+        "id": "35926296-145f-4b83-929a-c0cbb3dae116",
+        "isHidden": false,
+        "type": "hero"
+    },
+    {
+        "content": {
+            "heading": "The Upcoming Events",
+            "rows": 3
+        },
+        "id": "7521cdcb-352c-495c-b527-3521ffe46f4b",
+        "isHidden": false,
+        "type": "eventsList"
+    }
+]
+
+----
+
+Text: this is my home page 2
