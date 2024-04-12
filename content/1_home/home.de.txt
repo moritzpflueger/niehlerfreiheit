@@ -40,6 +40,19 @@ Blocks:
     },
     {
         "content": {
+            "heading": "Hilf dir selbst in unserer Fahrradwerkstatt",
+            "text": "In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur.\nVor Ort können Fahrradprojekte begutachtet werden.",
+            "layout": "right",
+            "page": [
+                "page://gI2FdBOwLrqabuxD"
+            ]
+        },
+        "id": "bffb0c43-1e54-4317-b6c2-40ef5e2a672a",
+        "isHidden": false,
+        "type": "teaser"
+    },
+    {
+        "content": {
             "heading": "Jeden Monat das neuste Programm bekommen",
             "text": "Unser Newsletter kommt gewöhnlich einmal im Monat mit dem aktuellen Programm und generellen Updates von der Niehler Freiheit."
         },
@@ -49,14 +62,14 @@ Blocks:
     },
     {
         "content": {
-            "heading": "Hilf dir selbst in unserer Fahrradwerkstatt",
-            "text": "In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur.\nVor Ort können Fahrradprojekte begutachtet werden.",
-            "layout": "right",
+            "heading": "Mitmachen & Unterstützen",
+            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+            "layout": "left",
             "page": [
-                "page://gI2FdBOwLrqabuxD"
+                "page://slq1YfWVa57eb21Q"
             ]
         },
-        "id": "bffb0c43-1e54-4317-b6c2-40ef5e2a672a",
+        "id": "2476410b-e6a6-40ef-b92d-16b2ddc4013f",
         "isHidden": false,
         "type": "teaser"
     }

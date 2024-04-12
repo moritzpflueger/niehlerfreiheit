@@ -568,6 +568,14 @@ video {
   bottom: 2.5rem;
 }
 
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -714,6 +722,10 @@ video {
   width: 100%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -754,6 +766,10 @@ video {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
@@ -772,6 +788,10 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-20 {
+  gap: 5rem;
 }
 
 .overflow-y-auto {
@@ -1394,6 +1414,10 @@ footer a:hover {
     visibility: visible;
   }
 
+  .sm\:order-1 {
+    order: 1;
+  }
+
   .sm\:my-32 {
     margin-top: 8rem;
     margin-bottom: 8rem;
@@ -1430,6 +1454,14 @@ footer a:hover {
 
   .sm\:flex-row {
     flex-direction: row;
+  }
+
+  .sm\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .sm\:justify-end {
+    justify-content: flex-end;
   }
 
   .sm\:gap-10 {
