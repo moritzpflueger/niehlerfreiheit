@@ -18,15 +18,37 @@ body {
 }
 
 h1 {
-  @apply text-7xl sm:text-8xl font-bold uppercase my-10;
+  @apply text-6xl sm:text-8xl font-bold uppercase my-10;
 }
 
 h2 {
-  @apply text-5xl sm:text-6xl font-bold uppercase mb-5;
+  @apply text-2xl font-bold uppercase mb-3;
 }
 
 h3 {
-  @apply text-3xl sm:text-4xl uppercase mb-3;
+  @apply mb-0;
+}
+
+
+/* collapsible list items */
+details > summary {
+    list-style: none;
+    position: relative;
+    padding-right: 20px; /* Adjust based on the size of your custom caret */
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details > summary::before {
+    content: '▶';
+    position: absolute;
+    right: 0;
+    
+    @apply top-[48px] sm:top-[36px];
+}
+details[open] > summary::before {
+    content: '▼';
 }
 
 /* Kirby Text */
