@@ -16,19 +16,16 @@
     <?= css('assets/css/styles.css') ?>
   </head>
   <body>
-    <header class="py-5 md:py-10 sm:px-5">
-      <nav class="flex items-center justify-between">
+    <header class="max-w-4xl w-full mx-auto py-5 md:py-10">
+      <nav class="flex items-start justify-between">
         <a href="<?= $site->url() ?>">
           <img 
             src="<?= $site->logo()->toFile()->url() ?>" alt="<?= $site->title() ?>" 
-            class="h-8"
+            class="h-20"
           >
         </a>
         <button id="menu-button" class="text-white hover:text-yellow-500">
-          <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor">
-            <line x1="2" y1="9" x2="22" y2="9" strokeLinecap="round" strokeLinejoin="round" />
-            <line x1="10" y1="15" x2="22" y2="15" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>          
+          <?= file_get_contents(kirby()->root('assets') . '/icons/menu.svg'); ?>          
         </button>
         <?php snippet('menu') ?>
       </nav>

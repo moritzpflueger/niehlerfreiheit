@@ -1,19 +1,27 @@
 <?= snippet('header') ?>
 
-<section class="my-32 max-w-4xl mx-auto">
+<section class="sm:my-32 max-w-4xl mx-auto">
   <h1><?= $showPastEvents ? "Archiv" : "Programm" ?></h1>
-
+  
   <?php snippet('events/filter', [
-    'filters' => $filters,
-    'selectedFilter' => $selectedFilter,
+    'dateFilters' => $dateFilters,
+    'categoryFiltersNonRecurringEvents' => $categoryFiltersNonRecurringEvents,
+    'categoryFiltersRecurringEvents' => $categoryFiltersRecurringEvents,
+    'selectedDateFilters' => $selectedDateFilters,
+    'selectedCategoryFilters' => $selectedCategoryFilters,
     'showPastEvents' => $showPastEvents,
-  ]) ?>
+    ]) ?>
+
+  <?php if($groupedEvents->isEmpty()): ?>
+    <p class="text-xl my-32">No events found</p>
+  <?php endif; ?>
 
   <?php foreach ($groupedEvents as $monthName => $events): ?>
-    <h3 class="text-2xl mb-20 mt-32 first-of-type:mt-0 uppercase">
+    <h3 class="text-2xl mb-5 sm:mb-10 mt-16 first-of-type:mt-0 uppercase">
       <?= !$showYear ? strtok($monthName, ' ') : $monthName ?>
       <hr class="border-[#00538A] mt-5" />
     </h3>
+
 
     <?php $index = 0; ?>
     <?php foreach ($events as $event): ?>
@@ -26,7 +34,7 @@
   <?php endforeach; ?>
  
   <?php if(!$showPastEvents): ?>
-    <a href="<?= $page->url() ?>?showPastEvents=true" class="text-yellow-500 text-xl uppercase hover:underline flex items-center gap-3">
+    <a href="<?= $page->url() ?>?showPastEvents=true" class="text-yellow-500 text-xl uppercase hover:underline flex items-center gap-3 mt-16">
       <?= t('events.button.viewPast') ?>
       <div class="w-10">
         <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>

@@ -11,14 +11,14 @@
     ->limit($rows);
 ?>
 
-<h2>UPCOMING EVENTS</h2>
+<h3 class="mb-10">UPCOMING EVENTS</h3>
 
 <?php $index = 0; ?>
 <?php foreach ($events as $event): ?>
   <?php snippet('events/listItem', [
     'event' => $event,
-    'highlightFeaturedEvent' => true,
-    'showImage' => false,
+    'highlightFeaturedEvent' => false,
+    'showImage' => true,
     'showDivider' => $index < count($events) - 1
   ]) ?>
   <?php $index++; ?>

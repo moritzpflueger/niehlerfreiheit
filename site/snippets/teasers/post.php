@@ -8,7 +8,7 @@ $textBlock = $post->blocks()->toBlocks()->filter(function($block) {
   })->first();
 
 if ($textBlock) {
-  $teaserText = $textBlock->excerpt($layout === 'small' ? 250 : 500);  
+  $teaserText = $textBlock->excerpt($layout === 'small' ? 250 : 350);  
 } else {
   $teaserText = "No text available.";
 }
@@ -17,7 +17,7 @@ if ($textBlock) {
 <section class="flex <?= $layout === 'small' ? 'text-left' : 'text-center' ?>">
   <div class="">
     <h2 class="<?= $layout === 'small' ? 'text-4xl' : '' ?>"><?= $post->title() ?></h2>
-    <p class="my-10">
+    <p class="text-neutral-500">
       <?= $teaserText ?>
     </p>
     <a href="<?= $post->url() ?>"  class="text-yellow-500 text-xl uppercase hover:underline flex justify-end items-center gap-3">

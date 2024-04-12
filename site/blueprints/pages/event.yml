@@ -69,15 +69,9 @@ columns:
                 text: Saturday
               - value: SU
                 text: Sunday
-          isBiweekly:
-            label: Show every two weeks
-            type: toggle
-            translate: false
-            default: false
-            when: 
-              recurrence: 'weekly'   
           until:
-            label: Populate until n months
+            label: Months to Display
+            help: the amount of months to display the event series into the future. Always based on the current day.
             type: number
             translate: false
             required: true
@@ -96,16 +90,16 @@ columns:
             translate: false
             required: true
             whenQuery: recurrence != 'none'
+          starttime:
+            label: Start Time
+            type: time
+            translate: false
+            required: true          
           admissiontime:
             label: Admission Time
             type: time
             translate: false
             help: optional
-          starttime:
-            label: Start Time
-            type: time
-            translate: false
-            required: true
           text:
             type: textarea
             size: small
@@ -120,6 +114,11 @@ columns:
       settings:
         type: fields
         fields:
+          isCanceled:
+            label: Mark as Canceled
+            type: toggle
+            translate: false
+            default: false
           canceledDates:
             label: Canceled Dates
             type: structure
@@ -136,3 +135,11 @@ columns:
             required: true
             options: query
             query: page.siblings.pluck("categoryTest", ",", true)
+          isBiweekly:
+            label: Show every two weeks
+            help: Check for biweekly events.
+            type: toggle
+            translate: false
+            default: false
+            when: 
+              recurrence: 'weekly'               

@@ -13,10 +13,10 @@
     }
 
     public function isCanceled() {
-      return $this->isCanceled;
+      return (bool) $this->isCanceled;
     }
 
     public function isRecurring() {
       return true; // This method allows us to identify virtual recurring event pages
-    }    
+    }
   }  

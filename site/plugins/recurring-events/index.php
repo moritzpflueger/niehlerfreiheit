@@ -57,7 +57,6 @@
                     'starttime' => $event->starttime(),
                     'text' => $event->text(),
                     'category' => $event->category(),
-                    'files' => $event->files(),
                   ],
                   'parent' => $event,
                 ]);         
