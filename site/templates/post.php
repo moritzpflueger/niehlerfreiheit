@@ -33,5 +33,8 @@
     <?php endforeach; ?>
   </ul>    
 </div>
+<section class="my-20 max-w-4xl mx-auto">
+  <?php snippet('teasers/newsletter') ?>
+</section>
 <?= snippet('footer') ?>
 
