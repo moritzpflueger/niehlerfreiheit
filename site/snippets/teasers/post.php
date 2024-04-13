@@ -1,7 +1,7 @@
 <?php 
 $layout = $layout ?? null;
 $posts = page('posts')->children()->listed()->limit(1);
-$post = $post ?? $posts->first();;
+$post = $post ?? $posts->first();
 
 $textBlock = $post->blocks()->toBlocks()->filter(function($block) {
       return $block->type() === 'text';
@@ -16,7 +16,9 @@ if ($textBlock) {
 
 <section class="flex <?= $layout === 'small' ? 'text-left' : 'text-center' ?>">
   <div class="">
-    <h2 class="<?= $layout === 'small' ? 'text-4xl' : '' ?>"><?= $post->title() ?></h2>
+    <h2 class="<?= $layout === 'small' ? 'text-2xl' : '' ?>">
+      <?= $post->title() ?>
+    </h2>
     <p class="text-neutral-500">
       <?= $teaserText ?>
     </p>
