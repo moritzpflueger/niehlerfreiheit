@@ -67,3 +67,14 @@ fields:
             label: Page, Post or Event
             type: pages
             multiple: false
+      - type: posts
+        # preview: fields
+        # wysiwyg: true
+        fields:
+          heading:
+            label: Heading
+            type: text
+          text:
+            label: Text
+            type: textarea
+          
