@@ -62,7 +62,7 @@
           <a href="<?= $site->url() ?>/impressum">Impressum</a>
         </li>
         <li>
-          <a href="<?= $site->url() ?>/datenschutz">Datenschutzerklärung</a>
+          <a href="<?= $site->url() ?>/datenschutzerklaerung">Datenschutzerklärung</a>
         </li>        
         <li class="sm:ml-auto">
           &copy; <?= date('Y') ?> Kalker Freiheit
