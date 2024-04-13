@@ -47,7 +47,11 @@
     }  
 
     foreach ($virtualEvents as $event) {
-      $events->add($event);
+      if ($showPastEvents && $event->date()->toDate('YYYY-MM-dd') < $today) {
+        $events->add($event);
+      } else if (!$showPastEvents && $event->date()->toDate('YYYY-MM-dd') >= $today) {
+        $events->add($event);
+      }
     }
 
     $events = $events->sortBy('date', $showPastEvents ? 'desc' : 'asc');
