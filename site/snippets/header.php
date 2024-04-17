@@ -11,7 +11,7 @@
     <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#000000">
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="theme-color" content="#000000">  
-    <title><?= $site->title() ?></title>
+    <title>Niehler Freiheit e.V.</title>
     <!-- Add your CSS and JavaScript files here -->
     <?= css('assets/css/styles.css') ?>
   </head>
