@@ -21,3 +21,4 @@ jobs:
           username: ${{ secrets.NF_FTP_USERNAME }}
           password: ${{ secrets.NF_FTP_PASSWORD }}
           protocol: ftps
+          server-dir: web/staging/
