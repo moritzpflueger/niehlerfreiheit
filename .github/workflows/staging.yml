@@ -1,0 +1,23 @@
+name: Staging Deployment
+on:
+  push:
+    branches: [ staging ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+      - name: FTP Deployment
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          # environment secrets are maintained at Github.
+          # To edit go to "Settings > Secrets" at your Github repository.
+          server: ${{ secrets.NF_FTP_SERVER }}
+          username: ${{ secrets.NF_FTP_USERNAME }}
+          password: ${{ secrets.NF_FTP_PASSWORD }}
+          protocol: ftps

@@ -1,3 +1,18 @@
+# START CUSTOM
+
+# add basis authentification
+AuthType Basic
+AuthName "Restricted Access"
+AuthUserFile /home/sites/site100005556/web/staging/.htpasswd
+Require valid-user
+
+# ensure https
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# END CUSTOM
+
 # Kirby .htaccess
 # revision 2023-07-22
 
