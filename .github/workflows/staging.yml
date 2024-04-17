@@ -22,4 +22,9 @@ jobs:
           password: ${{ secrets.NF_FTP_PASSWORD }}
           protocol: ftps
           server-dir: web/staging/
-          port: 21
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/node_modules/**
+            **/static/**
