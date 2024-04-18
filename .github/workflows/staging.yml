@@ -33,4 +33,3 @@ jobs:
             **/site/accounts/
             **/site/cache/
             **/site/sessions/
-            **/media/**
