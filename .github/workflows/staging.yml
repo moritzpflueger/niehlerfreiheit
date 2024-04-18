@@ -33,8 +33,6 @@ jobs:
             **/site/accounts/
             **/site/cache/
             **/site/sessions/
-            **/assets/**
-            **/kirby/**
             **/media/**
             **/site/**
             **/vendor/**
