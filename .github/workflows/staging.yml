@@ -30,11 +30,11 @@ jobs:
             **/static/**
             package*.json
             composer.*
-            site/accounts/
-            site/cache/
-            site/sessions/
-            assets
-            kirby
-            media
-            site
-            vendor
+            **/site/accounts/
+            **/site/cache/
+            **/site/sessions/
+            **/assets/**
+            **/kirby/**
+            **/media/**
+            **/site/**
+            **/vendor/**
