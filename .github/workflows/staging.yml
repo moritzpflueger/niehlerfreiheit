@@ -34,5 +34,3 @@ jobs:
             **/site/cache/
             **/site/sessions/
             **/media/**
-            **/site/**
-            **/vendor/**
