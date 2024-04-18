@@ -12,6 +12,7 @@ columns:
         sortBy: date desc
         parent: site.find("events")  # get events from parent page
         limit: 20
+        info: "{{ page.date }}"  # Display the date in a readable format
 
   - width: 1/3
     sections:
