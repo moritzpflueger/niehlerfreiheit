@@ -15,7 +15,8 @@ return [
         'newsletter.subscribe.button' => 'Newsletter Abonnieren',
         'newsletter.subscribe.text' => 'Unser Newsletter kommt gewöhnlich einmal im Monat mit dem aktuellen Programm und generellen Updates von der Niehler Freiheit.',
         'event.startTime' => 'Beginn',
-        'event.admissionTime' => 'Einlass'
+        'event.admissionTime' => 'Einlass',
+        'event.eventCode' => 'Die Plätze sind begrenzt. Einlass nur mit Anmeldung:'
     ],
     'url' => NULL
 ];

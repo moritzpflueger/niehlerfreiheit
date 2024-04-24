@@ -144,4 +144,9 @@ columns:
             translate: false
             default: false
             when: 
-              recurrence: 'weekly'               
+              recurrence: 'weekly'    
+          eventCode:
+            label: Event Code
+            type: text
+            translate: false
+            help: Optional. Shows event code & registration link in event page.

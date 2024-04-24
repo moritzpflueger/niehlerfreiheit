@@ -15,7 +15,8 @@ return [
         'newsletter.subscribe.button' => 'Subscribe to newsletter',
         'newsletter.subscribe.text' => 'Our newsletter usually arrives once a month with the current program and general updates from Niehler Freiheit.',
         'event.admissionTime' => 'Admission',
-        'event.startTime' => 'Start'
+        'event.startTime' => 'Start',
+        'event.eventCode' => 'Tickets are limited. Admission only with registration:'
     ],
     'url' => NULL
 ];

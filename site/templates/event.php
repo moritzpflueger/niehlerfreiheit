@@ -23,6 +23,17 @@
       <div class="kirbytext">
         <?= $page->text()->kirbyText() ?>
       </div>
+      <?php if ($page->eventCode()->isNotEmpty()): ?>
+        <div class="my-10">
+          <h3 class="">
+            <?= t('event.eventCode') ?>
+          </h3>
+          <a class="underline" href="https://baramendederwelt.com/">https://baramendederwelt.com/</a>
+          <p class="text-xl py-3">
+            Code: "<?= $page->eventCode()->html() ?>"
+          </p>
+        </div>
+      <?php endif; ?>
     </article>
   </section>
 <?php snippet('footer') ?>
