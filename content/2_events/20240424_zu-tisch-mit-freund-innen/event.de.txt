@@ -6,7 +6,15 @@ Recurrence: none
 
 ----
 
-Recurrenceday: 
+Weekofmonth: 
+
+----
+
+Recurrencedays: 
+
+----
+
+Monthstodisplay: 
 
 ----
 
@@ -14,11 +22,15 @@ Date: 2024-04-24
 
 ----
 
-Admissiontime: 
+Startdate: 
 
 ----
 
 Starttime: 18:00:00
+
+----
+
+Admissiontime: 
 
 ----
 
@@ -38,18 +50,31 @@ Wir freuen uns, sie mit Euch und Euren Freund*innen zu teilen.
 Wir danken allen Freund*innen: Den aktuellen, denen die es mal waren, denjenigen die es sein werden.
  
 Entstanden mit und entwickelt von: 
-Hannah Jaspert, Lina Höfling, Vivienne Fusco, Franka Kohlmey, Helena Dschida, Rosa Heidemann, Elena Frigge, Emma Eis 
- 
-Die Plätze sind begrenzt. Einlass nur mit Anmeldung:
-https://baramendederwelt.com/
+Hannah Jaspert, Lina Höfling, Vivienne Fusco, Franka Kohlmey, Helena Dschida, Rosa Heidemann, Elena Frigge, Emma Eis
 
-Code je nach Datum verwenden:
-zutisch2203
-zutisch2503
+----
+
+Iscanceled: false
+
+----
+
+Canceleddates: 
 
 ----
 
 Category: talk
+
+----
+
+Isbiweekly: false
+
+----
+
+Eventcode: zutisch2503
+
+----
+
+Recurrenceday: 
 
 ----
 
