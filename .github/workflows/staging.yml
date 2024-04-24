@@ -30,6 +30,7 @@ jobs:
             **/static/**
             package*.json
             composer.*
-            **/site/accounts/
-            **/site/cache/
-            **/site/sessions/
+            **/content/**
+            **/site/accounts/**
+            **/site/cache/**
+            **/site/sessions/**
