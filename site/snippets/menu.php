@@ -8,7 +8,7 @@
     </span>
     <ul class="flex flex-col text-3xl sm:text-5xl uppercase items-center gap-10 p-10">
       <?php 
-        $menuItems = $pages->listed()->filterBy('showInMenu', true);
+        $menuItems = $site->menu()->toPages();
         foreach ($menuItems as $item):
           $isActive = $page->uri() === $item->uri();
       ?>

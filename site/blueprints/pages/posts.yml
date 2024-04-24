@@ -15,9 +15,3 @@ columns:
       settings:
         type: fields
         fields:
-          showInMenu:
-            label: Show in Menu
-            help: If checked, this page will be displayed in the main menu.
-            type: toggle
-            translate: false
-            default: false        
