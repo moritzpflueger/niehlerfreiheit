@@ -51,7 +51,7 @@ columns:
             label: Recurrence Days
             type: checkboxes
             translate: false
-            required: true
+            # required: true # handle with custom plugin
             default: monday
             whenQuery: recurrence != 'none'
             options:
@@ -74,7 +74,7 @@ columns:
             help: How months to display the event series into the future [today + n months].
             type: number
             translate: false
-            required: true
+            # required: true # handle with custom plugin
             default: 3
             whenQuery: recurrence != 'none'
           date:
@@ -88,7 +88,7 @@ columns:
             label: Start Date of Event Series
             type: date
             translate: false
-            required: true
+            # required: true # handle with custom plugin
             whenQuery: recurrence != 'none'
           starttime:
             label: Start Time
@@ -134,7 +134,7 @@ columns:
             translate: false
             required: true
             options: query
-            query: page.siblings.pluck("categoryTest", ",", true)
+            query: site.index.pluck("category", ",", true)
           isBiweekly:
             label: Show every two weeks
             help: Check for biweekly events.
