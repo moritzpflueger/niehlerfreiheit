@@ -9,8 +9,8 @@
 
         // Define the fields that are conditionally required
         $conditionalFields = [
-          'weekly' => ['recurrencedays', 'startdate', 'monthsToDisplay'],
-          'monthly' => ['recurrencedays', 'startdate', 'monthsToDisplay']
+          'weekly' => ['recurrencedays', 'startdate', 'monthstodisplay'],
+          'monthly' => ['recurrencedays', 'startdate', 'monthstodisplay']
         ];
         
         // Check requirements based on the recurrence value
