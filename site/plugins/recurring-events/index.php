@@ -22,7 +22,7 @@
           foreach ($recurringEvents as $event) {
               $startDate = $event->startdate(); // Start date and time
               $endDate = null;
-              $until = date('Y-m-d', strtotime('+' . $event->until() . 'months'));
+              $until = date('Y-m-d', strtotime('+' . $event->monthsToDisplay() . 'months'));
               $frequency = $event->recurrence(); // 'weekly' | 'monthly'
               $interval = $event->isBiweekly()->toBool() ? 2 : 1;
               $weekOfMonth = $event->weekOfMonth()->yaml();

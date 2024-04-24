@@ -69,9 +69,9 @@ columns:
                 text: Saturday
               - value: SU
                 text: Sunday
-          until:
+          monthsToDisplay:
             label: Months to Display
-            help: the amount of months to display the event series into the future. Always based on the current day.
+            help: How months to display the event series into the future [today + n months].
             type: number
             translate: false
             required: true
