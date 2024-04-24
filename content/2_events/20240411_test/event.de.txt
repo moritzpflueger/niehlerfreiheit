@@ -1,0 +1,57 @@
+Title: Test
+
+----
+
+Recurrence: weekly
+
+----
+
+Weekofmonth: 1
+
+----
+
+Recurrencedays: 
+
+----
+
+Until: 3
+
+----
+
+Date: 2024-04-11
+
+----
+
+Startdate: 
+
+----
+
+Starttime: 00:00:00
+
+----
+
+Admissiontime: 
+
+----
+
+Text: 
+
+----
+
+Iscanceled: false
+
+----
+
+Canceleddates: 
+
+----
+
+Category: concert
+
+----
+
+Isbiweekly: false
+
+----
+
+Uuid: m9OBtPKREtyy7QbZ

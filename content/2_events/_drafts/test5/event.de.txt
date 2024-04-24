@@ -1,0 +1,61 @@
+Title: test5
+
+----
+
+Recurrence: none
+
+----
+
+Isrecurring: true
+
+----
+
+Weekofmonth: 1
+
+----
+
+Recurrencedays: 
+
+----
+
+Until: 3
+
+----
+
+Date: 2024-04-11
+
+----
+
+Startdate: 
+
+----
+
+Starttime: 18:00:00
+
+----
+
+Admissiontime: 
+
+----
+
+Text: 
+
+----
+
+Iscanceled: false
+
+----
+
+Canceleddates: 
+
+----
+
+Category: com
+
+----
+
+Isbiweekly: false
+
+----
+
+Uuid: g6C3hUjaii9abiJm

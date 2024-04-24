@@ -1,0 +1,61 @@
+Title: test7
+
+----
+
+Recurrence: none
+
+----
+
+Weekofmonth: 1
+
+----
+
+Recurrencedays: 
+
+----
+
+Until: 
+
+----
+
+Date: 2024-04-05
+
+----
+
+Startdate: 
+
+----
+
+Starttime: 04:00:00
+
+----
+
+Admissiontime: 
+
+----
+
+Text: 
+
+----
+
+Iscanceled: false
+
+----
+
+Canceleddates: 
+
+----
+
+Category: yoga
+
+----
+
+Isbiweekly: false
+
+----
+
+Isrecurring: false
+
+----
+
+Uuid: o5Z9BlGdUC4r4lYc

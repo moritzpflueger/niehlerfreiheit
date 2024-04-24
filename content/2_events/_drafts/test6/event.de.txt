@@ -1,0 +1,61 @@
+Title: test6
+
+----
+
+Recurrence: none
+
+----
+
+Isrecurring: true
+
+----
+
+Weekofmonth: 1
+
+----
+
+Recurrencedays: 
+
+----
+
+Until: 3
+
+----
+
+Date: 2024-04-04
+
+----
+
+Startdate: 
+
+----
+
+Starttime: 04:00:00
+
+----
+
+Admissiontime: 
+
+----
+
+Text: 
+
+----
+
+Iscanceled: false
+
+----
+
+Canceleddates: 
+
+----
+
+Category: Papagei
+
+----
+
+Isbiweekly: false
+
+----
+
+Uuid: NibVt7CpX1a4qwG9
