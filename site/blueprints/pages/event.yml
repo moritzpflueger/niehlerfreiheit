@@ -119,6 +119,8 @@ columns:
             type: toggle
             translate: false
             default: false
+            when:
+              recurrence: 'none'
           canceledDates:
             label: Canceled Dates
             type: structure
