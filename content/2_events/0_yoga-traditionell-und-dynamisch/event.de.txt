@@ -14,7 +14,7 @@ Recurrencedays: SU
 
 ----
 
-Until: 3
+Monthstodisplay: 6
 
 ----
 
@@ -55,11 +55,15 @@ Canceleddates:
 
 ----
 
-Category: Yoga
+Category: workshop
 
 ----
 
 Isbiweekly: false
+
+----
+
+Until: 3
 
 ----
 

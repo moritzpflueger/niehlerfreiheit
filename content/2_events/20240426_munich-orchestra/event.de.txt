@@ -6,7 +6,15 @@ Recurrence: none
 
 ----
 
-Recurrenceday: 
+Weekofmonth: 
+
+----
+
+Recurrencedays: 
+
+----
+
+Monthstodisplay: 
 
 ----
 
@@ -14,7 +22,7 @@ Date: 2024-04-26
 
 ----
 
-Admissiontime: 18:00:00
+Startdate: 
 
 ----
 
@@ -22,11 +30,31 @@ Starttime: 19:00:00
 
 ----
 
+Admissiontime: 18:00:00
+
+----
+
 Text: test
 
 ----
 
+Iscanceled: true
+
+----
+
+Canceleddates: 
+
+----
+
 Category: concert
+
+----
+
+Isbiweekly: false
+
+----
+
+Recurrenceday: 
 
 ----
 
