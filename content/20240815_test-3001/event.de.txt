@@ -1,8 +1,8 @@
-Title: Offenes Plenum
+Title: test 3001
 
 ----
 
-Recurrence: monthly
+Recurrence: none
 
 ----
 
@@ -10,23 +10,23 @@ Weekofmonth: 1
 
 ----
 
-Recurrencedays: FR
+Recurrencedays: 
 
 ----
 
-Until: 3
+Monthstodisplay: 3
 
 ----
 
-Date: 
+Date: 2024-08-15
 
 ----
 
-Startdate: 2024-04-01
+Startdate: 
 
 ----
 
-Starttime: 20:00:00
+Starttime: 16:00:00
 
 ----
 
@@ -46,7 +46,7 @@ Canceleddates:
 
 ----
 
-Category: Plenum
+Category: theatre
 
 ----
 
@@ -54,4 +54,4 @@ Isbiweekly: false
 
 ----
 
-Uuid: 5Z34aOqjTpshWzxw
+Uuid: 0RGYTj0IKsOpqT0g

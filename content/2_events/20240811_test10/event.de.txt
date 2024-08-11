@@ -1,0 +1,29 @@
+Title: test10
+
+----
+
+Date: 2024-08-11
+
+----
+
+Starttime: 20:00:00
+
+----
+
+Admissiontime: 19:00:00
+
+----
+
+Text: 
+
+----
+
+Iscanceled: false
+
+----
+
+Category: talk
+
+----
+
+Uuid: PM4788Oy3atu39oP
