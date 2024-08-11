@@ -1,0 +1,129 @@
+title: Event
+num: '{{ page.date.toDate("YMMdd") }}'
+create:
+  fields:
+    - recurrence
+    - recurrenceDays
+    - startdate
+    - admissiontime
+    - starttime
+    - category
+
+columns:
+  - width: 2/3
+    sections:
+      info:
+        type: fields
+        fields:
+          title:
+            type: text
+            translate: true
+          recurrence:
+            label: Recurrence
+            type: select
+            translate: false
+            default: weekly
+            options:
+              weekly: Weekly
+              monthly: Monthly
+          weekOfMonth:
+            label: Week of Month
+            type: checkboxes
+            translate: false
+            required: true
+            default: "1"
+            options:
+              - value: "1"
+                text: First
+              - value: "2"
+                text: Second
+              - value: "3"
+                text: Third
+              - value: "4"
+                text: Fourth
+              - value: "5"
+                text: Fifth
+          recurrenceDays:
+            label: Recurrence Days
+            type: checkboxes
+            translate: false
+            required: true
+            options:
+              - value: MO
+                text: Monday
+              - value: TU
+                text: Tuesday
+              - value: WE
+                text: Wednesday
+              - value: TH
+                text: Thursday
+              - value: FR
+                text: Friday
+              - value: SA
+                text: Saturday
+              - value: SU
+                text: Sunday
+          monthsToDisplay:
+            label: Months to Display
+            help: How months to display the event series into the future [today + n months].
+            type: number
+            translate: false
+            required: true
+            default: 3
+          startdate:
+            label: Start Date of Event Series
+            type: date
+            translate: false
+            required: true
+          starttime:
+            label: Start Time
+            type: time
+            translate: false
+            required: true
+          admissiontime:
+            label: Admission Time
+            type: time
+            translate: false
+            help: optional
+          text:
+            type: textarea
+            size: small
+            translate: true
+  - width: 1/3
+    sections:
+      image:
+        type: files
+        layout: cards
+        size: small
+        max: 1 # Limiting to one image upload
+      settings:
+        type: fields
+        fields:
+          canceledDates:
+            label: Canceled Dates
+            type: structure
+            fields:
+              date:
+                label: Date
+                type: date
+          category:
+            label: Category
+            type: tags
+            max: 1
+            translate: false
+            required: true
+            options: query
+            query: site.index.pluck("category", ",", true)
+          isBiweekly:
+            label: Show every two weeks
+            help: Check for biweekly events.
+            type: toggle
+            translate: false
+            default: false
+            when:
+              recurrence: "weekly"
+          eventCode:
+            label: Event Code
+            type: text
+            translate: false
+            help: Optional. Shows event code & registration link in event page.

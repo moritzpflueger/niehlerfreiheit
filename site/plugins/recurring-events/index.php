@@ -14,10 +14,13 @@
             
           $today = date('Y-m-d');
           $virtualEvents = [];
-          $recurringEvents = $page
+          $recurringEvents = $page->site()->find('recurring-events')
             ->children()
-            ->listed()
-            ->filterBy('recurrence', '!=', 'none');
+            ->listed();
+
+          if ($recurringEvents->isEmpty()) {
+            return $virtualEvents;
+          }
 
           foreach ($recurringEvents as $event) {
               $startDate = $event->startdate(); // Start date and time
