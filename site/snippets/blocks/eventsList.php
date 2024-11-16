@@ -1,18 +1,18 @@
 <?php
-  $eventsPage = $site->find('events');
-  $excludeHero = $excludeHero ?? true;
-  $rows = $block->rows()->toInt();
-  $heading = $block->heading();
+$eventsPage = $site->find('events');
+$excludeHero = $excludeHero ?? true;
+$rows = $block->rows()->toInt();
+$heading = $block->heading();
 
-  $events = $eventsPage
-    ->children()
-    ->listed()
-    ->filterBy('date', '>=', date('Y-m-d'))
-    ->sortBy('date', 'asc')
-    ->limit($rows);
+$events = $eventsPage
+  ->children()
+  ->listed()
+  ->filterBy('date', '>=', date('Y-m-d'))
+  ->sortBy('date', 'asc')
+  ->limit($rows);
 ?>
 
-<h2 class=""><?= $heading ?></h2>
+<h2 class="px-3 pt-2"><?= $heading ?></h2>
 
 <?php $index = 0; ?>
 <?php foreach ($events as $event): ?>

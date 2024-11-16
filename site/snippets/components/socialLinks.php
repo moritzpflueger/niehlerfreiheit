@@ -1,8 +1,8 @@
-<ul class="flex gap-3">
+<ul>
   <?php foreach ($site->socialLinks()->toStructure() as $link): ?>
-    <li class="w-10 h-10">
-      <a href="<?= $link->url() ?>" aria-label="<?= $link->name() ?>" target="_blank" class="hover:text-yellow-500">
-        <?= file_get_contents(kirby()->root('assets') . '/icons/social/' . $link->icon() . '.svg'); ?>
+    <li>
+      <a href="<?= $link->url() ?>" aria-label="<?= $link->name() ?>" target="_blank">
+        <?= $link->name() ?>
       </a>
     </li>
   <?php endforeach; ?>

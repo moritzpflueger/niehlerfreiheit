@@ -27,99 +27,12 @@ Blocks:
     },
     {
         "content": {
-            "heading": "5 Minuten Freiheit",
-            "text": "In einem Zeitalter, in dem die digitalen Verbindungen oft die physischen Interaktionen übertreffen, gewinnt die Kraft von Gemeinschaftsräumen, die der Kreativität, Kultur und Kunst gewidmet sind, immer mehr an Bedeutung. Ein kürzlich veröffentlichtes Video über einen kreativen Kulturverein zeigt die tiefgreifenden Auswirkungen solcher Räume",
-            "layout": "left",
-            "page": [
-                "page://eSTslWxEYW3gt8Vl"
-            ]
-        },
-        "id": "9df53352-1d76-4c8e-91b9-baa7420b625d",
-        "isHidden": false,
-        "type": "teaser"
-    },
-    {
-        "content": {
-            "heading": "Hilf dir selbst in unserer Fahrradwerkstatt",
-            "text": "In der halben Acht wird Hilfe zur Selbsthilfe bei der Fahrradreparatur angeboten. Böni steht mit Rat und Tat zur Seite bei deiner Fahrradreparatur.\nVor Ort können Fahrradprojekte begutachtet werden.",
-            "layout": "right",
-            "page": [
-                "page://gI2FdBOwLrqabuxD"
-            ]
-        },
-        "id": "bffb0c43-1e54-4317-b6c2-40ef5e2a672a",
-        "isHidden": false,
-        "type": "teaser"
-    },
-    {
-        "content": {
-            "heading": "Yoga in der Freiheit",
-            "text": "Wir laden euch herzlich zu einer faszinierenden Yoga-Reise ein! Unser Kurs basiert auf dem traditionellen Ashtanga Yoga und ist für alle Levels geeignet. Wir praktizieren nicht nur Körperstellungen (Asanas), sondern entdecken auch Atemübungen (Pranayama) und die Essenz des Ashtanga Yoga.",
-            "layout": "left",
-            "page": [
-                "page://IqTfU0Ks0goqhKXp"
-            ]
-        },
-        "id": "fd61f202-2a51-4310-8203-3b009d3a2676",
-        "isHidden": false,
-        "type": "teaser"
-    },
-    {
-        "content": {
-            "heading": "Entdecke unser Bistro",
-            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-            "layout": "right",
-            "page": [
-                "page://nvCHucdty0tUnsid"
-            ]
-        },
-        "id": "4d706b3b-e3f2-419f-a5d7-d00c7f043aa3",
-        "isHidden": false,
-        "type": "teaser"
-    },
-    {
-        "content": {
             "heading": "Jeden Monat das neuste Programm bekommen",
             "text": "Unser Newsletter kommt gewöhnlich einmal im Monat mit dem aktuellen Programm und generellen Updates von der Niehler Freiheit."
         },
         "id": "7faefc08-0adb-44e3-bd90-134add535482",
         "isHidden": false,
         "type": "newsletter"
-    },
-    {
-        "content": {
-            "heading": "Mitmachen & Unterstützen",
-            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-            "layout": "left",
-            "page": [
-                "page://slq1YfWVa57eb21Q"
-            ]
-        },
-        "id": "2476410b-e6a6-40ef-b92d-16b2ddc4013f",
-        "isHidden": false,
-        "type": "teaser"
-    },
-    {
-        "content": {
-            "heading": "Werkeln in der Freiheit",
-            "text": "Euer Spielplatz für kreative Handwerken: Ob Schweißen, Sägen oder Schleifen – in unserer Holz- u Metallwerkstatt könnt ihr euren Ideen freien Lauf lassen und in die faszinierende Welt der Metallverarbeitung eintauchen. Diese Werkstatt bietet nicht nur Raum und die richtigen Werkzeuge für eure Projekte, sondern auch das Herzstück jeder Schreinerei: eine professionelle Tischkreissäge. Ob Anfänger oder Fortgeschrittener – hier wird jeder zum Meister seines Fachs.",
-            "layout": "right",
-            "page": [
-                "page://nvCHucdty0tUnsid"
-            ]
-        },
-        "id": "d7e6ae4f-5794-4139-9f86-8f5ce5e19d5d",
-        "isHidden": false,
-        "type": "teaser"
-    },
-    {
-        "content": {
-            "heading": "News aus der Freiheit",
-            "text": "Hier findet ihr den neusten Klatsch und Tratsch und auch ein paar Neuigkeiten aus der Freheit."
-        },
-        "id": "ee3539ea-b311-4c85-8d9b-c2ce30abbd4e",
-        "isHidden": false,
-        "type": "posts"
     }
 ]
 

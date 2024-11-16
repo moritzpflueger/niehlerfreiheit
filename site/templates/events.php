@@ -1,7 +1,7 @@
 <?= snippet('header') ?>
 
-<section class="sm:my-32 max-w-4xl mx-auto">
-  <h1><?= $showPastEvents ? "Archiv" : "Programm" ?></h1>
+<section class="">
+  <!-- <h1><?= $showPastEvents ? "Archiv" : "Programm" ?></h1> -->
   
   <?php snippet('events/filter', [
     'dateFilters' => $dateFilters,
@@ -17,20 +17,21 @@
   <?php endif; ?>
 
   <?php foreach ($groupedEvents as $monthName => $events): ?>
-    <h3 class="text-2xl mb-5 sm:mb-10 mt-16 first-of-type:mt-0 uppercase">
+    <!-- <h3 class="text-2xl mb-5 sm:mb-10 mt-16 first-of-type:mt-0 uppercase">
       <?= !$showYear ? strtok($monthName, ' ') : $monthName ?>
       <hr class="border-[#00538A] mt-5" />
-    </h3>
-
+    </h3> -->
 
     <?php $index = 0; ?>
-    <?php foreach ($events as $event): ?>
-      <?php snippet('events/listItem', [
-        'event' => $event,
-        'showYear' => $showYear
-      ]) ?>
-      <?php $index++; ?>
-    <?php endforeach; ?>
+    <div class="flex flex-wrap">
+      <?php foreach ($events as $event): ?>
+        <?php snippet('events/listItem', [
+          'event' => $event,
+          'showYear' => $showYear
+        ]) ?>
+        <?php $index++; ?>
+      <?php endforeach; ?>
+    </div>
   <?php endforeach; ?>
  
   <?php if(!$showPastEvents): ?>

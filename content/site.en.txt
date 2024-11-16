@@ -1,23 +1,12 @@
-Logo: - file://WY3FL5rTvLscY77l
+Title: Niehler Freiheit
 
 ----
 
-Placeholderimage: - file://nkuMdHbqgCvubkRy
+Menu:
 
-----
-
-Sociallinks:
-
-- 
-  name: Instagram
-  url: >
-    https://www.instagram.com/niehlerfreiheit/
-  icon: instagram
-- 
-  name: Facebook
-  url: >
-    https://www.facebook.com/niehlerfreiheit/events/?ref=page_internal
-  icon: facebook
+- page://QkZjf3iBdhwRrYf5
+- page://9kX1z082HLRqjEvS
+- page://JkaKBKLwaqdU5OCT
 
 ----
 

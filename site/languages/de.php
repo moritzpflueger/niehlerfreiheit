@@ -7,7 +7,7 @@ return [
     'locale' => [
         'LC_ALL' => 'de'
     ],
-    'name' => 'German',
+    'name' => 'Deutsch',
     'translations' => [
         'events.button.viewUpcoming' => 'Zum Programm',
         'events.button.viewPast' => 'Vergangene Veranstaltungen',

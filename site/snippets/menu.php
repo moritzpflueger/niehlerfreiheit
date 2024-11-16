@@ -1,12 +1,12 @@
-<div id="menuModal" class="modal">
-  <div class="modal-content p-5 overflow-y-auto">
-    <span class="close-button hover:text-yellow-500">
+<div id="menuModal" class="">
+  <div class="">
+    <!-- <span class="close-button hover:text-yellow-500">
       <span class="font-semibold lowercase text-xl"><?= t('close') ?></span>
       <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
       </svg>
-    </span>
-    <ul class="flex flex-col text-3xl sm:text-5xl uppercase items-center gap-10 p-10">
+    </span> -->
+    <ul class="flex flex-wrap gap-x-10 gap-y-3">
       <?php 
         $menuItems = $site->menu()->toPages();
         foreach ($menuItems as $item):
@@ -19,10 +19,10 @@
         </li>
       <?php endforeach; ?>
     </ul>
-    <div class="absolute bottom-10 text-2xl flex gap-5">
+    <!-- <div class="absolute bottom-10 text-2xl flex gap-5">
       <?php snippet('components/socialLinks') ?>
       <?php snippet('components/toggleLanguage') ?>      
-    </div>
+    </div> -->
   </div>
 </div>
 

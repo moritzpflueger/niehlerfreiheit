@@ -1,73 +1,44 @@
-    <footer class="flex flex-col items-center p-10 text-neutral-400">
-      <div class="text-2xl flex gap-5">
-        <?php snippet('components/socialLinks') ?>
-        <?php snippet('components/toggleLanguage') ?>      
-      </div>
-      <ul class="flex flex-col md:flex-row justify-between w-full gap-5 sm:gap-20 py-10">
-        <li class="">
-          <ul>
-            <?php 
+    <footer class="grid sm:grid-cols-2 gap-y-8 border-t border-neutral-500">
+
+
+      <div class="flex flex-col gap-y-8 col-span-1 sm:border-r border-neutral-500 px-3 py-2">
+        <ul>
+          <li>
+            <ul>
+              <?php
               $menuItems = [
                 ['title' => $site->find('events')->title(), 'url' => $site->find('events')->url()],
                 ['title' => 'Archiv', 'url' => $site->url() . '/events?showPastEvents=true'],
-                ['title' => $site->find('posts')->title(), 'url' => $site->url() . '/posts'],
-                // ['title' => $site->find('location')->title(), 'url' => $site->url() . '/location'],
-                ['title' => $site->find('verein')->title(), 'url' => $site->url() . '/verein'],
+                ['title' => $site->find('vereinssatzung')->title(), 'url' => $site->url() . '/vereinssatzung'],
+
               ];
               foreach ($menuItems as $item):
 
-            ?>
-              <li class="hover:text-yellow-500">
-                <a href="<?= $item['url'] ?>">
-                  <?= $item['title'] ?>
-                </a>
-              </li>
-            <?php endforeach; ?>
-          </ul>
-        </li>
-        <li class="">
-          <ul>
-            <li>
-              <a href="<?= $site->url() ?>/contact">Unterstützen</a>
-            </li>
-            <li>
-              <a href="<?= $site->url() ?>/contact">Unterstützen</a>
-            </li>
-            <li>
-              <a href="<?= $site->url() ?>/contact">Unterstützen</a>
-            </li>
-            <li>
-              <a href="<?= $site->url() ?>/contact">Unterstützeeeeen</a>
-            </li>
-            <li>
-              <a href="<?= $site->url() ?>/contact">Unterstützen</a>
-            </li>
-          </ul>
-        </li>
-        <li class="">
-          <ul>
-            <?php 
-              $posts = page('posts')->children()->listed()->limit(5);
-              foreach ($posts as $post):
-            ?>
-            <li>
-              <a href="<?= $post->url() ?>"><?= $post->title()->excerpt(35) ?></a>
-            </li>
-            <?php endforeach; ?>
-          </ul>
-        </li>
-      </ul>
-      <ul class="flex flex-col sm:flex-row sm:gap-10 w-full">
-        <li>
-          <a href="<?= $site->url() ?>/impressum">Impressum</a>
-        </li>
-        <li>
-          <a href="<?= $site->url() ?>/datenschutzerklaerung">Datenschutzerklärung</a>
-        </li>        
-        <li class="sm:ml-auto">
-          &copy; <?= date('Y') ?> Kalker Freiheit
-        </li>
-      </ul>
+              ?>
+                <li class="hover:text-yellow-500">
+                  <a href="<?= $item['url'] ?>">
+                    <?= $item['title'] ?>
+                  </a>
+                </li>
+              <?php endforeach; ?>
+            </ul>
+          </li>
+        </ul>
+        <ul class="flex flex-col w-full">
+          <li>
+            <a href="<?= $site->url() ?>/impressum">Impressum</a>
+          </li>
+          <li>
+            <a href="<?= $site->url() ?>/datenschutzerklaerung">Datenschutzerklärung</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-span-1 px-3 py-2 flex flex-col gap-y-8">
+        <?php snippet('components/toggleLanguage') ?>
+        <?php snippet('components/socialLinks') ?>
+        &copy;<?= date('Y') ?> Kalker Freiheit
+      </div>
     </footer>
-  </body>
-</html>
+    </body>
+
+    </html>

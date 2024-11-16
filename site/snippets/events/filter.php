@@ -38,26 +38,26 @@ $filterUrl = function ($filter, $filterType) use ($page, $showPastEvents, $selec
 ?>
 
 <nav class="">
-  <div class="flex items-center justify-between px-2 py-1">
+  <div class="flex items-center justify-between px-3 py-2">
     <button
       id="toggleFilters"
-      class="text-neutral-200 uppercase px-2 py-1 flex items-center">
+      class="text-neutral-200 uppercase flex items-center">
       <span class="w-6 mr-3"><?= file_get_contents(kirby()->root('assets') . '/icons/filter.svg'); ?></span>
       <span id="buttonText">show filters ‣</span>
     </button>
     <button
       id="clearFilters"
-      class="text-neutral-200 uppercase">
+      class="text-neutral-200 uppercase <?= ((count($selectedCategoryFilters) + count($selectedDateFilters)) === 0 ? 'hidden' : '') ?>">
       Clear All
       <span class=" <?= ((count($selectedCategoryFilters) + count($selectedDateFilters)) > 0 ? 'font-bold text-yellow-500' : 'text-neutral-500') ?>">
         (<?= count($selectedCategoryFilters) + count($selectedDateFilters) ?>)
       </span>
     </button>
   </div>
-  <div id="filters" class="hidden text-base p-3">
-    <!-- <div class="py-5">
-      Veranstaltungen
-    </div>     -->
+  <div id="filters" class="hidden text-base px-3 pt-2 pb-6">
+    <div class="py-2">
+      Categories
+    </div>
     <?php
     foreach ($categoryFiltersNonRecurringEvents as $filter):
       $isActive = in_array($filter, $selectedCategoryFilters);
@@ -83,10 +83,10 @@ $filterUrl = function ($filter, $filterType) use ($page, $showPastEvents, $selec
       </a>
     <?php endforeach; ?>
 
-    <hr class="-ml-3 -mr-3 border-neutral-500" />
+    <!-- <hr class="-ml-3 -mr-3 border-neutral-500" /> -->
 
     <?php foreach ($dateFilters as $yearName => $filters2): ?>
-      <div class="py-5">
+      <div class="py-2">
         <?= $yearName ?>
       </div>
       <?php foreach ($filters2 as $filter): ?>
@@ -100,32 +100,10 @@ $filterUrl = function ($filter, $filterType) use ($page, $showPastEvents, $selec
         ?>
         <a
           href="<?= $filterUrl($filter, 'date') ?>"
-          class="<?= $isActive ? 'bg-neutral-300 text-black' : 'bg-neutral-800 text-neutral-300 ' ?> inline-flex p-2 mb-2 whitespace-nowrap">
+          class="<?= $isActive ? 'bg-neutral-200 text-black' : 'border-neutral-200 text-neutral-200 ' ?> border inline-flex px-1 mb-2 whitespace-nowrap">
           <?= $formattedFilter ?>
         </a>
       <?php endforeach; ?>
-    <?php endforeach; ?>
-  </div>
-  <div class="">
-    <?php
-    foreach ($selectedDateFilters as $filter):
-      $locale = kirby()->language();
-      $formatter = new IntlDateFormatter($locale, IntlDateFormatter::LONG, IntlDateFormatter::NONE, null, IntlDateFormatter::GREGORIAN, 'MMMM');
-      $timestamp = strtotime($filter);
-      $formattedFilter = $formatter->format($timestamp);
-    ?>
-      <a
-        href="<?= $filterUrl($filter, 'date') ?>"
-        class="bg-neutral-800 text-neutral-300 inline-flex pl-1 pr-2 mb-2 whitespace-nowrap">
-        ✕ <?= $formattedFilter ?>
-      </a>
-    <?php endforeach; ?>
-    <?php foreach ($selectedCategoryFilters as $filter): ?>
-      <a
-        href="<?= $filterUrl($filter, 'category') ?>"
-        class="bg-neutral-800 inline-flex pl-1 pr-2 mb-2 whitespace-nowrap <?= in_array($filter, $categoryFiltersRecurringEvents) ? 'text-cyan-500' : 'text-lime-600' ?>">
-        ✕ <?= $filter ?>
-      </a>
     <?php endforeach; ?>
   </div>
 </nav>

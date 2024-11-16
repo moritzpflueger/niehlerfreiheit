@@ -3,52 +3,29 @@
 @tailwind utilities;
 
 body {
-  @apply 
-    bg-black 
+  @apply bg-black 
     text-neutral-100 
     font-mono 
-    text-xl
+    font-thin
+    uppercase
+    /* text-base */
     /* max-w-4xl  */
     mx-auto 
-    px-5
     h-[100dvh]
     flex
-    flex-col
-  ;
+    flex-col;
 }
 
 h1 {
-  @apply text-6xl sm:text-8xl font-bold uppercase my-10;
+  @apply text-3xl sm:text-4xl font-bold uppercase my-10;
 }
 
 h2 {
-  @apply text-2xl font-bold uppercase mb-3;
+  @apply mb-3;
 }
 
 h3 {
   @apply mb-0;
-}
-
-
-/* collapsible list items */
-details > summary {
-    list-style: none;
-    position: relative;
-    padding-right: 20px; /* Adjust based on the size of your custom caret */
-}
-details > summary::-webkit-details-marker {
-    display: none;
-}
-
-details > summary::before {
-    content: '▶';
-    position: absolute;
-    right: 0;
-    
-    @apply top-[48px] sm:top-[36px];
-}
-details[open] > summary::before {
-    content: '▼';
 }
 
 /* Kirby Text */
@@ -126,7 +103,7 @@ details[open] > summary::before {
   @apply bg-neutral-900 p-5 pl-10 text-2xl;
 }
 .blocks .block[data-type="quote"]:before {
-  content: '“';
+  content: "“";
   @apply text-6xl text-yellow-500;
 }
 
@@ -134,7 +111,7 @@ details[open] > summary::before {
   @apply text-lg py-10 text-center flex justify-center relative;
 }
 .blocks .block[data-type="quote"] footer:before {
-  content: '—';
+  content: "—";
   @apply pr-3;
 }
 

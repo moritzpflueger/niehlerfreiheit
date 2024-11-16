@@ -52,6 +52,7 @@ tabs:
             templates:
               - default
               - home
+              - faq
             limit: 10
           dynamicPages:
             type: pages

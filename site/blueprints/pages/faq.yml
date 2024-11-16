@@ -1,0 +1,16 @@
+title: FAQ Page
+
+fields:
+  heading:
+    type: text
+    label: Heading
+  faqs:
+    type: structure
+    label: FAQ Items
+    fields:
+      question:
+        type: text
+        label: Question
+      answer:
+        type: textarea
+        label: Answer

@@ -6,11 +6,11 @@ Recurrence: weekly
 
 ----
 
-Weekofmonth: 1
+Weekofmonth: 1, 2
 
 ----
 
-Recurrencedays: TU
+Recurrencedays: TU, SU
 
 ----
 
