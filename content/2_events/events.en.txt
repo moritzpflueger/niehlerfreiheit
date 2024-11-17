@@ -1,5 +1,0 @@
-Title: Schedule
-
-----
-
-Text: This is a Events Page Test
