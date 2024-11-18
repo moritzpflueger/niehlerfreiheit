@@ -26,7 +26,6 @@ return function ($site, $page) {
       }
       return $child->date()->toDate('YYYY-MM-dd') >= $today;
     })
-    ->filterBy('recurrence', 'none')
     ->sortBy('date', $showPastEvents ? 'desc' : 'asc')
     ->limit($rows);
 
