@@ -1,6 +1,6 @@
 title: My Homepage
 
-options: 
+options:
   status: false
   create: false
   template: false
@@ -24,6 +24,7 @@ fields:
             size: small
             multiple: false
             help: The image will be displayed in the hero section.
+            # translate: false
       - type: newsletter
         # preview: fields
         # wysiwyg: true
@@ -77,4 +78,3 @@ fields:
           text:
             label: Text
             type: textarea
-          

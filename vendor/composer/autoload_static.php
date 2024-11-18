@@ -109,8 +109,8 @@ class ComposerStaticInitf8de3f2ba5f236ec777cb591b464af3f
         ),
         'Kirby\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/kirby/src',
-            1 => __DIR__ . '/..' . '/getkirby/composer-installer/src',
+            0 => __DIR__ . '/..' . '/getkirby/composer-installer/src',
+            1 => __DIR__ . '/../..' . '/kirby/src',
         ),
         'Doctrine\\Deprecations\\' => 
         array (
