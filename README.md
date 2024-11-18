@@ -2,11 +2,12 @@
 
 ### Get going
 
-* run `php -S localhost:8080 kirby/router.php` to start the server for local development.
+- run `composer install` to install the dependencies.
 
-* The app is using [TailwindCSS](https://tailwindcss.com/docs/installation) for styling. Run `npm run watch` for local development.
+- run `npm install` to install the dependencies.
 
-* The app is using [Kirby](https://getkirby.com/docs/guide/quickstart).
+- run `php -S localhost:8080 kirby/router.php` to start the server for local development.
 
+- The app is using [TailwindCSS](https://tailwindcss.com/docs/installation) for styling. Run `npm run watch` for local development.
 
-
+- The app is using [Kirby](https://getkirby.com/docs/guide/quickstart).
