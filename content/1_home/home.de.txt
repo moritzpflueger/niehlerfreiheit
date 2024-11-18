@@ -7,9 +7,9 @@ Blocks:
 [
     {
         "content": {
-            "text": "EIN ORT FÜR <b style=\"color: #EAB305;\">FREIHEIT</b> IN KÖLN. NIEHLER FREIHEIT E.V. NUTZT RÄUME KREATIV UND VERANSTALTET REGELMÄSSIGE KULTUEVENTS FÜR ALLE. UNSER ZIEL IST ES AUSTAUSCH UND BEGEGNUNGEN ZU FÖRDERN.",
+            "text": "EIN ORT FÜR <b style=\"color: #EAB305;\">FREIHEIT</b> IN KÖLN. NIEHLER FREIHEIT E.V. NUTZT RÄUME KREATIV UND VERANSTALTET REGELMÄSSIGE KULTUEVENTS FÜR ALLE. UNSER ZIEL IST ES AUSTAUSCH UND BEGEGNUNGEN ZU FÖRDERN. NIEHLER FREIHEIT E.V. NUTZT RÄUME KREATIV UND VERANSTALTET REGELMÄSSIGE KULTUEVENTS FÜR ALLE. UNSER ZIEL IST ES AUSTAUSCH UND BEGEGNUNGEN ZU FÖRDERN. NIEHLER FREIHEIT E.V. NUTZT RÄUME KREATIV UND VERANSTALTET REGELMÄSSIGE KULTUEVENTS FÜR ALLE. UNSER ZIEL IST ES AUSTAUSCH UND BEGEGNUNGEN ZU FÖRDERN. NIEHLER FREIHEIT E.V. NUTZT RÄUME KREATIV UND VERANSTALTET REGELMÄSSIGE KULTUEVENTS FÜR ALLE. UNSER ZIEL IST ES AUSTAUSCH UND BEGEGNUNGEN ZU FÖRDERN.",
             "image": [
-                "file://iKPuEvZCpY1f8Phv"
+                "file://GeUOE36hOz6FvVcX"
             ]
         },
         "id": "35926296-145f-4b83-929a-c0cbb3dae116",
@@ -18,7 +18,7 @@ Blocks:
     },
     {
         "content": {
-            "heading": "Die anstehenden Veranstaltungen",
+            "heading": "Anstehenden Veranstaltungen",
             "rows": 3
         },
         "id": "7521cdcb-352c-495c-b527-3521ffe46f4b",
@@ -27,10 +27,10 @@ Blocks:
     },
     {
         "content": {
-            "heading": "Jeden Monat das neuste Programm bekommen",
-            "text": "Unser Newsletter kommt gewöhnlich einmal im Monat mit dem aktuellen Programm und generellen Updates von der Niehler Freiheit."
+            "heading": "",
+            "text": ""
         },
-        "id": "7faefc08-0adb-44e3-bd90-134add535482",
+        "id": "8fda1527-322e-4281-8ccf-4274d13c41f2",
         "isHidden": false,
         "type": "newsletter"
     }
