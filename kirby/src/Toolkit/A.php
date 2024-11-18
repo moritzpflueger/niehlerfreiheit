@@ -255,7 +255,7 @@ class A
 	 * // result: ['cat' => 'miao', 'dog' => 'wuff'];
 	 * </code>
 	 *
-	 * @param array $array The source array
+	 * @param mixed $array The source array
 	 * @param string|int|array|null $key The key to look for
 	 * @param mixed $default Optional default value, which
 	 *                       should be returned if no element
@@ -588,7 +588,7 @@ class A
 	 */
 	public static function prepend(array $array, array $prepend): array
 	{
-		return $prepend + $array;
+		return static::merge($prepend, $array, A::MERGE_APPEND);
 	}
 
 	/**
@@ -738,12 +738,18 @@ class A
 	/**
 	 * Returns a number of random elements from an array,
 	 * either in original or shuffled order
+	 *
+	 * @throws \Exception When $count is larger than array length
 	 */
 	public static function random(
 		array $array,
 		int $count = 1,
 		bool $shuffle = false
 	): array {
+		if ($count > count($array)) {
+			throw new InvalidArgumentException('$count is larger than available array items');
+		}
+
 		if ($shuffle === true) {
 			return array_slice(self::shuffle($array), 0, $count);
 		}
