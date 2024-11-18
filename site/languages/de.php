@@ -9,7 +9,7 @@ return [
     ],
     'name' => 'Deutsch',
     'translations' => [
-        'events.button.viewUpcoming' => 'Zum Programm',
+        'events.button.viewUpcoming' => 'Alle Events',
         'events.button.viewPast' => 'Vergangene Veranstaltungen',
         'menu.closebutton' => 'schließen',
         'newsletter.subscribe.button' => 'Newsletter Abonnieren',

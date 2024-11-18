@@ -1,7 +1,7 @@
-    <footer class="grid sm:grid-cols-2 gap-y-8 border-t border-neutral-500">
+    <footer class="grid sm:grid-cols-2 gap-y-8 border-t border-neutral-700">
 
 
-      <div class="flex flex-col gap-y-8 col-span-1 sm:border-r border-neutral-500 px-3 py-2">
+      <div class="flex flex-col gap-y-8 col-span-1 sm:border-r border-neutral-700 px-3 py-2">
         <ul>
           <li>
             <ul>
@@ -33,10 +33,12 @@
           </li>
         </ul>
       </div>
-      <div class="col-span-1 px-3 py-2 flex flex-col gap-y-8">
-        <?php snippet('components/toggleLanguage') ?>
+      <div class="col-span-1 px-3 py-2 flex flex-col justify-between">
         <?php snippet('components/socialLinks') ?>
-        &copy;<?= date('Y') ?> Kalker Freiheit
+        <div>
+          <?php snippet('components/toggleLanguage') ?>
+          &copy;<?= date('Y') ?> Kalker Freiheit
+        </div>
       </div>
     </footer>
     </body>

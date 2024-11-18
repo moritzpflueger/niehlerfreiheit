@@ -37,8 +37,8 @@ $filterUrl = function ($filter, $filterType) use ($page, $showPastEvents, $selec
 };
 ?>
 
-<nav class="">
-  <div class="flex items-center justify-between px-3 py-2">
+<nav class="border-b border-neutral-700 py-8 px-6">
+  <div class="flex items-center justify-between px-2">
     <button
       id="toggleFilters"
       class="text-neutral-200 uppercase flex items-center">
@@ -83,7 +83,6 @@ $filterUrl = function ($filter, $filterType) use ($page, $showPastEvents, $selec
       </a>
     <?php endforeach; ?>
 
-    <!-- <hr class="-ml-3 -mr-3 border-neutral-500" /> -->
 
     <?php foreach ($dateFilters as $yearName => $filters2): ?>
       <div class="py-2">

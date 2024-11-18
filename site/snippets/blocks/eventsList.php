@@ -12,24 +12,27 @@ $events = $eventsPage
   ->limit($rows);
 ?>
 
-<h2 class="px-3 pt-2"><?= $heading ?></h2>
+<!-- <h2 class="text-xl mb-0 uppercase py-32 flex items-center text-center justify-center border-b border-neutral-700"><?= $heading ?></h2> -->
 
-<?php $index = 0; ?>
-<?php foreach ($events as $event): ?>
-  <?php snippet('events/listItem', [
-    'event' => $event,
-    'highlightFeaturedEvent' => false,
-    'showImage' => true,
-    'showDivider' => $index < count($events) - 1
-  ]) ?>
-  <?php $index++; ?>
-<?php endforeach; ?>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4">
+  <?php $index = 0; ?>
+  <?php foreach ($events as $event): ?>
+    <?php snippet('events/listItem', [
+      'event' => $event,
+      'highlightFeaturedEvent' => false,
+      'showImage' => true,
+      'showDivider' => $index < count($events) - 1
+    ]) ?>
+    <?php $index++; ?>
+  <?php endforeach; ?>
+  <a href="<?= $site->url() ?>/events" class="text-yellow-500 text-xl uppercase py-10 hover:underline flex items-center justify-center border-y border-neutral-700">
+    <?= t('events.button.viewUpcoming') ?>
+    <div class="w-10">
+      <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>
+    </div>
+  </a>
+</div>
 
-<a href="<?= $site->url() ?>/events" class="text-yellow-500 text-xl uppercase hover:underline flex items-center justify-end gap-3">
-  <?= t('events.button.viewUpcoming') ?>
-  <div class="w-10">
-    <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>
-  </div>
-</a>
+
 
 <!-- text-[#00538A] -->

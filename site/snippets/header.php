@@ -19,13 +19,13 @@
 
 <body>
   <header class="">
-    <a href="<?= $site->url() ?>" class="block border-b border-neutral-500 px-3 py-2">
+    <a href="<?= $site->url() ?>" class="block border-b border-neutral-700 px-3 py-2">
       niehler freiheit e.V.
     </a>
-    <nav class="flex items-start justify-between px-3 py-2 border-b border-neutral-500">
+    <nav class="flex items-start justify-between px-3 py-2 border-b border-neutral-700">
       <!-- <button id="menu-button" class="text-white hover:text-yellow-500">
-          <?= file_get_contents(kirby()->root('assets') . '/icons/menu.svg'); ?>          
-        </button> -->
+        <?= file_get_contents(kirby()->root('assets') . '/icons/menu.svg'); ?>
+      </button> -->
       <?php snippet('menu') ?>
     </nav>
   </header>
