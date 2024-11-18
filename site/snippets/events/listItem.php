@@ -22,10 +22,7 @@ $showDivider = $showDivider ?? false;
   <a href="<?= $eventUrl ?>" class="">
     <div class="border-r border-b border-neutral-700 h-full">
       <?php if ($showImage): ?>
-        <div class="">
-          <img class="" src="<?= $imageUrl ?>" alt="<?= $imageAlt ?>" />
-
-        </div>
+        <img class="w-full" src="<?= $imageUrl ?>" alt="<?= $imageAlt ?>" />
       <?php endif; ?>
       <div class="px-3 pt-3 pb-5">
 
