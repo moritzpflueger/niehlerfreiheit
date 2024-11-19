@@ -1,7 +1,7 @@
 name: Staging Deployment
 on:
   push:
-    branches: [ staging ]
+    branches: [staging]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -29,7 +29,6 @@ jobs:
             **/node_modules/**
             **/static/**
             package*.json
-            composer.*
             **/content/**
             **/site/accounts/**
             **/site/cache/**
