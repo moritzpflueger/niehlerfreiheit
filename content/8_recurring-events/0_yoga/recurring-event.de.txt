@@ -2,7 +2,7 @@ Title: Yoga
 
 ----
 
-Recurrence: weekly
+Recurrence: monthly
 
 ----
 
@@ -10,7 +10,7 @@ Weekofmonth: 1
 
 ----
 
-Recurrencedays: FR
+Recurrencedays: 
 
 ----
 
@@ -31,6 +31,8 @@ Admissiontime:
 ----
 
 Text:
+
+Deutsch Version!±
 
 Please arrive 15 minutes early.
 
