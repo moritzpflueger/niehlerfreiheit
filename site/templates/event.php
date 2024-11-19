@@ -34,9 +34,11 @@
       <p class="">
         <?= t('event.date') ?>: <?= $page->date()->toDate('E dd MMMM') ?>
       </p>
-      <p class="">
-        <?= t('event.admission') ?>: <?= $page->admissiontime()->toDate('H:mm') ?>
-      </p>
+      <?php if ($page->admissiontime()->isNotEmpty()): ?>
+        <p class="">
+          <?= t('event.admission') ?>: <?= $page->admissiontime()->toDate('H:mm') ?>
+        </p>
+      <?php endif; ?>
       <p class="mb-5">
         <?= t('event.start') ?>: <?= $page->starttime()->toDate('H:mm') ?>
       </p>
