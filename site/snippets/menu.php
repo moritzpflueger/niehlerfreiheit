@@ -26,7 +26,9 @@
   </div>
 </div>
 
-<script>
+
+<!-- TODO: implement menu modal -->
+<!-- <script>
   // Get the modal
   var modal = document.getElementById('menuModal');
 
@@ -55,4 +57,4 @@
       document.body.classList.remove('no-scroll'); // Enable scrolling
     }
   }
-</script>
+</script> -->
