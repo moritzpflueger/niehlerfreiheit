@@ -18,7 +18,6 @@
 
   <?php foreach ($groupedEvents as $monthName => $events): ?>
 
-
     <?php $index = 0; ?>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 border-t border-neutral-700">
       <h3 class="h-full flex items-center justify-center border-b border-r border-neutral-700 py-16">
