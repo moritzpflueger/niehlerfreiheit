@@ -1,0 +1,41 @@
+Title: Homepage
+
+----
+
+Blocks:
+
+[
+    {
+        "content": {
+            "text": "EIN ORT FÜR <b style=\"color: #EAB305;\">FREIHEIT</b> IN KÖLN. NIEHLER FREIHEIT E.V. NUTZT RÄUME KREATIV UND VERANSTALTET REGELMÄSSIGE KULTUEVENTS FÜR ALLE. UNSER ZIEL IST ES AUSTAUSCH UND BEGEGNUNGEN ZU FÖRDERN. NIEHLER FREIHEIT E.V. NUTZT RÄUME KREATIV UND VERANSTALTET REGELMÄSSIGE KULTUEVENTS FÜR ALLE. UNSER ZIEL IST ES AUSTAUSCH UND BEGEGNUNGEN ZU FÖRDERN. NIEHLER FREIHEIT E.V. NUTZT RÄUME KREATIV UND VERANSTALTET REGELMÄSSIGE KULTUEVENTS FÜR ALLE. UNSER ZIEL IST ES AUSTAUSCH UND BEGEGNUNGEN ZU FÖRDERN. NIEHLER FREIHEIT E.V. NUTZT RÄUME KREATIV UND VERANSTALTET REGELMÄSSIGE KULTUEVENTS FÜR ALLE. UNSER ZIEL IST ES AUSTAUSCH UND BEGEGNUNGEN ZU FÖRDERN.",
+            "image": [
+                "file://jLqQPA5PC01SgMmO"
+            ]
+        },
+        "id": "1520dd10-fd18-4cf1-beb9-b53cfef12814",
+        "isHidden": false,
+        "type": "hero"
+    },
+    {
+        "content": {
+            "heading": "Upcoming Events",
+            "rows": 3
+        },
+        "id": "7521cdcb-352c-495c-b527-3521ffe46f4b",
+        "isHidden": false,
+        "type": "eventsList"
+    },
+    {
+        "content": {
+            "heading": "",
+            "text": ""
+        },
+        "id": "b0cbeef5-4d4a-427a-80e2-c81d8f73578e",
+        "isHidden": false,
+        "type": "newsletter"
+    }
+]
+
+----
+
+Text: this is my home page 2

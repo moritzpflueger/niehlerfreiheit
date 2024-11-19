@@ -1,0 +1,33 @@
+Title: Test Event
+
+----
+
+Date: 2024-11-22
+
+----
+
+Starttime: 03:00:00
+
+----
+
+Admissiontime: 11:00:00
+
+----
+
+Text: test
+
+----
+
+Iscanceled: false
+
+----
+
+Category: theatre
+
+----
+
+Eventcode: 
+
+----
+
+Uuid: S4RHGMRYnBAvaNPa

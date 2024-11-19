@@ -1,0 +1,57 @@
+Title: test1
+
+----
+
+Recurrence: weekly
+
+----
+
+Weekofmonth: 1, 2
+
+----
+
+Recurrencedays: TU, SU
+
+----
+
+Monthstodisplay: 3
+
+----
+
+Startdate: 2024-08-14
+
+----
+
+Starttime: 14:00:00
+
+----
+
+Admissiontime: 10:00:00
+
+----
+
+Text: test text
+
+----
+
+Canceleddates: 
+
+----
+
+Category: talk
+
+----
+
+Isbiweekly: false
+
+----
+
+Eventcode: 
+
+----
+
+Blocks: 
+
+----
+
+Uuid: Gkdkk7tn1uuo9vNk
