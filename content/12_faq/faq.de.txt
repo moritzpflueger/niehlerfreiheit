@@ -1,0 +1,73 @@
+Title: FAQ
+
+----
+
+Heading: Häufig gestellte Fragen
+
+----
+
+Faqs:
+
+- 
+  question: Ist euer Veranstaltungsort barrierefrei?
+  answer: >
+    Wir arbeiten kontinuierlich daran,
+    Barrieren abzubauen. Der Haupteingang test
+    ist rollstuhlgerecht, und wir bieten bei
+    Bedarf Unterstützung an. Melde dich
+    gerne vor deinem Besuch, damit wir dir
+    weiterhelfen können.
+- 
+  question: Wie kann ich Tickets kaufen?
+  answer: >
+    Tickets kannst du bequem online über
+    unseren Ticketshop oder direkt vor Ort
+    erwerben.
+- 
+  question: 'Gibt es Rabatte für Studierende oder Geringverdiener*innen?'
+  answer: >
+    Ja, wir bieten ermäßigte Tickets an.
+    Bringe einfach einen entsprechenden
+    Nachweis mit.
+- 
+  question: >
+    Gibt es eine Möglichkeit,
+    Veranstaltungen in Gebärdensprache zu
+    erleben?
+  answer: >
+    Für ausgewählte Veranstaltungen bieten
+    wir Übersetzung in Gebärdensprache an.
+    Diese sind im Programm entsprechend
+    gekennzeichnet.
+- 
+  question: Bietet ihr Essen und Getränke an?
+  answer: 'Ja, in unserem Café gibt es ausschließlich Bio- und regionale Produkte. Wir bieten auch vegane und glutenfreie Optionen an.'
+- 
+  question: >
+    Darf ich eigenes Essen oder Getränke
+    mitbringen?
+  answer: >
+    Leider nicht, aber wir versprechen dir,
+    dass du in unserem Angebot etwas
+    Passendes findest!
+
+----
+
+Blocks:
+
+- 
+  content:
+    level: h2
+    text: Häufig gestellte Fragen
+  id: b18272e0-15df-4b3b-bf64-f5bf0fe57c59
+  isHidden: false
+  type: heading
+- 
+  content: [ ]
+  id: 30095e5c-c2f0-4c22-95bb-09973a50f460
+  isHidden: false
+  type: accordion
+
+----
+
+Uuid: 9kX1z082HLRqjEvS
