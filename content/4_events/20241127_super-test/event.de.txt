@@ -1,0 +1,33 @@
+Title: Super test
+
+----
+
+Date: 2024-11-27
+
+----
+
+Starttime: 16:00:00
+
+----
+
+Admissiontime: 
+
+----
+
+Text: 
+
+----
+
+Iscanceled: false
+
+----
+
+Category: Theater
+
+----
+
+Eventcode: 
+
+----
+
+Uuid: 7s6h86c5WnAyMhzY
