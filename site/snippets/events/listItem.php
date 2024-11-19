@@ -39,7 +39,7 @@ $showDivider = $showDivider ?? false;
         <div class="text-base text-neutral-400 uppercase mb-0">
           <?= $event->date()->toDate('E dd MMMM' . ($showYear ? ' Y' : '')) ?>
         </div>
-        <h3 class="text-white"><?= $event->title()->html() ?></h3>
+        <h3 class="text-white break-words"><?= $event->title()->html() ?></h3>
         <div class="mt-2">
           <div class="text-black text-sm inline-flex w-auto px-1 <?= $isRecurring ? 'bg-cyan-400' : 'bg-green-400' ?>">
             <?= $event->category() ?>
