@@ -32,20 +32,10 @@ tabs:
             # query: site.index(true).filterBy("template", "event").filterBy("recurrence", "!=", "none")
 
   pages:
-    label: Posts & Pages
-    # icon: page
+    label: Pages
     icon: 🗂️
     columns:
-      - width: 2/3
-        sections:
-          posts:
-            type: pages
-            parent: site.find("posts") # get posts from parent page
-            templates:
-              - post
-            limit: 10
-
-      - width: 1/3
+      - width: 3/3
         sections:
           pages:
             type: pages
@@ -53,14 +43,17 @@ tabs:
               - default
               - home
               - faq
-            limit: 10
-          dynamicPages:
-            type: pages
-            label: Dynamic Pages
-            templates:
-              - posts
-              - events
-            limit: 10
+            limit: 20
+
+      # - width: 1/3
+      #   sections:
+      #     dynamicPages:
+      #       type: pages
+      #       label: Dynamic Pages
+      #       templates:
+      #         - posts
+      #         - events
+      #       limit: 10
 
   configuration:
     icon: cog
@@ -79,11 +72,11 @@ tabs:
           general2:
             type: fields
             fields:
-              logo:
-                label: Logo
-                translate: false
-                type: files
-                max: 1
+              # logo:
+              #   label: Logo
+              #   translate: false
+              #   type: files
+              #   max: 1
               placeholderImage:
                 label: Placeholder Image
                 help: This image will be used as a default image, for when no image is uploaded to an event or a page.
@@ -115,9 +108,9 @@ tabs:
                       facebook: Facebook
                       instagram: Instagram
                       youtube: YouTube
-          generateStaticSite:
-            label: Generate Static Site
-            type: pages
-            templates:
-              - static-site-generator
-            help: admin use only
+          # generateStaticSite:
+          #   label: Generate Static Site
+          #   type: pages
+          #   templates:
+          #     - static-site-generator
+          #   help: admin use only

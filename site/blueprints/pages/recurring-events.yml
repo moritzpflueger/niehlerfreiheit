@@ -1,4 +1,4 @@
-title: Events
+title: Recurring Events
 
 columns:
   main:
@@ -6,12 +6,12 @@ columns:
     sections:
       events:
         type: pages
-        headline: All Events
+        headline: All Recurring Events
         status: all
         templates:
-          - event
+          - recurring-event
         sortBy: date desc
-        parent: site.find("events") # get events from parent page
+        parent: site.find("recurring-events") # get events from parent page
         limit: 20
   # sidebar:
   #   width: 1/3
