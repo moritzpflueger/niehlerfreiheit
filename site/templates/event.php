@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-<section class="mb-32 w-full p-">
+<section class="mb-32 w-full flex-1">
   <article class="">
     <div class="grid sm:grid-cols-2 border-b border-neutral-700">
       <?php if ($page->files()->valid()): ?>
@@ -27,18 +27,18 @@
           : $page->isCanceled()->toBool();
         if ($isCanceled): ?>
           <div class="bg-red-500 border border-red-500 px-1 text-sm uppercase text-black inline-block">
-            abgesagt
+            <?= t('event.canceled') ?>
           </div>
         <?php endif; ?>
       </div>
       <p class="">
-        Date: <?= $page->date()->toDate('E dd MMMM') ?>
+        <?= t('event.date') ?>: <?= $page->date()->toDate('E dd MMMM') ?>
       </p>
       <p class="">
-        Admission: <?= $page->admissiontime()->toDate('H:mm') ?>
+        <?= t('event.admission') ?>: <?= $page->admissiontime()->toDate('H:mm') ?>
       </p>
       <p class="mb-5">
-        Start: <?= $page->starttime()->toDate('H:mm') ?>
+        <?= t('event.start') ?>: <?= $page->starttime()->toDate('H:mm') ?>
       </p>
       <?php if ($page->eventCode()->isNotEmpty()): ?>
         <div class="mb-5">

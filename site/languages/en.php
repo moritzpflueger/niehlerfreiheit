@@ -11,12 +11,16 @@ return [
     'translations' => [
         'events.button.viewUpcoming' => 'View all events',
         'events.button.viewPast' => 'View past events',
-        'menu.closebutton' => 'close',
-        'newsletter.subscribe.button' => 'Subscribe to newsletter',
-        'newsletter.subscribe.text' => 'Our newsletter usually arrives once a month with the current program and general updates from Niehler Freiheit.',
-        'event.admissionTime' => 'Admission',
-        'event.startTime' => 'Start',
-        'event.eventCode' => 'Tickets are limited. Admission only with registration:'
+        'event.eventCode' => 'Tickets are limited. Admission only with registration:',
+        'event.admission' => 'Admission',
+        'event.canceled' => 'Canceled',
+        'event.date' => 'Date',
+        'event.start' => 'Start',
+        'event.scheduledDates' => 'Scheduled Dates',
+        'events.button.clearAll' => 'Clear All',
+        'events.button.hideFilters' => 'Hide Filters',
+        'events.button.showFilters' => 'Show Filters',
+        'events.categories' => 'Categories'
     ],
     'url' => NULL
 ];
