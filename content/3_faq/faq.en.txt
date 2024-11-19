@@ -2,21 +2,15 @@ Title: FAQ
 
 ----
 
-Heading: Häufig gestellte Fragen
+Heading: Frequently Asked Questions
 
 ----
 
 Faqs:
 
 - 
-  question: Ist euer Veranstaltungsort barrierefrei?
-  answer: >
-    Wir arbeiten kontinuierlich daran,
-    Barrieren abzubauen. Der Haupteingang test
-    ist rollstuhlgerecht, und wir bieten bei
-    Bedarf Unterstützung an. Melde dich
-    gerne vor deinem Besuch, damit wir dir
-    weiterhelfen können.
+  question: Is the venue barrierefree
+  answer: We are working on it. Comeback in 2032.
 - 
   question: Wie kann ich Tickets kaufen?
   answer: >
@@ -67,7 +61,3 @@ Blocks:
   id: 30095e5c-c2f0-4c22-95bb-09973a50f460
   isHidden: false
   type: accordion
-
-----
-
-Uuid: 9kX1z082HLRqjEvS

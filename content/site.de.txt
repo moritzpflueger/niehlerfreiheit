@@ -4,13 +4,9 @@ Title: Niehler Freiheit
 
 Menu:
 
-- page://JkaKBKLwaqdU5OCT
-- page://9kX1z082HLRqjEvS
 - page://88oASCzeq6Qoi3gw
-
-----
-
-Logo: 
+- page://9kX1z082HLRqjEvS
+- page://JkaKBKLwaqdU5OCT
 
 ----
 
@@ -30,3 +26,7 @@ Sociallinks:
   url: >
     https://www.facebook.com/niehlerfreiheit/events/?ref=page_internal
   icon: facebook
+
+----
+
+Logo: 

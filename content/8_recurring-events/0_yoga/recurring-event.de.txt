@@ -1,4 +1,4 @@
-Title: test2
+Title: Yoga
 
 ----
 
@@ -10,7 +10,7 @@ Weekofmonth: 1
 
 ----
 
-Recurrencedays: TU
+Recurrencedays: FR
 
 ----
 
@@ -18,7 +18,7 @@ Monthstodisplay: 3
 
 ----
 
-Startdate: 2024-08-28
+Startdate: 2025-01-01
 
 ----
 
@@ -52,7 +52,7 @@ Canceleddates:
 
 ----
 
-Category: Test
+Category: Yoga
 
 ----
 
@@ -64,4 +64,4 @@ Eventcode:
 
 ----
 
-Uuid: 1uu8BgkrWaEht5bx
+Uuid: iYplrHBofvGF3e1G

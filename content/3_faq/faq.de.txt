@@ -2,27 +2,27 @@ Title: FAQ
 
 ----
 
-Heading: Frequently Asked Questions
+Heading: Häufig gestellte Fragen
 
 ----
 
 Faqs:
 
 - 
-  question: Ist euer Veranstaltungsort barrierefrei?
-  answer: >
-    Wir arbeiten kontinuierlich daran,
-    Barrieren abzubauen. Der Haupteingang
-    ist rollstuhlgerecht, und wir bieten bei
-    Bedarf Unterstützung an. Melde dich
-    gerne vor deinem Besuch, damit wir dir
-    weiterhelfen können.
-- 
   question: Wie kann ich Tickets kaufen?
   answer: >
     Tickets kannst du bequem online über
     unseren Ticketshop oder direkt vor Ort
     erwerben.
+- 
+  question: Ist euer Veranstaltungsort barrierefrei?
+  answer: >
+    Wir arbeiten kontinuierlich daran,
+    Barrieren abzubauen. Der Haupteingang
+    test ist rollstuhlgerecht, und wir
+    bieten bei Bedarf Unterstützung an.
+    Melde dich gerne vor deinem Besuch,
+    damit wir dir weiterhelfen können.
 - 
   question: 'Gibt es Rabatte für Studierende oder Geringverdiener*innen?'
   answer: >
@@ -67,3 +67,7 @@ Blocks:
   id: 30095e5c-c2f0-4c22-95bb-09973a50f460
   isHidden: false
   type: accordion
+
+----
+
+Uuid: 9kX1z082HLRqjEvS

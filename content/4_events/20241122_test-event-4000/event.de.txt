@@ -22,7 +22,7 @@ Iscanceled: false
 
 ----
 
-Category: theatre
+Category: Theater
 
 ----
 
