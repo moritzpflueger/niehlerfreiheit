@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 <section class="mb-32 w-full flex-1">
   <article class="">
-    <div class="grid sm:grid-cols-2 border-b border-neutral-700">
+    <div class="grid grid-cols-1 sm:grid-cols-2 border-b border-neutral-700">
       <?php if ($page->files()->valid()): ?>
         <img
           src="<?= $page->files()->first()->url() ?>"
@@ -14,7 +14,7 @@
           class="w-full">
       <?php endif; ?>
       <div class="sm:border-l border-t sm:border-t-0 border-neutral-700 flex items-start justify-center flex-col p-10">
-        <h2 class="text-4xl lg:text-6xl uppercase font-bold tracking-tight"><?= $page->title()->html() ?></h2>
+        <h2 class="text-4xl lg:text-6xl font-bold tracking-tight break-words w-full"><?= $page->title() ?></h2>
       </div>
     </div>
     <div class="px-3 py-2">
