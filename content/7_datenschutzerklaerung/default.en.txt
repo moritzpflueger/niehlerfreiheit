@@ -1,8 +1,8 @@
-Title: Data
+Title: Data Policy
 
 ----
 
-Slug: data
+Slug: data-policy
 
 ----
 
