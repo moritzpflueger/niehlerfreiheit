@@ -28,7 +28,7 @@ jobs:
             **/.github/**
             **/node_modules/**
             **/static/**
-            **/content/**
+
             **/site/accounts/**
             **/site/cache/**
             **/site/sessions/**
