@@ -6,18 +6,13 @@
           <li>
             <ul>
               <?php
-              $menuItems = [
-                ['title' => $site->find('events')->title(), 'url' => $site->find('events')->url()],
-                ['title' => 'Archiv', 'url' => $site->url() . '/events?showPastEvents=true'],
-                ['title' => $site->find('vereinssatzung')->title(), 'url' => $site->url() . '/vereinssatzung'],
-
-              ];
+              $menuItems = $site->menu()->toPages();
               foreach ($menuItems as $item):
-
+                $isActive = $page->uri() === $item->uri();
               ?>
                 <li class="hover:text-yellow-500">
-                  <a href="<?= $item['url'] ?>">
-                    <?= $item['title'] ?>
+                  <a href="<?= $site->url() ?>/<?= $item->uri() ?>" class="<?= $isActive ? 'text-yellow-500' : '' ?>">
+                    <?= $item->title() ?>
                   </a>
                 </li>
               <?php endforeach; ?>
@@ -26,10 +21,13 @@
         </ul>
         <ul class="flex flex-col w-full">
           <li>
-            <a href="<?= $site->url() ?>/impressum">Impressum</a>
+            <a href="<?= $site->url() ?>/events?showPastEvents=true"><?= $kirby->language()->code() === 'en' ? 'Archive' : 'Archiv' ?></a>
           </li>
           <li>
-            <a href="<?= $site->url() ?>/datenschutzerklaerung">Datenschutzerklärung</a>
+            <a href="<?= $site->find('impressum')->url() ?>"><?= $site->find('impressum')->title() ?></a>
+          </li>
+          <li>
+            <a href="<?= $site->find('datenschutzerklaerung')->url() ?>"><?= $site->find('datenschutzerklaerung')->title() ?></a>
           </li>
         </ul>
       </div>
