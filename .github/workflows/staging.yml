@@ -28,7 +28,6 @@ jobs:
             **/.github/**
             **/node_modules/**
             **/static/**
-            package*.json
             **/content/**
             **/site/accounts/**
             **/site/cache/**
