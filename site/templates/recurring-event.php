@@ -19,24 +19,19 @@
     </div>
     <div class="px-3 py-2">
       <div class="flex gap-3 mb-2">
-        <div class="text-black text-sm inline-flex w-auto px-1 bg-green-400">
+        <div class="text-black text-sm inline-flex w-auto px-1 bg-cyan-400">
           <?= $page->category() ?>
         </div>
-        <?php $isCanceled = is_bool($page->isCanceled())
-          ? $page->isCanceled()
-          : $page->isCanceled()->toBool();
-        if ($isCanceled): ?>
-          <div class="bg-red-500 border border-red-500 px-1 text-sm uppercase text-black inline-block">
-            abgesagt
-          </div>
-        <?php endif; ?>
       </div>
       <p class="">
-        Date: <?= $page->date()->toDate('E dd MMMM') ?>
+        <?php $eventsPageUrl = $site->find('events')->url(); ?>
+        <a href="<?= $eventsPageUrl ?>?category=<?= strtolower($page->category()) ?>" class="underline">scheduled dates</a>
       </p>
-      <p class="">
-        Admission: <?= $page->admissiontime()->toDate('H:mm') ?>
-      </p>
+      <?php if ($page->admissiontime()->isNotEmpty()): ?>
+        <p class="">
+          Admission: <?= $page->admissiontime()->toDate('H:mm') ?>
+        </p>
+      <?php endif; ?>
       <p class="mb-5">
         Start: <?= $page->starttime()->toDate('H:mm') ?>
       </p>
