@@ -8,10 +8,9 @@
               <?php
               $menuItems = $site->menu()->toPages();
               foreach ($menuItems as $item):
-                $isActive = $page->uri() === $item->uri();
               ?>
                 <li class="hover:text-yellow-500">
-                  <a href="<?= $site->url() ?>/<?= $item->uri() ?>" class="<?= $isActive ? 'text-yellow-500' : '' ?>">
+                  <a href="<?= $site->url() ?>/<?= $item->uri() ?>">
                     <?= $item->title() ?>
                   </a>
                 </li>
