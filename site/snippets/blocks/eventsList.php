@@ -25,7 +25,7 @@ $events = $eventsPage
     ]) ?>
     <?php $index++; ?>
   <?php endforeach; ?>
-  <a href="<?= $site->url() ?>/events" class="text-yellow-500 text-xl uppercase py-10 hover:underline flex items-center justify-center border-b border-neutral-700">
+  <a href="<?= $site->url() ?>/events" class="text-primary text-xl uppercase py-10 hover:underline flex items-center justify-center border-b border-neutral-700">
     <?= t('events.button.viewUpcoming') ?>
     <div class="w-10">
       <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>

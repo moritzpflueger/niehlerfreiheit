@@ -19,14 +19,14 @@
     </div>
     <div class="px-3 py-2">
       <div class="flex gap-3 mb-2">
-        <div class="text-black text-sm inline-flex w-auto px-1 bg-green-400">
+        <div class="text-black text-sm inline-flex w-auto px-1 bg-accent2">
           <?= $page->category() ?>
         </div>
         <?php $isCanceled = is_bool($page->isCanceled())
           ? $page->isCanceled()
           : $page->isCanceled()->toBool();
         if ($isCanceled): ?>
-          <div class="bg-red-500 border border-red-500 px-1 text-sm uppercase text-black inline-block">
+          <div class="bg-accent3 border border-accent3 px-1 text-sm uppercase text-black inline-block">
             <?= t('event.canceled') ?>
           </div>
         <?php endif; ?>

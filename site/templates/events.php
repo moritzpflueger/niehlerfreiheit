@@ -34,14 +34,14 @@
   <?php endforeach; ?>
 
   <?php if (!$showPastEvents): ?>
-    <a href="<?= $page->url() ?>?showPastEvents=true" class="text-yellow-500 text-xl uppercase px-3 py-32 hover:underline flex items-center justify-center border-y border-neutral-700">
+    <a href="<?= $page->url() ?>?showPastEvents=true" class="text-primary text-xl uppercase py-32 hover:underline flex items-center justify-center border-y border-neutral-700">
       <?= t('events.button.viewPast') ?>
       <div class="w-10">
         <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>
       </div>
     </a>
   <?php else: ?>
-    <a href="<?= $page->url() ?>" class="text-yellow-500 text-xl uppercase px-3 py-32 hover:underline flex items-center justify-center border-y border-neutral-700">
+    <a href="<?= $page->url() ?>" class="text-primary text-xl uppercase px-3 py-32 hover:underline flex items-center justify-center border-y border-neutral-700">
       <?= t('events.button.viewUpcoming') ?>
       <div class="w-10">
         <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>

@@ -31,7 +31,7 @@ $showDivider = $showDivider ?? false;
           : $event->isCanceled()->toBool();
         if ($isCanceled): ?>
 
-          <div class="bg-red-500 border border-red-500 px-1 text-sm uppercase text-black inline-block mb-2">
+          <div class="bg-accent3 border border-accent3 px-1 text-sm uppercase text-black inline-block mb-2">
             abgesagt
           </div>
         <?php endif; ?>
@@ -41,7 +41,7 @@ $showDivider = $showDivider ?? false;
         </div>
         <h3 class="text-white break-words"><?= $event->title()->html() ?></h3>
         <div class="mt-2">
-          <div class="text-black text-sm inline-flex w-auto px-1 <?= $isRecurring ? 'bg-cyan-400' : 'bg-green-400' ?>">
+          <div class="text-black text-sm inline-flex w-auto px-1 <?= $isRecurring ? 'bg-accent1' : 'bg-accent2' ?>">
             <?= $event->category() ?>
           </div>
         </div>

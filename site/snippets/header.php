@@ -22,7 +22,7 @@
       niehler freiheit e.V.
     </a>
     <nav class="flex items-start justify-between px-3 py-2 border-b border-neutral-700">
-      <!-- <button id="menu-button" class="text-white hover:text-yellow-500">
+      <!-- <button id="menu-button" class="text-white hover:text-primary">
         <?= file_get_contents(kirby()->root('assets') . '/icons/menu.svg'); ?>
       </button> -->
       <?php snippet('menu') ?>

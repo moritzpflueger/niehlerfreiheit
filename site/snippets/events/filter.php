@@ -49,7 +49,7 @@ $filterUrl = function ($filter, $filterType) use ($page, $showPastEvents, $selec
       id="clearFilters"
       class="text-neutral-200 uppercase <?= ((count($selectedCategoryFilters) + count($selectedDateFilters)) === 0 ? 'hidden' : '') ?>">
       <?= t('events.button.clearAll') ?>
-      <span class=" <?= ((count($selectedCategoryFilters) + count($selectedDateFilters)) > 0 ? 'font-bold text-yellow-500' : 'text-neutral-500') ?>">
+      <span class=" <?= ((count($selectedCategoryFilters) + count($selectedDateFilters)) > 0 ? 'font-bold text-primary' : 'text-neutral-500') ?>">
         (<?= count($selectedCategoryFilters) + count($selectedDateFilters) ?>)
       </span>
     </button>
@@ -64,7 +64,7 @@ $filterUrl = function ($filter, $filterType) use ($page, $showPastEvents, $selec
     ?>
       <a
         href="<?= $filterUrl($filter, 'category') ?>"
-        class="<?= $isActive ? 'bg-lime-600 border-lime-600 text-black' : 'border-lime-600 text-lime-600 ' ?> border inline-flex mb-2 px-1 whitespace-nowrap uppercase items-center">
+        class="<?= $isActive ? 'bg-accent2 border-accent2 text-black' : 'border-accent2 text-accent2 ' ?> border inline-flex mb-2 px-1 whitespace-nowrap uppercase items-center">
         <?= $filter ?>
       </a>
     <?php endforeach; ?>
@@ -78,7 +78,7 @@ $filterUrl = function ($filter, $filterType) use ($page, $showPastEvents, $selec
     ?>
       <a
         href="<?= $filterUrl($filter, 'category') ?>"
-        class="<?= $isActive ? 'bg-cyan-500 border-cyan-500 text-black' : 'border-cyan-500 text-cyan-500 ' ?> border inline-flex mb-2 px-1 whitespace-nowrap uppercase">
+        class="<?= $isActive ? 'bg-accent1 border-accent1 text-black' : 'border-accent1 text-accent1 ' ?> border inline-flex mb-2 px-1 whitespace-nowrap uppercase">
         <?= $filter ?>
       </a>
     <?php endforeach; ?>

@@ -73,7 +73,7 @@ h3 {
 }
 
 .blocks .block a {
-  @apply underline hover:text-yellow-500;
+  @apply underline hover:text-primary;
 }
 
 .blocks .block figcaption {
@@ -104,7 +104,7 @@ h3 {
 }
 .blocks .block[data-type="quote"]:before {
   content: "“";
-  @apply text-6xl text-yellow-500;
+  @apply text-6xl text-primary;
 }
 
 .blocks .block[data-type="quote"] footer {
@@ -116,7 +116,7 @@ h3 {
 }
 
 .blocks .block[data-type="code"] {
-  @apply p-10 bg-neutral-900 text-yellow-500 mb-10 overflow-x-auto;
+  @apply p-10 bg-neutral-900 text-primary mb-10 overflow-x-auto;
 }
 
 .kirbytext .video {
@@ -164,7 +164,7 @@ h3 {
 }
 
 .kirbytext a {
-  @apply underline hover:text-yellow-500;
+  @apply underline hover:text-primary;
 }
 
 /* Menu Modal */
@@ -207,5 +207,5 @@ h3 {
 }
 
 footer a:hover {
-  @apply text-yellow-500;
+  @apply text-primary;
 }

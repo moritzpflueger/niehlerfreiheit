@@ -9,7 +9,7 @@
               $menuItems = $site->menu()->toPages();
               foreach ($menuItems as $item):
               ?>
-                <li class="hover:text-yellow-500">
+                <li class="hover:text-primary">
                   <a href="<?= $site->url() ?>/<?= $item->uri() ?>">
                     <?= $item->title() ?>
                   </a>
