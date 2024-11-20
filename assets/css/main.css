@@ -51,7 +51,7 @@ h3 {
 .blocks .block[data-type="list"] ol,
 .blocks .block[data-type="markdown"] ul,
 .blocks .block[data-type="markdown"] ol {
-  @apply mb-10;
+  @apply mb-10 normal-case;
 }
 
 .blocks .block[data-type="text"] {
@@ -66,10 +66,10 @@ h3 {
   @apply text-5xl uppercase mb-5;
 }
 .blocks .block h2 {
-  @apply text-3xl font-semibold uppercase mb-5;
+  @apply text-xl font-bold uppercase mb-5;
 }
 .blocks .block h3 {
-  @apply text-xl uppercase mb-5;
+  @apply text-lg uppercase mb-5;
 }
 
 .blocks .block a {

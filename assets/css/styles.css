@@ -1125,6 +1125,7 @@ h3 {
 .blocks .block[data-type="markdown"] ul,
 .blocks .block[data-type="markdown"] ol {
   margin-bottom: 2.5rem;
+  text-transform: none;
 }
 
 .blocks .block[data-type="text"] {
@@ -1145,15 +1146,15 @@ h3 {
 
 .blocks .block h2 {
   margin-bottom: 1.25rem;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 .blocks .block h3 {
   margin-bottom: 1.25rem;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.75rem;
   text-transform: uppercase;
 }
