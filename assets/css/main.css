@@ -8,12 +8,19 @@ body {
     font-mono 
     font-thin
     uppercase
-    /* text-base */
-    /* max-w-4xl  */
+    text-base
     mx-auto 
     h-[100dvh]
     flex
     flex-col;
+}
+
+::selection {
+  @apply bg-primary text-black;
+}
+
+::-moz-selection {
+  @apply bg-primary text-black;
 }
 
 h1 {
