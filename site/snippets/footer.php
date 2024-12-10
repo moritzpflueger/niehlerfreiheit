@@ -15,6 +15,11 @@
                   </a>
                 </li>
               <?php endforeach; ?>
+              <li class="hover:text-primary">
+                <a href="/#newsletter">
+                  newsletter
+                </a>
+              </li>
             </ul>
           </li>
         </ul>

@@ -18,6 +18,11 @@
           </a>
         </li>
       <?php endforeach; ?>
+      <li class="hover:text-primary">
+        <a href="/#newsletter" class="<?= $isActive ? 'text-primary' : '' ?>">
+          newsletter
+        </a>
+      </li>
     </ul>
     <!-- <div class="absolute bottom-10 text-2xl flex gap-5">
       <?php snippet('components/socialLinks') ?>
