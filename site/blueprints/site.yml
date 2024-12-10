@@ -43,6 +43,7 @@ tabs:
               - default
               - home
               - faq
+              - unterstuetzung
             limit: 20
 
       # - width: 1/3
