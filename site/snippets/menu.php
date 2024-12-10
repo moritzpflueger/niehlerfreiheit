@@ -19,7 +19,7 @@
         </li>
       <?php endforeach; ?>
       <li class="hover:text-primary">
-        <a href="/#newsletter" class="<?= $isActive ? 'text-primary' : '' ?>">
+        <a href="/#newsletter">
           newsletter
         </a>
       </li>
