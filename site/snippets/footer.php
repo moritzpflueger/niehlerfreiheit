@@ -39,7 +39,7 @@
         <?php snippet('components/socialLinks') ?>
         <div>
           <?php snippet('components/toggleLanguage') ?>
-          &copy;<?= date('Y') ?> Kalker Freiheit
+          &copy;<?= date('Y') ?> Niehler Freiheit
         </div>
       </div>
     </footer>
