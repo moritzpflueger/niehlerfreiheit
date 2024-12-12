@@ -18,7 +18,10 @@ echo '<?xml version="1.0" encoding="UTF-8" ?>';
         <link><?= $event->url() ?></link>
         <admissionTime><?= $event->admissiontime()->isNotEmpty() ? $event->admissiontime() : 'not set' ?></admissionTime>
         <startTime><?= $event->starttime() ?></startTime>
-        <description><?= $event->text()->kirbytext() ?></description>
+        <description>
+          <de><?= $event->content('de')->text()->kirbytext() ?></de>
+          <en><?= $event->content('en')->text()->kirbytext() ?></en>
+        </description>
         <category><?= $event->category() ?></category>
         <pubDate><?= $event->date()->toDate('Y-MM-DD') ?></pubDate>
         <guid><?= $event->url() ?></guid>
