@@ -7,6 +7,7 @@ Menu:
 - page://88oASCzeq6Qoi3gw
 - page://9kX1z082HLRqjEvS
 - page://JkaKBKLwaqdU5OCT
+- page://jG997XdWlMrbOjvz
 
 ----
 
@@ -21,12 +22,11 @@ Sociallinks:
   url: >
     https://www.instagram.com/niehlerfreiheit/
   icon: instagram
-- 
-  name: Facebook
-  url: >
-    https://www.facebook.com/niehlerfreiheit/events/?ref=page_internal
-  icon: facebook
 
 ----
 
 Logo: 
+
+----
+
+Date: 2024-12-27 00:00:00
