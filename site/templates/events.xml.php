@@ -23,7 +23,7 @@ echo '<?xml version="1.0" encoding="UTF-8" ?>';
           <en><?= $event->content('en')->text()->kirbytext() ?></en>
         </description>
         <category><?= $event->category() ?></category>
-        <pubDate><?= $event->date()->toDate('Y-MM-DD') ?></pubDate>
+        <pubDate><?= $event->date()->toDate('Y-MM-dd') ?></pubDate>
         <guid><?= $event->url() ?></guid>
 
 
