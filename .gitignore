@@ -10,6 +10,11 @@ Icon
 /media/*
 !/media/index.html
 
+# Newsletter pictures of the month
+# ---------------
+
+/assets/pictures-of-the-month/*
+
 # Lock files
 # ---------------
 
@@ -29,6 +34,9 @@ Icon
 # -------------SECURITY-------------
 # NEVER publish these files via Git!
 # -------------SECURITY-------------
+
+# Environment variables
+.env
 
 # Cache Files
 # ---------------

@@ -1,0 +1,47 @@
+title: Site
+
+tabs:
+  content:
+    label: Content
+    icon: page
+    columns:
+      main:
+        width: 2/3
+        sections:
+          pages:
+            type: pages
+            label: Pages
+            
+      sidebar:
+        width: 1/3
+        sections:
+          newsletter:
+            type: info
+            label: 📧 Newsletter
+            theme: positive
+            text: |
+              Send your monthly events newsletter via Brevo.
+              
+              <a href="/brevo-newsletter/preview" target="_blank" style="display: inline-block; background: #000; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 6px; margin-top: 10px; font-weight: 600;">
+                📧 Preview & Send Newsletter
+              </a>
+              
+              <div style="margin-top: 15px; padding: 10px; background: #f0f0f0; border-radius: 4px; font-size: 13px;">
+                <strong>Quick Start:</strong><br>
+                1. Preview newsletter<br>
+                2. Send test email<br>
+                3. Send to subscribers
+              </div>
+          
+          staticsite:
+            type: info
+            label: 🏗️ Static Site Generator
+            text: |
+              Generate static HTML version of your site.
+              
+              <div class="k-button-group">
+                <button class="k-button" onclick="alert('Use your static site generator here')">
+                  Generate Static Site
+                </button>
+              </div>
+
