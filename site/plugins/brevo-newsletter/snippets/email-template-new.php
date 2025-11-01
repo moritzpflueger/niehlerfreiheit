@@ -26,9 +26,6 @@ $brandColors = [
 
 // Get base URL for images
 $baseUrl = $site->url();
-if (option('brevo-newsletter.image_base_url')) {
-  $baseUrl = option('brevo-newsletter.image_base_url');
-}
 ?>
 <!DOCTYPE html>
 <html lang="de">
