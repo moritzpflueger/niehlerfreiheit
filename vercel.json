@@ -1,13 +1,12 @@
 {
   "version": 2,
+  "functions": {
+    "index.php": {
+      "runtime": "vercel-php@0.7.2",
+      "includeFiles": "**"
+    }
+  },
   "builds": [
-    {
-      "src": "index.php",
-      "use": "vercel-php@0.7.1",
-      "config": {
-        "includeFiles": "**"
-      }
-    },
     {
       "src": "assets/**",
       "use": "@vercel/static"

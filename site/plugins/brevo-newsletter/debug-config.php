@@ -37,6 +37,18 @@ echo "\n";
 echo "=== PHP Info ===\n";
 echo "PHP Version: " . PHP_VERSION . "\n";
 echo "Server: " . ($_SERVER['SERVER_SOFTWARE'] ?? 'Unknown') . "\n";
+echo "\n";
+
+echo "=== All Environment Variables ===\n";
+$allEnv = array_merge(getenv(), $_ENV, $_SERVER);
+$filtered = array_filter(array_keys($allEnv), function($key) {
+    return stripos($key, 'BREVO') !== false || 
+           stripos($key, 'VERCEL') !== false ||
+           stripos($key, 'ENV') !== false;
+});
+foreach ($filtered as $key) {
+    echo "$key: " . (isset($allEnv[$key]) ? (strlen($allEnv[$key]) > 50 ? substr($allEnv[$key], 0, 50) . '...' : $allEnv[$key]) : 'N/A') . "\n";
+}
 
 echo "</pre>";
 
