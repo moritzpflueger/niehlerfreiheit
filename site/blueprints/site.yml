@@ -56,6 +56,23 @@ tabs:
       #         - events
       #       limit: 10
 
+  newsletter:
+    label: Newsletter
+    icon: email
+    columns:
+      - width: 1/1
+        sections:
+          newsletterLink:
+            type: info
+            headline: Newsletter Generator
+            text: |
+              <div style="padding: 2rem; text-align: center;">
+                <p style="margin-bottom: 1rem; color: #777;">Erstelle Newsletter-Entwürfe in Brevo oder sende sie direkt</p>
+                <a href="/newsletter-generator" target="_blank" style="display: inline-block; background: #4271ae; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: 600;">
+                  📧 Newsletter Generator öffnen
+                </a>
+              </div>
+
   configuration:
     icon: cog
     columns:

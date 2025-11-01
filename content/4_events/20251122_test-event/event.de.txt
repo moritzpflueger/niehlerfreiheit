@@ -1,0 +1,33 @@
+Title: Test Event
+
+----
+
+Date: 2025-11-22
+
+----
+
+Starttime: 03:00:00
+
+----
+
+Admissiontime: 11:00:00
+
+----
+
+Text: test
+
+----
+
+Iscanceled: false
+
+----
+
+Category: Concert
+
+----
+
+Eventcode: 
+
+----
+
+Uuid: S4RHGMRYnBAvaNPa

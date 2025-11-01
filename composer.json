@@ -27,7 +27,8 @@
     "d4l/kirby-static-site-generator": "^1.13",
     "hashandsalt/kirby-recurr": "^0.0.7",
     "rasteiner/k3-whenquery": "^0.5.0",
-    "simshaun/recurr": "^4.0"
+    "simshaun/recurr": "^4.0",
+    "vlucas/phpdotenv": "^5.6"
   },
   "config": {
     "allow-plugins": {
