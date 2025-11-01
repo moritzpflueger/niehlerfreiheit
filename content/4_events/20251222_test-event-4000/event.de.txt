@@ -1,8 +1,8 @@
-Title: Test Event
+Title: Test Event 4000
 
 ----
 
-Date: 2024-11-22
+Date: 2025-12-22
 
 ----
 
@@ -14,7 +14,7 @@ Admissiontime: 11:00:00
 
 ----
 
-Text: test
+Text: Das ist der deutsche Text
 
 ----
 
@@ -22,7 +22,7 @@ Iscanceled: false
 
 ----
 
-Category: Concert
+Category: Theater
 
 ----
 
