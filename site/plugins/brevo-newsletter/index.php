@@ -17,6 +17,18 @@ Kirby::plugin('brevo-newsletter/integration', [
   
   
   'routes' => [
+    // DEBUG ROUTE - DELETE AFTER FIXING
+    [
+      'pattern' => 'debug-brevo-config',
+      'method' => 'GET',
+      'action' => function () {
+        ob_start();
+        include __DIR__ . '/debug-config.php';
+        $html = ob_get_clean();
+        return new \Kirby\Http\Response($html, 'text/html');
+      }
+    ],
+    
     // Panel newsletter form route
     [
       'pattern' => 'newsletter-generator',
