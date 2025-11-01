@@ -19,12 +19,17 @@
     }
     
     .top-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
       background: #fff;
       border-bottom: 1px solid #ddd;
       padding: 0.75rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      z-index: 1000;
     }
     
     .breadcrumb {
@@ -83,6 +88,7 @@
       max-width: 1200px;
       margin: 0 auto;
       padding: 2rem;
+      padding-top: 5rem;
     }
     
     .content {
@@ -236,6 +242,10 @@
         flex-direction: column;
         gap: 1rem;
         align-items: stretch;
+      }
+      
+      .container {
+        padding-top: 8rem;
       }
     }
   </style>
