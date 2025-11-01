@@ -183,9 +183,9 @@ Kirby::plugin('brevo-newsletter/integration', [
         foreach ($events as $event) {
           $eventsList[] = [
             'id' => $event->id(),
-            'title' => $event->title()->html(),
-            'date' => $event->date()->toDate('dd.MM.Y'),
-            'category' => $event->category()->html(),
+            'title' => (string) $event->title()->html(),
+            'date' => (string) $event->date()->toDate('dd.MM.Y'),
+            'category' => (string) $event->category()->html(),
             'isRecurring' => false
           ];
         }
@@ -198,9 +198,9 @@ Kirby::plugin('brevo-newsletter/integration', [
           foreach ($recurringEvents as $event) {
             $eventsList[] = [
               'id' => $event->id(),
-              'title' => $event->title()->html(),
-              'date' => 'Wiederkehrend',
-              'category' => $event->category()->html(),
+              'title' => (string) $event->title()->html(),
+              'date' => 'Recurring',
+              'category' => (string) $event->category()->html(),
               'isRecurring' => true
             ];
           }

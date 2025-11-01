@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,34 +13,76 @@
     
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background: #efefef;
+      background: #f0f0f0;
       color: #16171a;
       line-height: 1.5;
-      padding: 2rem;
+    }
+    
+    .top-bar {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 0.75rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+      color: #777;
+    }
+    
+    .breadcrumb a {
+      color: #16171a;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    
+    .breadcrumb a:hover {
+      color: #4271ae;
+    }
+    
+    .breadcrumb-home {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+    
+    .breadcrumb-separator {
+      color: #999;
+    }
+    
+    .btn-publish {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #4271ae;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 3px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    
+    .btn-publish:hover:not(:disabled) {
+      background: #2e5a94;
+    }
+    
+    .btn-publish:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
     }
     
     .container {
       max-width: 1200px;
       margin: 0 auto;
-    }
-    
-    .header {
-      background: white;
-      border-radius: 6px;
       padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    
-    .header h1 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-    
-    .header p {
-      color: #777;
-      font-size: 0.875rem;
     }
     
     .content {
@@ -50,14 +92,14 @@
     }
     
     .card {
-      background: white;
-      border-radius: 6px;
+      background: transparent;
+      border-radius: 0;
       padding: 2rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      box-shadow: none;
     }
     
     .card-title {
-      font-size: 1.125rem;
+      font-size: 1rem;
       font-weight: 600;
       margin-bottom: 1.5rem;
       padding-bottom: 1rem;
@@ -82,7 +124,7 @@
       color: #16171a;
     }
     
-    select, textarea, input {
+    select, textarea, input[type="text"], input[type="url"] {
       width: 100%;
       padding: 0.75rem;
       border: 1px solid #ccc;
@@ -93,14 +135,23 @@
       transition: border-color 0.2s;
     }
     
+    input[type="file"] {
+      width: 100%;
+      padding: 0.5rem 0;
+      border: none;
+      font-family: inherit;
+      font-size: 0.875rem;
+      background: white;
+    }
+    
     select:focus, textarea:focus, input:focus {
       outline: none;
       border-color: #4271ae;
     }
     
     textarea {
+      min-height: 120px;
       resize: vertical;
-      min-height: 100px;
     }
     
     .help-text {
@@ -111,21 +162,34 @@
     
     .events-list {
       list-style: none;
-      margin: 1rem 0;
+      padding: 0;
     }
     
     .event-item {
       padding: 0.75rem;
-      border-left: 3px solid #4271ae;
-      background: #f7f7f7;
-      margin-bottom: 0.5rem;
-      border-radius: 3px;
+      border-bottom: 1px solid #efefef;
     }
     
-    .event-title {
+    .event-item:last-child {
+      border-bottom: none;
+    }
+    
+    .event-item-title {
       font-weight: 600;
       font-size: 0.875rem;
       margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .event-badge {
+      background: #4271ae;
+      color: white;
+      font-size: 11px;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-weight: normal;
     }
     
     .event-meta {
@@ -138,74 +202,6 @@
       padding: 2rem;
       color: #999;
       font-size: 0.875rem;
-    }
-    
-    .button-group {
-      display: flex;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    
-    .btn {
-      flex: 1;
-      padding: 0.875rem 1.5rem;
-      border: none;
-      border-radius: 3px;
-      font-family: inherit;
-      font-size: 0.875rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s;
-      text-decoration: none;
-      display: inline-block;
-      text-align: center;
-    }
-    
-    .btn-primary {
-      background: #4271ae;
-      color: white;
-    }
-    
-    .btn-primary:hover {
-      background: #2c5282;
-    }
-    
-    .btn-success {
-      background: #10b981;
-      color: white;
-    }
-    
-    .btn-success:hover {
-      background: #059669;
-    }
-    
-    .btn:disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
-    }
-    
-    .info-box {
-      background: #f0f7ff;
-      border: 1px solid #bfdbfe;
-      border-radius: 3px;
-      padding: 1rem;
-      font-size: 0.875rem;
-      line-height: 1.6;
-      color: #1e3a8a;
-    }
-    
-    .info-box h3 {
-      font-size: 0.875rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-    
-    .info-box ul {
-      margin: 0.5rem 0 0 1.25rem;
-    }
-    
-    .info-box li {
-      margin-bottom: 0.25rem;
     }
     
     .message {
@@ -227,11 +223,6 @@
       color: #991b1b;
     }
     
-    .loading {
-      color: #777;
-      font-style: italic;
-    }
-    
     @media (max-width: 768px) {
       .content {
         grid-template-columns: 1fr;
@@ -241,50 +232,69 @@
         grid-template-columns: 1fr;
       }
       
-      .button-group {
+      .top-bar {
         flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>📧 Newsletter Generator</h1>
-      <p>Erstelle einen Newsletter-Entwurf in Brevo oder sende direkt</p>
-    </div>
+  <div class="top-bar">
+    <nav class="breadcrumb">
+      <a href="/panel">
+        <svg class="breadcrumb-home" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-4h3v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354l-6-6Z"/>
+        </svg>
+      </a>
+      <span class="breadcrumb-separator">/</span>
+      <a href="/panel">Niehler Freiheit</a>
+      <span class="breadcrumb-separator">/</span>
+      <span>Newsletter Generator</span>
+    </nav>
     
+    <button type="button" id="createDraftBtn" class="btn-publish">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 20px; height: 20px;">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+      </svg>
+
+      Create Draft Newsletter and send to Brevo
+    </button>
+  </div>
+  
+  <div class="container">
     <div id="message"></div>
     
     <div class="content">
       <div class="card">
-        <h2 class="card-title">Newsletter Inhalt</h2>
+        <h2 class="card-title">Newsletter Content</h2>
         
         <form id="newsletterForm">
           <div class="form-group">
             <div class="form-row">
               <div>
-                <label for="month">Monat</label>
+                <label for="month">Month</label>
                 <select id="month" name="month" required>
-                  <option value="">-- Monat wählen --</option>
-                  <option value="01">Januar</option>
-                  <option value="02">Februar</option>
-                  <option value="03">März</option>
+                  <option value="">-- Select Month --</option>
+                  <option value="01">January</option>
+                  <option value="02">February</option>
+                  <option value="03">March</option>
                   <option value="04">April</option>
-                  <option value="05">Mai</option>
-                  <option value="06">Juni</option>
-                  <option value="07">Juli</option>
+                  <option value="05">May</option>
+                  <option value="06">June</option>
+                  <option value="07">July</option>
                   <option value="08">August</option>
                   <option value="09">September</option>
-                  <option value="10">Oktober</option>
+                  <option value="10">October</option>
                   <option value="11">November</option>
-                  <option value="12">Dezember</option>
+                  <option value="12">December</option>
                 </select>
               </div>
               <div>
-                <label for="year">Jahr</label>
+                <label for="year">Year</label>
                 <select id="year" name="year" required>
-                  <option value="">-- Jahr wählen --</option>
+                  <option value="">-- Select Year --</option>
                   <?php
                   $currentYear = date('Y');
                   for ($y = $currentYear; $y <= $currentYear + 10; $y++) {
@@ -294,72 +304,47 @@
                 </select>
               </div>
             </div>
-            <p class="help-text">Wähle den Monat und das Jahr für die Newsletter-Events</p>
+            <p class="help-text">Select the month and year for the newsletter events</p>
           </div>
           
           <div class="form-group">
-            <label for="welcomeTextDe">Begrüßungstext (Deutsch)</label>
+            <label for="welcomeTextDe">Welcome Text (German)</label>
             <textarea id="welcomeTextDe" name="welcomeTextDe" required placeholder="Hallo liebe Freund:innen,
 
 hier sind die kommenden Veranstaltungen..."></textarea>
-            <p class="help-text">Dieser Text erscheint am Anfang des Newsletters</p>
+            <p class="help-text">This text appears at the beginning of the newsletter</p>
           </div>
           
           <div class="form-group">
-            <label for="welcomeTextEn">Begrüßungstext (English - wird kursiv dargestellt)</label>
+            <label for="welcomeTextEn">Welcome Text (English - displayed in italics)</label>
             <textarea id="welcomeTextEn" name="welcomeTextEn" required placeholder="Hello dear friends,
 
 here are the upcoming events..."></textarea>
-            <p class="help-text">Englischer Text wird direkt unter dem deutschen Text in Kursiv angezeigt</p>
+            <p class="help-text">English text appears directly below the German text in italics</p>
           </div>
           
           <div class="form-group">
-            <label for="imageFile">Bild des Monats hochladen</label>
+            <label for="imageFile">Upload Picture of the Month</label>
             <input type="file" id="imageFile" name="imageFile" accept="image/*">
             <input type="hidden" id="imageUrl" name="imageUrl">
-            <p class="help-text">Optional - Wähle ein Bild von deinem Computer (JPG, PNG, GIF, WebP)</p>
+            <p class="help-text">Optional - Select an image from your computer (JPG, PNG, GIF, WebP)</p>
             <div id="uploadStatus" style="margin-top: 10px; display: none;"></div>
           </div>
           
           <div class="form-group">
-            <label for="imageCredits">Bildnachweis / Credits (optional)</label>
-            <textarea id="imageCredits" name="imageCredits" rows="2" placeholder="Foto: Max Mustermann
+            <label for="imageCredits">Image Credits (optional)</label>
+            <textarea id="imageCredits" name="imageCredits" rows="2" placeholder="Photo: Max Mustermann
 © 2025"></textarea>
-            <p class="help-text">Optional - Wird unter dem Bild angezeigt (Zeilenumbrüche möglich)</p>
-          </div>
-          
-          <div class="button-group">
-            <button type="button" id="createDraftBtn" class="btn btn-primary">
-              ✏️ Draft in Brevo erstellen
-            </button>
-            <button type="button" id="sendNowBtn" class="btn btn-success">
-              🚀 Sofort senden
-            </button>
+            <p class="help-text">Optional - Displayed below the image (line breaks allowed)</p>
           </div>
         </form>
       </div>
       
       <div>
         <div class="card">
-          <h2 class="card-title">Events in diesem Monat</h2>
+          <h2 class="card-title">Events This Month</h2>
           <div id="eventsPreview">
-            <p class="empty-state">Wähle einen Monat, um Events anzuzeigen</p>
-          </div>
-        </div>
-        
-        <div class="card" style="margin-top: 2rem;">
-          <div class="info-box">
-            <h3>ℹ️ So funktioniert's:</h3>
-            <ol>
-              <li>Monat und Jahr wählen</li>
-              <li>Begrüßungstext (Deutsch + Englisch) eingeben</li>
-              <li>Optional: Bild hochladen oder URL eingeben</li>
-              <li>"Draft erstellen" klicken</li>
-              <li>In Brevo Vorschau prüfen und versenden</li>
-            </ol>
-            <p style="margin-top: 10px; font-size: 0.85em; color: #666;">
-              <strong>Tipp:</strong> Hochgeladene Bilder werden in <code>/assets/pictures-of-the-month/</code> gespeichert und sind dauerhaft für alle Empfänger sichtbar.
-            </p>
+            <p class="empty-state">Select a month to view events</p>
           </div>
         </div>
       </div>
@@ -371,105 +356,30 @@ here are the upcoming events..."></textarea>
     const yearSelect = document.getElementById('year');
     const eventsPreview = document.getElementById('eventsPreview');
     const createDraftBtn = document.getElementById('createDraftBtn');
-    const sendNowBtn = document.getElementById('sendNowBtn');
     const messageDiv = document.getElementById('message');
     const imageFileInput = document.getElementById('imageFile');
     const imageUrlInput = document.getElementById('imageUrl');
     const uploadStatus = document.getElementById('uploadStatus');
     
     // Set default to next month
-    const nextMonth = new Date();
-    nextMonth.setMonth(nextMonth.getMonth() + 1);
-    monthSelect.value = String(nextMonth.getMonth() + 1).padStart(2, '0');
-    yearSelect.value = nextMonth.getFullYear();
+    const today = new Date();
+    const nextMonth = new Date(today.getFullYear(), today.getMonth() + 1, 1);
+    const monthValue = String(nextMonth.getMonth() + 1).padStart(2, '0');
+    const yearValue = String(nextMonth.getFullYear());
     
-    // Load events when month/year changes
-    monthSelect.addEventListener('change', loadEvents);
-    yearSelect.addEventListener('change', loadEvents);
+    monthSelect.value = monthValue;
+    yearSelect.value = yearValue;
     
-    // Handle file upload
-    imageFileInput.addEventListener('change', async (e) => {
-      const file = e.target.files[0];
-      if (!file) return;
-      
-      // Show uploading status
-      uploadStatus.style.display = 'block';
-      uploadStatus.innerHTML = '<span style="color: #4271ae;">⏳ Wird hochgeladen...</span>';
-      
-      // Create form data
-      const formData = new FormData();
-      formData.append('image', file);
-      
-      try {
-        const response = await fetch('/brevo-newsletter/upload-image', {
-          method: 'POST',
-          body: formData
-        });
-        
-        const data = await response.json();
-        
-        if (data.success) {
-          imageUrlInput.value = data.url;
-          uploadStatus.innerHTML = '<span style="color: #10b981;">✅ Bild erfolgreich hochgeladen!</span>';
-          setTimeout(() => {
-            uploadStatus.style.display = 'none';
-          }, 3000);
-        } else {
-          uploadStatus.innerHTML = '<span style="color: #ef4444;">❌ ' + data.message + '</span>';
-        }
-      } catch (error) {
-        console.error('Upload error:', error);
-        uploadStatus.innerHTML = '<span style="color: #ef4444;">❌ Upload fehlgeschlagen</span>';
-      }
-    });
-    
-    // Load events on page load
+    // Load events for default month
     loadEvents();
     
-    async function loadEvents() {
-      const month = monthSelect.value;
-      const year = yearSelect.value;
-      
-      if (!month || !year) {
-        eventsPreview.innerHTML = '<p class="empty-state">Wähle einen Monat, um Events anzuzeigen</p>';
-        return;
-      }
-      
-      eventsPreview.innerHTML = '<p class="loading">Events werden geladen...</p>';
-      
-      try {
-        const response = await fetch(`/brevo-newsletter/events/${year}/${month}`);
-        const data = await response.json();
-        
-        if (data.success && data.events.length > 0) {
-          const eventsList = data.events.map(event => `
-            <li class="event-item">
-              <div class="event-title">
-                ${event.title}
-                ${event.isRecurring ? '<span style="background: #4271ae; color: white; font-size: 11px; padding: 2px 6px; border-radius: 3px; margin-left: 8px;">wiederkehrend</span>' : ''}
-              </div>
-              <div class="event-meta">${event.date} - ${event.category}</div>
-            </li>
-          `).join('');
-          
-          eventsPreview.innerHTML = `
-            <ul class="events-list">
-              ${eventsList}
-            </ul>
-          `;
-        } else {
-          eventsPreview.innerHTML = '<p class="empty-state">Keine Events für diesen Monat gefunden</p>';
-        }
-      } catch (error) {
-        console.error('Error loading events:', error);
-        eventsPreview.innerHTML = '<p class="empty-state error">Fehler beim Laden der Events</p>';
-      }
-    }
-    
     function showMessage(text, type = 'success') {
-      messageDiv.innerHTML = `<div class="message ${type}">${text}</div>`;
+      messageDiv.className = `message ${type}`;
+      messageDiv.textContent = text;
+      messageDiv.style.display = 'block';
+      
       setTimeout(() => {
-        messageDiv.innerHTML = '';
+        messageDiv.style.display = 'none';
       }, 5000);
     }
     
@@ -483,14 +393,91 @@ here are the upcoming events..."></textarea>
       };
     }
     
+    async function loadEvents() {
+      const month = monthSelect.value;
+      const year = yearSelect.value;
+      
+      if (!month || !year) {
+        eventsPreview.innerHTML = '<p class="empty-state">Select a month to view events</p>';
+        return;
+      }
+      
+      eventsPreview.innerHTML = '<p class="loading">Loading events...</p>';
+      
+      try {
+        const response = await fetch(`/brevo-newsletter/events/${year}/${month}`);
+        const data = await response.json();
+        
+        if (data.success && data.events.length > 0) {
+          const eventsList = data.events.map(event => `
+            <li class="event-item">
+              <div class="event-item-title">
+                <span>${event.title}</span>
+                ${event.isRecurring ? '<span class="event-badge">recurring</span>' : ''}
+              </div>
+              <div class="event-meta">${event.date} - ${event.category}</div>
+            </li>
+          `).join('');
+          
+          eventsPreview.innerHTML = `
+            <ul class="events-list">
+              ${eventsList}
+            </ul>
+          `;
+        } else {
+          eventsPreview.innerHTML = '<p class="empty-state">No events found for this month</p>';
+        }
+      } catch (error) {
+        console.error('Error loading events:', error);
+        eventsPreview.innerHTML = '<p class="empty-state error">Error loading events</p>';
+      }
+    }
+    
+    monthSelect.addEventListener('change', loadEvents);
+    yearSelect.addEventListener('change', loadEvents);
+    
+    // Image upload handler
+    imageFileInput.addEventListener('change', async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      
+      uploadStatus.style.display = 'block';
+      uploadStatus.innerHTML = '<span style="color: #4271ae;">Uploading...</span>';
+      
+      const formData = new FormData();
+      formData.append('image', file);
+      
+      try {
+        const response = await fetch('/brevo-newsletter/upload-image', {
+          method: 'POST',
+          body: formData
+        });
+        
+        const data = await response.json();
+        
+        if (data.success) {
+          imageUrlInput.value = data.url;
+          uploadStatus.innerHTML = '<span style="color: #10b981;">Image uploaded successfully!</span>';
+          setTimeout(() => {
+            uploadStatus.style.display = 'none';
+          }, 3000);
+        } else {
+          uploadStatus.innerHTML = '<span style="color: #ef4444;">' + data.message + '</span>';
+        }
+      } catch (error) {
+        console.error('Upload error:', error);
+        uploadStatus.innerHTML = '<span style="color: #ef4444;">Upload failed</span>';
+      }
+    });
+    
     createDraftBtn.addEventListener('click', async () => {
       if (!monthSelect.value || !yearSelect.value || !document.getElementById('welcomeTextDe').value || !document.getElementById('welcomeTextEn').value) {
-        showMessage('Bitte fülle alle erforderlichen Felder aus', 'error');
+        showMessage('Please fill in all required fields', 'error');
         return;
       }
       
       createDraftBtn.disabled = true;
-      createDraftBtn.textContent = '⏳ Erstelle Draft...';
+      createDraftBtn.textContent = 'Creating draft...';
       
       try {
         const response = await fetch('/brevo-newsletter/create-draft-form', {
@@ -504,60 +491,23 @@ here are the upcoming events..."></textarea>
         const data = await response.json();
         
         if (data.success) {
-          showMessage('✅ Draft erfolgreich erstellt! Weiterleitung zu Brevo...');
-          setTimeout(() => {
-            window.open(data.data.campaignUrl, '_blank');
-          }, 1000);
+          showMessage('Draft created successfully in Brevo!');
+          if (data.campaignUrl) {
+            setTimeout(() => {
+              window.open(data.campaignUrl, '_blank');
+            }, 1000);
+          }
         } else {
-          showMessage('❌ Fehler: ' + data.message, 'error');
+          showMessage('Error: ' + data.message, 'error');
         }
       } catch (error) {
         console.error('Error:', error);
-        showMessage('❌ Fehler beim Erstellen des Drafts', 'error');
+        showMessage('Error creating draft', 'error');
       } finally {
         createDraftBtn.disabled = false;
-        createDraftBtn.textContent = '✏️ Draft in Brevo erstellen';
-      }
-    });
-    
-    sendNowBtn.addEventListener('click', async () => {
-      if (!monthSelect.value || !yearSelect.value || !document.getElementById('welcomeTextDe').value || !document.getElementById('welcomeTextEn').value) {
-        showMessage('Bitte fülle alle erforderlichen Felder aus', 'error');
-        return;
-      }
-      
-      if (!confirm('⚠️ Der Newsletter wird SOFORT an alle Abonnenten gesendet! Fortfahren?')) {
-        return;
-      }
-      
-      sendNowBtn.disabled = true;
-      sendNowBtn.textContent = '⏳ Sende...';
-      
-      try {
-        const response = await fetch('/brevo-newsletter/send-now-form', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(getFormData())
-        });
-        
-        const data = await response.json();
-        
-        if (data.success) {
-          showMessage('✅ Newsletter erfolgreich gesendet!');
-        } else {
-          showMessage('❌ Fehler: ' + data.message, 'error');
-        }
-      } catch (error) {
-        console.error('Error:', error);
-        showMessage('❌ Fehler beim Senden des Newsletters', 'error');
-      } finally {
-        sendNowBtn.disabled = false;
-        sendNowBtn.textContent = '🚀 Sofort senden';
+        createDraftBtn.textContent = 'Create Draft Newsletter and send to Brevo';
       }
     });
   </script>
 </body>
 </html>
-
