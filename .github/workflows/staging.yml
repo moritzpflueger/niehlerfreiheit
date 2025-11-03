@@ -29,7 +29,7 @@ jobs:
           EOF
       
       - name: FTP Deployment
-        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        uses: SamKirkland/FTP-Deploy-Action@4.3.5
         with:
           # environment secrets are maintained at Github.
           # To edit go to "Settings > Secrets" at your Github repository.
@@ -38,6 +38,8 @@ jobs:
           password: ${{ secrets.NF_FTP_PASSWORD }}
           protocol: ftp
           server-dir: web/staging/
+          timeout: 300000
+          log-level: verbose
           exclude: |
             **/.git*
             **/.git*/**
