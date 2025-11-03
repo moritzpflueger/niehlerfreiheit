@@ -273,7 +273,7 @@ $baseUrl = $site->url();
     
     <!-- Welcome Text -->
     <div class="welcome-section">
-      <div class="welcome-text" style="margin-bottom: 48px;"><?= nl2br(html($welcomeTextDe)) ?></div>
+      <div class="welcome-text" style="margin-bottom: 64px;"><?= nl2br(html($welcomeTextDe)) ?></div>
       <div class="welcome-text welcome-text-en"><?= nl2br(html($welcomeTextEn)) ?></div>
     </div>
     
