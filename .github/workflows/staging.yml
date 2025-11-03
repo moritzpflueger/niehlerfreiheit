@@ -12,6 +12,22 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 2
+      
+      - name: Create staging config with secrets
+        run: |
+          cat > site/config/config.staging.niehlerfreiheit.de.php << 'EOF'
+          <?php
+          return [
+            'debug' => true,
+            'brevo-newsletter' => [
+              'brevo_api_key' => '${{ secrets.BREVO_API_KEY }}',
+              'sender_email' => '${{ secrets.BREVO_SENDER_EMAIL }}',
+              'sender_name' => 'Niehler Freiheit',
+              'list_ids' => [4]
+            ]
+          ];
+          EOF
+      
       - name: FTP Deployment
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:

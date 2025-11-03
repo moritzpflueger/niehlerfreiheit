@@ -1,5 +1,3 @@
-# Test Deployment
-
 # ✏️ Brevo Newsletter - Editor Workflow
 
 ## 🎯 New Feature: Draft Campaigns
