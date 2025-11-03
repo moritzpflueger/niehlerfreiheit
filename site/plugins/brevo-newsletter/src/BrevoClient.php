@@ -402,7 +402,7 @@ class BrevoClient
     list($year, $month) = explode('-', $monthYear);
     $monthYearDisplay = $month . '/' . $year;
     
-    return $this->kirby->snippet('brevo-newsletter/email-template-new', [
+    return $this->kirby->snippet('brevo-newsletter/email-template', [
       'events' => $events,
       'recurringEvents' => $recurringEvents,
       'site' => $this->kirby->site(),
