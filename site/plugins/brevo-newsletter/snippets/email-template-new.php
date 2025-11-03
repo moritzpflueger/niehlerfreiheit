@@ -273,7 +273,7 @@ $baseUrl = $site->url();
     
     <!-- Welcome Text -->
     <div class="welcome-section">
-      <div class="welcome-text"><?= nl2br(html($welcomeTextDe)) ?></div>
+      <div class="welcome-text" style="margin-bottom: 32px;"><?= nl2br(html($welcomeTextDe)) ?></div>
       <div class="welcome-text welcome-text-en"><?= nl2br(html($welcomeTextEn)) ?></div>
     </div>
     
@@ -330,7 +330,7 @@ $baseUrl = $site->url();
       </div>
       
       <!-- Event Content (German) -->
-      <div class="event-content">
+      <div class="event-content" style="margin-bottom: 16px;">
         <div class="event-meta">
           <?= ucfirst($dateFormatDe) ?><br>
           <?php if ($admissionTime): ?>Einlass: <?= $admissionTime ?><br><?php endif; ?>
