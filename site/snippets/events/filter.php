@@ -43,20 +43,20 @@ $filterUrl = function ($filter, $filterType) use ($page, $showPastEvents, $selec
       id="toggleFilters"
       class="text-neutral-200 uppercase flex items-center">
       <span class="w-6 mr-3"><?= file_get_contents(kirby()->root('assets') . '/icons/filter.svg'); ?></span>
-      <span id="buttonText">show filters ‣</span>
+      <span id="buttonText"><?= t('events.button.showFilters') ?> ‣</span>
     </button>
     <button
       id="clearFilters"
       class="text-neutral-200 uppercase <?= ((count($selectedCategoryFilters) + count($selectedDateFilters)) === 0 ? 'hidden' : '') ?>">
-      Clear All
-      <span class=" <?= ((count($selectedCategoryFilters) + count($selectedDateFilters)) > 0 ? 'font-bold text-yellow-500' : 'text-neutral-500') ?>">
+      <?= t('events.button.clearAll') ?>
+      <span class=" <?= ((count($selectedCategoryFilters) + count($selectedDateFilters)) > 0 ? 'font-bold text-primary' : 'text-neutral-500') ?>">
         (<?= count($selectedCategoryFilters) + count($selectedDateFilters) ?>)
       </span>
     </button>
   </div>
   <div id="filters" class="hidden text-base px-3 pt-2 pb-6">
     <div class="py-2">
-      Categories
+      <?= t('events.categories') ?>
     </div>
     <?php
     foreach ($categoryFiltersNonRecurringEvents as $filter):
@@ -64,7 +64,7 @@ $filterUrl = function ($filter, $filterType) use ($page, $showPastEvents, $selec
     ?>
       <a
         href="<?= $filterUrl($filter, 'category') ?>"
-        class="<?= $isActive ? 'bg-lime-600 border-lime-600 text-black' : 'border-lime-600 text-lime-600 ' ?> border inline-flex mb-2 px-1 whitespace-nowrap uppercase items-center">
+        class="<?= $isActive ? 'bg-accent2 border-accent2 text-black' : 'border-accent2 text-accent2 ' ?> border inline-flex mb-2 px-1 whitespace-nowrap uppercase items-center">
         <?= $filter ?>
       </a>
     <?php endforeach; ?>
@@ -78,7 +78,7 @@ $filterUrl = function ($filter, $filterType) use ($page, $showPastEvents, $selec
     ?>
       <a
         href="<?= $filterUrl($filter, 'category') ?>"
-        class="<?= $isActive ? 'bg-cyan-500 border-cyan-500 text-black' : 'border-cyan-500 text-cyan-500 ' ?> border inline-flex mb-2 px-1 whitespace-nowrap uppercase">
+        class="<?= $isActive ? 'bg-accent1 border-accent1 text-black' : 'border-accent1 text-accent1 ' ?> border inline-flex mb-2 px-1 whitespace-nowrap uppercase">
         <?= $filter ?>
       </a>
     <?php endforeach; ?>
@@ -137,6 +137,6 @@ $filterUrl = function ($filter, $filterType) use ($page, $showPastEvents, $selec
   function updateButtonText() {
     const isFiltersVisible = localStorage.getItem('filtersVisible') === 'true';
     const buttonText = document.getElementById('buttonText');
-    buttonText.textContent = isFiltersVisible ? 'hide filters ▾' : 'show filters ‣';
+    buttonText.textContent = isFiltersVisible ? '<?= t('events.button.hideFilters') ?> ▾' : '<?= t('events.button.showFilters') ?> ‣';
   }
 </script>

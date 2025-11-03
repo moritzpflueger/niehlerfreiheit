@@ -1,0 +1,29 @@
+Title: Past event
+
+----
+
+Date: 2024-11-06
+
+----
+
+Starttime: 14:00:00
+
+----
+
+Admissiontime: 
+
+----
+
+Text: 
+
+----
+
+Iscanceled: false
+
+----
+
+Category: Theater
+
+----
+
+Uuid: abbZ8xct2uJCCbkV

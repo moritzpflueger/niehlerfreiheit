@@ -8,12 +8,19 @@ body {
     font-mono 
     font-thin
     uppercase
-    /* text-base */
-    /* max-w-4xl  */
+    text-base
     mx-auto 
     h-[100dvh]
     flex
     flex-col;
+}
+
+::selection {
+  @apply bg-primary text-black;
+}
+
+::-moz-selection {
+  @apply bg-primary text-black;
 }
 
 h1 {
@@ -51,7 +58,7 @@ h3 {
 .blocks .block[data-type="list"] ol,
 .blocks .block[data-type="markdown"] ul,
 .blocks .block[data-type="markdown"] ol {
-  @apply mb-10;
+  @apply mb-10 normal-case;
 }
 
 .blocks .block[data-type="text"] {
@@ -66,14 +73,14 @@ h3 {
   @apply text-5xl uppercase mb-5;
 }
 .blocks .block h2 {
-  @apply text-3xl font-semibold uppercase mb-5;
+  @apply text-xl font-bold uppercase mb-5;
 }
 .blocks .block h3 {
-  @apply text-xl uppercase mb-5;
+  @apply text-lg uppercase mb-5;
 }
 
 .blocks .block a {
-  @apply underline hover:text-yellow-500;
+  @apply underline hover:text-primary;
 }
 
 .blocks .block figcaption {
@@ -104,7 +111,7 @@ h3 {
 }
 .blocks .block[data-type="quote"]:before {
   content: "“";
-  @apply text-6xl text-yellow-500;
+  @apply text-6xl text-primary;
 }
 
 .blocks .block[data-type="quote"] footer {
@@ -116,7 +123,7 @@ h3 {
 }
 
 .blocks .block[data-type="code"] {
-  @apply p-10 bg-neutral-900 text-yellow-500 mb-10 overflow-x-auto;
+  @apply p-10 bg-neutral-900 text-primary mb-10 overflow-x-auto;
 }
 
 .kirbytext .video {
@@ -164,7 +171,7 @@ h3 {
 }
 
 .kirbytext a {
-  @apply underline hover:text-yellow-500;
+  @apply underline hover:text-primary;
 }
 
 /* Menu Modal */
@@ -207,5 +214,5 @@ h3 {
 }
 
 footer a:hover {
-  @apply text-yellow-500;
+  @apply text-primary;
 }

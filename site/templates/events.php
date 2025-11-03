@@ -18,9 +18,8 @@
 
   <?php foreach ($groupedEvents as $monthName => $events): ?>
 
-
     <?php $index = 0; ?>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 border-t border-neutral-700">
+    <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 border-t border-neutral-700">
       <h3 class="h-full flex items-center justify-center border-b border-r border-neutral-700 py-16">
         <?= !$showYear ? strtok($monthName, ' ') : $monthName ?>
       </h3>
@@ -35,15 +34,15 @@
   <?php endforeach; ?>
 
   <?php if (!$showPastEvents): ?>
-    <a href="<?= $page->url() ?>?showPastEvents=true" class="text-yellow-500 text-xl uppercase py-32 hover:underline flex items-center justify-center border-y border-neutral-700">
+    <a href="<?= $page->url() ?>?showPastEvents=true" class="text-primary text-xl uppercase py-32 hover:underline flex items-center justify-center border-y border-neutral-700">
       <?= t('events.button.viewPast') ?>
       <div class="w-10">
         <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>
       </div>
     </a>
   <?php else: ?>
-    <a href="<?= $page->url() ?>" class="text-yellow-500 text-xl uppercase py-32 hover:underline flex items-center justify-center border-y border-neutral-700">
-      Show upcoming Events
+    <a href="<?= $page->url() ?>" class="text-primary text-xl uppercase px-3 py-32 hover:underline flex items-center justify-center border-y border-neutral-700">
+      <?= t('events.button.viewUpcoming') ?>
       <div class="w-10">
         <?= file_get_contents(kirby()->root('assets') . '/icons/arrowRight.svg'); ?>
       </div>

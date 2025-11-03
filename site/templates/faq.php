@@ -7,7 +7,9 @@
       <li class="first:border-t border-b border-neutral-700 px-3 py-2">
         <details>
           <summary class="cursor-pointer"><?= $faq->question() ?></summary>
-          <p class="px-3 py-5 max-w-2xl normal-case"><?= $faq->answer() ?></p>
+          <div class="kirbytext normal-case px-3 py-5 max-w-2xl">
+            <?= $faq->answer()->kirbyText() ?>
+          </div>
         </details>
       </li>
     <?php endforeach; ?>

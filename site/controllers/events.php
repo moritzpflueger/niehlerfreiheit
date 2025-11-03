@@ -29,6 +29,8 @@ return function ($site, $page) {
     ->sortBy('date', $showPastEvents ? 'desc' : 'asc')
     ->limit($rows);
 
+  $nonRecurringEvents = clone $events;
+
   foreach ($events as $event) {
     $category = strtolower($event->category());
     if (!in_array($category, $categoryFiltersNonRecurringEvents)) {
@@ -99,5 +101,6 @@ return function ($site, $page) {
     'selectedCategoryFilters' => $selectedCategoryFilters,
     'showPastEvents' => $showPastEvents,
     'showYear' => $showYear,
+    'nonRecurringEvents' => $nonRecurringEvents,
   ];
 };

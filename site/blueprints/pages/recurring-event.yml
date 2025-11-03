@@ -30,7 +30,7 @@ columns:
             label: Week of Month
             type: checkboxes
             translate: false
-            required: true
+            # required: true
             default: "1"
             options:
               - value: "1"
@@ -47,7 +47,7 @@ columns:
             label: Recurrence Days
             type: checkboxes
             translate: false
-            required: true
+            # required: true
             options:
               - value: MO
                 text: Monday
@@ -102,6 +102,7 @@ columns:
           canceledDates:
             label: Canceled Dates
             type: structure
+            translate: false
             fields:
               date:
                 label: Date

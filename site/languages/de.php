@@ -11,12 +11,16 @@ return [
     'translations' => [
         'events.button.viewUpcoming' => 'Alle Events',
         'events.button.viewPast' => 'Vergangene Veranstaltungen',
-        'menu.closebutton' => 'schließen',
-        'newsletter.subscribe.button' => 'Newsletter Abonnieren',
-        'newsletter.subscribe.text' => 'Unser Newsletter kommt gewöhnlich einmal im Monat mit dem aktuellen Programm und generellen Updates von der Niehler Freiheit.',
-        'event.startTime' => 'Beginn',
-        'event.admissionTime' => 'Einlass',
-        'event.eventCode' => 'Die Plätze sind begrenzt. Einlass nur mit Anmeldung:'
+        'event.eventCode' => 'Die Plätze sind begrenzt. Einlass nur mit Anmeldung:',
+        'event.admission' => 'Einlass',
+        'event.start' => 'Beginn',
+        'event.date' => 'Datum',
+        'event.canceled' => 'Abgesagt',
+        'event.scheduledDates' => 'Alle Termine',
+        'events.categories' => 'Kategorien',
+        'events.button.showFilters' => 'Filter anzeigen',
+        'events.button.clearAll' => 'Filter löschen',
+        'events.button.hideFilters' => 'Filter ausblenden'
     ],
     'url' => NULL
 ];

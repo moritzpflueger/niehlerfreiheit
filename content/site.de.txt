@@ -4,13 +4,10 @@ Title: Niehler Freiheit
 
 Menu:
 
-- page://JkaKBKLwaqdU5OCT
-- page://9kX1z082HLRqjEvS
 - page://88oASCzeq6Qoi3gw
-
-----
-
-Logo: 
+- page://9kX1z082HLRqjEvS
+- page://JkaKBKLwaqdU5OCT
+- page://jG997XdWlMrbOjvz
 
 ----
 
@@ -25,8 +22,11 @@ Sociallinks:
   url: >
     https://www.instagram.com/niehlerfreiheit/
   icon: instagram
-- 
-  name: Facebook
-  url: >
-    https://www.facebook.com/niehlerfreiheit/events/?ref=page_internal
-  icon: facebook
+
+----
+
+Logo: 
+
+----
+
+Date: 2025-11-22 00:00:00

@@ -42,6 +42,7 @@ columns:
         layout: cards
         size: small
         max: 1 # Limiting to one image upload
+        translate: false
       settings:
         type: fields
         fields:

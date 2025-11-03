@@ -1,6 +1,6 @@
 <div id="menuModal" class="">
   <div class="">
-    <!-- <span class="close-button hover:text-yellow-500">
+    <!-- <span class="close-button hover:text-primary">
       <span class="font-semibold lowercase text-xl"><?= t('close') ?></span>
       <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
@@ -12,12 +12,17 @@
       foreach ($menuItems as $item):
         $isActive = $page->uri() === $item->uri();
       ?>
-        <li class="hover:text-yellow-500">
-          <a href="<?= $site->url() ?>/<?= $item->uri() ?>" class="<?= $isActive ? 'text-yellow-500' : '' ?>">
+        <li class="hover:text-primary">
+          <a href="<?= $site->url() ?>/<?= $item->uri() ?>" class="<?= $isActive ? 'text-primary' : '' ?>">
             <?= $item->title() ?>
           </a>
         </li>
       <?php endforeach; ?>
+      <li class="hover:text-primary">
+        <a href="/#newsletter">
+          newsletter
+        </a>
+      </li>
     </ul>
     <!-- <div class="absolute bottom-10 text-2xl flex gap-5">
       <?php snippet('components/socialLinks') ?>
@@ -26,7 +31,9 @@
   </div>
 </div>
 
-<script>
+
+<!-- TODO: implement menu modal -->
+<!-- <script>
   // Get the modal
   var modal = document.getElementById('menuModal');
 
@@ -55,4 +62,4 @@
       document.body.classList.remove('no-scroll'); // Enable scrolling
     }
   }
-</script>
+</script> -->
