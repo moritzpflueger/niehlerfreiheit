@@ -62,13 +62,12 @@ class BrevoClient
    */
   public function createDraftFromForm(array $formData): array
   {
-    $subject = $this->generateSubject();
-    $htmlContent = $this->getEmailHtmlNew($formData);
-    
-    // Format campaign name: "DRAFT Newsletter_MM/YY"
+    // Format campaign name and subject: "Newsletter MM/YYYY"
     $monthYear = $formData['monthYear']; // Format: "YYYY-MM"
     list($year, $month) = explode('-', $monthYear);
+    $subject = sprintf('Newsletter %s/%s', $month, $year);
     $campaignName = sprintf('DRAFT Newsletter_%s/%s', $month, substr($year, -2));
+    $htmlContent = $this->getEmailHtmlNew($formData);
     
     $campaignData = [
       'name' => $campaignName,
