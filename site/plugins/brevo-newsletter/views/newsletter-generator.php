@@ -503,9 +503,7 @@ here are the upcoming events..."></textarea>
         if (data.success) {
           showMessage('Draft created successfully in Brevo!');
           if (data.campaignUrl) {
-            setTimeout(() => {
-              window.open(data.campaignUrl, '_blank');
-            }, 1000);
+            window.open(data.campaignUrl, '_blank');
           }
         } else {
           showMessage('Error: ' + data.message, 'error');
