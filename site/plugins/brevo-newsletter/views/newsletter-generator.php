@@ -500,10 +500,16 @@ here are the upcoming events..."></textarea>
         
         const data = await response.json();
         
+        console.log('Full response:', data);
+        console.log('Campaign URL:', data.data?.campaignUrl);
+        
         if (data.success) {
           showMessage('Draft created successfully in Brevo!');
-          if (data.campaignUrl) {
-            window.open(data.campaignUrl, '_blank');
+          if (data.data && data.data.campaignUrl) {
+            console.log('Opening URL:', data.data.campaignUrl);
+            window.open(data.data.campaignUrl, '_blank');
+          } else {
+            console.log('No campaignUrl found in response');
           }
         } else {
           showMessage('Error: ' + data.message, 'error');
