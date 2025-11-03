@@ -29,7 +29,7 @@ jobs:
           EOF
       
       - name: FTP Deployment
-        uses: SamKirkland/FTP-Deploy-Action@4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           # environment secrets are maintained at Github.
           # To edit go to "Settings > Secrets" at your Github repository.
